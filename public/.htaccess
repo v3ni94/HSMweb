@@ -1,0 +1,48 @@
+# HSM Tec: DocumentRoot = public/. Apache 2.4.
+Options -Indexes -MultiViews
+AddDefaultCharset UTF-8
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  # HTTPS und kanonischer Host (www -> ohne www). Auf Staging ggf. anpassen.
+  RewriteCond %{HTTPS} !=on [OR]
+  RewriteCond %{HTTP_HOST} ^www\. [NC]
+  RewriteCond %{HTTP_HOST} !^localhost [NC]
+  RewriteCond %{HTTP_HOST} !^127\. [NC]
+  RewriteRule ^ https://hsm-tec.de%{REQUEST_URI} [R=301,L]
+
+  # Versteckte Dateien und Quellartefakte sperren
+  RewriteRule (^|/)\.(?!well-known/) - [F]
+  RewriteRule \.(json|lock|md|dist|bak|sql|log|sh|ini)$ - [F]
+
+  # Statische Dateien direkt, alles andere über den Front Controller
+  RewriteCond %{REQUEST_FILENAME} -f
+  RewriteRule ^ - [L]
+  RewriteRule ^ index.php [L]
+</IfModule>
+
+# Öffentliche Datenexporte (assets/data) sind ausdrücklich erlaubt
+<IfModule mod_rewrite.c>
+  RewriteRule ^assets/data/[a-z0-9-]+\.json$ - [L]
+</IfModule>
+
+<IfModule mod_headers.c>
+  Header always set X-Content-Type-Options "nosniff"
+  <FilesMatch "\.(css|js|svg|png|jpg|jpeg|webp|avif|ico|woff2)$">
+    Header set Cache-Control "public, max-age=2592000, immutable"
+  </FilesMatch>
+  <FilesMatch "\.json$">
+    Header set Cache-Control "public, max-age=3600"
+  </FilesMatch>
+</IfModule>
+
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/css application/javascript application/json image/svg+xml text/plain application/xml
+</IfModule>
+
+<IfModule mod_php.c>
+  php_flag display_errors Off
+  php_value upload_max_filesize 4M
+  php_value post_max_size 12M
+  php_value max_file_uploads 3
+</IfModule>

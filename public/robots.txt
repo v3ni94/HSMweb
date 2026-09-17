@@ -1,0 +1,24 @@
+# HSM Tec GmbH. Auf Staging zusätzlich Zugriffsschutz verwenden; robots.txt ersetzt keinen Schutz.
+User-agent: *
+Allow: /
+Disallow: /anfrage/
+Disallow: /wasserschaden/melden/
+Disallow: /karriere/bewerben/
+Disallow: /csrf-token
+
+# KI-Crawler: Suchzugriff erlaubt; Training ist eine getrennte Betreiberentscheidung
+# und wird hier nicht stillschweigend freigegeben (siehe docs/release-checklist.md).
+User-agent: OAI-SearchBot
+Allow: /
+User-agent: ChatGPT-User
+Allow: /
+User-agent: GPTBot
+Disallow: /
+User-agent: Claude-SearchBot
+Allow: /
+User-agent: Claude-User
+Allow: /
+User-agent: ClaudeBot
+Disallow: /
+
+Sitemap: https://hsm-tec.de/sitemap.xml

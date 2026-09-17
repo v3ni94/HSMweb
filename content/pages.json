@@ -1,0 +1,2128 @@
+{
+    "_comment": "Zentrales Seitenregister. Jede Seite genau einmal. Templates: home, hub, service, foerderung, foerderrechner, unternehmen, projekte, ratgeber, karriere, kontakt, ki-openai, ki-anthropic, impressum, legal. lastmod nur bei echter inhaltlicher Änderung anpassen. noindex/excludeFromSitemap steuern Sitemap und Robots-Meta.",
+    "pages": [
+        {
+            "path": "/",
+            "template": "home",
+            "title": "HSM Tec GmbH Düren: Heizung, Bad, Wasserschaden und Sanierung",
+            "navTitle": "Startseite",
+            "metaTitle": "HSM Tec GmbH Düren | Heizung, Bad, Wasserschaden, Sanierung",
+            "metaDescription": "HSM Tec aus Düren: Heizungsmodernisierung, Badsanierung, Leckortung und Trocknung nach Wasserschaden, koordinierte Sanierung. Ein Ansprechpartner für Ihr Projekt.",
+            "h1": "Heizung, Bad und Sanierung. Durchdacht geplant. Gemeinsam umgesetzt.",
+            "lead": "HSM Tec aus Düren ist Ihr Ansprechpartner für Heizung, Sanitär und die koordinierte Umsetzung von Sanierungsarbeiten. Ob Heizungsmodernisierung, neues Bad oder Wasserschaden: Wir stimmen die erforderlichen Arbeiten mit Ihnen ab und koordinieren die beteiligten Gewerke.",
+            "claim": "Heizung, Bad und Sanierung. Ein Ansprechpartner für Ihr Projekt.",
+            "form": "contact",
+            "formTopic": "Allgemeine Anfrage",
+            "lastmod": "2026-09-17",
+            "areas": [
+                {
+                    "path": "/heizung/",
+                    "title": "Heizung",
+                    "text": "Wärmepumpen, Heizungsmodernisierung, Wartung, Reparatur und hydraulischer Abgleich."
+                },
+                {
+                    "path": "/sanitaer/",
+                    "title": "Bad und Sanitär",
+                    "text": "Badsanierung, barrierearme Bäder, Trinkwasser, Warmwasser und Rohrreparatur."
+                },
+                {
+                    "path": "/wasserschaden/",
+                    "title": "Wasserschaden",
+                    "text": "Leckortung, technische Trocknung und koordinierte Wiederherstellung."
+                },
+                {
+                    "path": "/sanierung/",
+                    "title": "Sanierung",
+                    "text": "Wohnungs-, Altbau- und Komplettsanierung mit Koordination der Gewerke."
+                }
+            ],
+            "process": [
+                {
+                    "title": "Anfrage und Erstgespräch",
+                    "text": "Sie beschreiben Ihr Vorhaben. Wir klären die wichtigsten Fragen telefonisch oder per E-Mail und vereinbaren bei Bedarf einen Termin vor Ort."
+                },
+                {
+                    "title": "Bestandsaufnahme",
+                    "text": "Wir sehen uns Gebäude, Anlage oder Schaden an, messen und dokumentieren. So entsteht eine belastbare Grundlage."
+                },
+                {
+                    "title": "Angebot mit klarer Leistungsabgrenzung",
+                    "text": "Sie erhalten ein Angebot, aus dem hervorgeht, welche Arbeiten wir selbst ausführen und welche Gewerke wir koordinieren."
+                },
+                {
+                    "title": "Umsetzung und Koordination",
+                    "text": "Wir führen die Arbeiten aus, stimmen Termine ab und koordinieren die weiteren Gewerke im vereinbarten Umfang."
+                },
+                {
+                    "title": "Übergabe und Dokumentation",
+                    "text": "Wir übergeben die fertige Leistung, erklären die Anlage und dokumentieren die Arbeiten."
+                }
+            ],
+            "oneHandExplained": "„Aus einer Hand“ bedeutet bei uns: HSM Tec bündelt die Abstimmung des vereinbarten Leistungsumfangs und koordiniert die erforderlichen weiteren Gewerke. Welche Arbeiten wir selbst ausführen und welche Partnerbetriebe übernehmen, steht im Angebot. Ob ein Auftrag als Gesamtleistung oder als abgestimmte Einzelleistungen vergeben wird, klären wir mit Ihnen im Vorfeld.",
+            "faq": [
+                {
+                    "q": "Für welche Region ist HSM Tec tätig?",
+                    "a": "Unser Sitz ist Düren. Ob wir Ihr Objekt betreuen können, klären wir im Erstgespräch anhand von Ort und Vorhaben."
+                },
+                {
+                    "q": "Wie schnell erhalte ich eine Rückmeldung?",
+                    "a": "Wir melden uns so schnell wie möglich zu unseren Geschäftszeiten. Eine feste Reaktionszeit können wir über die Website nicht zusichern. Bei akutem Wasseraustritt rufen Sie uns bitte an."
+                },
+                {
+                    "q": "Bietet HSM Tec einen 24-Stunden-Notdienst?",
+                    "a": "Das Schadenformular ist keine laufend besetzte Notrufstelle. Ob und in welchem Umfang ein Bereitschaftsdienst besteht, teilen wir Ihnen telefonisch mit. Bei Gefahr für Personen oder Gebäude verständigen Sie bitte zuerst die zuständigen Stellen und schließen den Hauptabsperrhahn."
+                }
+            ]
+        },
+        {
+            "path": "/leistungen/",
+            "template": "hub",
+            "parent": null,
+            "title": "Leistungen",
+            "navTitle": "Leistungen",
+            "metaTitle": "Leistungen: Heizung, Sanitär, Wasserschaden, Sanierung | HSM Tec",
+            "metaDescription": "Alle Leistungen von HSM Tec im Überblick: Heizung und Wärmepumpen, Bad und Sanitär, Leckortung und Trocknung nach Wasserschaden, koordinierte Sanierung.",
+            "h1": "Unsere Leistungen im Überblick",
+            "lead": "Vier Leistungsbereiche, ein Ansprechpartner. Wir planen und führen Heizungs- und Sanitärarbeiten aus, kümmern uns um Wasserschäden von der Leckortung bis zur Wiederherstellung und koordinieren Sanierungen mit den weiteren Gewerken.",
+            "hubChildren": [
+                "/heizung/",
+                "/sanitaer/",
+                "/wasserschaden/",
+                "/sanierung/"
+            ],
+            "extraLinks": [
+                {
+                    "path": "/fuer-hausverwaltungen-und-vermieter/",
+                    "title": "Für Hausverwaltungen und Vermieter"
+                },
+                {
+                    "path": "/fuer-gewerbekunden/",
+                    "title": "Für Gewerbekunden"
+                },
+                {
+                    "path": "/foerderung/",
+                    "title": "Förderung"
+                }
+            ],
+            "form": "contact",
+            "formTopic": "Allgemeine Anfrage",
+            "lastmod": "2026-09-17"
+        },
+        {
+            "path": "/heizung/",
+            "template": "hub",
+            "parent": "/leistungen/",
+            "title": "Heizung",
+            "metaTitle": "Heizung in Düren: Wärmepumpe, Modernisierung, Wartung | HSM Tec",
+            "metaDescription": "Heizungsbau in Düren: Beratung, Planung, Austausch, Installation, Wartung und Reparatur. Wärmepumpen, Heizkörper, Fußbodenheizung, hydraulischer Abgleich.",
+            "h1": "Heizung: Beratung, Modernisierung, Wartung und Reparatur",
+            "lead": "Wir planen, installieren und betreuen Heizungsanlagen in Wohn- und Gewerbegebäuden: von der Wärmepumpe über den Austausch bestehender Systeme bis zur Wartung und Optimierung. Für wen: Eigentümer, Vermieter, Hausverwaltungen und Gewerbekunden im Raum Düren. Wie es weitergeht: Sie schildern uns Ihre Ausgangslage, wir prüfen Gebäude und Anlage und schlagen eine passende Lösung vor.",
+            "sections": [
+                {
+                    "heading": "Was wir im Bereich Heizung leisten",
+                    "list": [
+                        "Beratung und Planung für Neuanlagen und Modernisierungen",
+                        "Austausch und Installation von Wärmeerzeugern, Speichern, Pumpen und Regelung",
+                        "Inbetriebnahme, Einweisung und Dokumentation",
+                        "Wartung, Störungsbeseitigung und Reparatur bestehender Anlagen",
+                        "Optimierung: hydraulischer Abgleich, Heizkurve, Pumpeneinstellung, Heizflächen"
+                    ]
+                },
+                {
+                    "heading": "Leistungsgrenzen ehrlich benannt",
+                    "paragraphs": [
+                        "Solarthermie, Biomasse, Hausstationen für Wärmenetze oder besondere Prüfungen bieten wir nur an, wenn sie zum bestätigten eigenen oder koordinierten Leistungsumfang gehören. Arbeiten an Gas, Elektrik und Kältemittel erfolgen ausschließlich im Rahmen der nachgewiesenen Qualifikationen, gegebenenfalls über qualifizierte Partnerbetriebe. Die Wartung einer fossilen Anlage bedeutet nicht automatisch, dass ihr späterer Austausch förderfähig ist. Das prüfen wir im Einzelfall."
+                    ]
+                }
+            ],
+            "hubChildren": [
+                "/heizung/waermepumpen/",
+                "/heizung/heizungsmodernisierung/",
+                "/heizung/heizungswartung/",
+                "/heizung/heizungsreparatur/",
+                "/heizung/fussbodenheizung/",
+                "/heizung/hydraulischer-abgleich/",
+                "/heizung/heizkoerper-und-heizflaechen/"
+            ],
+            "funding": "/foerderung/heizung/",
+            "form": "contact",
+            "formTopic": "Heizung",
+            "lastmod": "2026-09-17"
+        },
+        {
+            "path": "/heizung/waermepumpen/",
+            "template": "service",
+            "parent": "/heizung/",
+            "title": "Wärmepumpen",
+            "metaTitle": "Wärmepumpe in Düren: Prüfung, Planung, Einbau | HSM Tec",
+            "metaDescription": "Wärmepumpe für Bestandsgebäude: Gebäude- und Anlagenprüfung, Heizflächen, Aufstellort, Schall, Auslegung, Warmwasser und Förderung. Planung und Einbau durch HSM Tec Düren.",
+            "h1": "Wärmepumpen für Bestandsgebäude",
+            "lead": "Wir prüfen, ob und wie eine Wärmepumpe in Ihrem Gebäude sinnvoll funktioniert, planen die Anlage und bauen sie ein. Für wen: Eigentümer von Ein- und Mehrfamilienhäusern sowie Vermieter und Verwaltungen, die eine bestehende Heizung ersetzen möchten. Wie es weitergeht: Nach Ihrer Anfrage prüfen wir Gebäude, Heizflächen und Anlage vor Ort und erstellen eine belastbare Auslegung.",
+            "sections": [
+                {
+                    "heading": "Gebäude- und Anlagenprüfung zuerst",
+                    "paragraphs": [
+                        "Eine Wärmepumpe arbeitet effizient, wenn Vorlauftemperatur, Heizflächen und Gebäude zusammenpassen. Deshalb beginnen wir mit einer Bestandsaufnahme: Baujahr und Dämmzustand, vorhandene Heizkörper oder Flächenheizung, bisheriger Energieverbrauch, Warmwasserbedarf und der Zustand von Rohrnetz und Speicher.",
+                        "Nicht jede Anlage passt ohne Anpassung zu jedem Gebäude. Manchmal reicht der Austausch einzelner Heizkörper, manchmal ist ein Pufferspeicher oder ein hydraulischer Abgleich notwendig. Was in Ihrem Fall erforderlich ist, sagen wir Ihnen nach der Prüfung."
+                    ]
+                },
+                {
+                    "heading": "Heizflächen und Vorlauftemperatur",
+                    "paragraphs": [
+                        "Wir berechnen, welche Vorlauftemperatur Ihre vorhandenen Heizflächen am kältesten Tag benötigen. Liegt sie zu hoch, prüfen wir Alternativen: größere Heizkörper, Niedertemperaturheizkörper oder eine Flächenheizung in einzelnen Räumen."
+                    ]
+                },
+                {
+                    "heading": "Aufstellmöglichkeiten und Schall",
+                    "paragraphs": [
+                        "Die Außeneinheit braucht einen geeigneten Aufstellort mit Abstand zu Nachbarn, Schlafräumen und Wegen. Wir berücksichtigen Schallemissionen, Kondensatableitung, Fundament und Leitungsführung ins Gebäude. Innen benötigen Speicher, Hydraulik und Regelung ausreichend Platz."
+                    ]
+                },
+                {
+                    "heading": "Auslegung und Warmwasser",
+                    "paragraphs": [
+                        "Die Heizlast bestimmt die Größe der Wärmepumpe. Eine zu große Anlage taktet häufig, eine zu kleine erreicht die Wunschtemperatur nicht. Für Warmwasser planen wir Speicher und Hygienekonzept passend zum Haushalt oder zur Anzahl der Wohneinheiten."
+                    ]
+                }
+            ],
+            "steps": [
+                {
+                    "title": "Anfrage und Vorgespräch",
+                    "text": "Eckdaten zu Gebäude, Heizung und Verbrauch."
+                },
+                {
+                    "title": "Ortstermin und Bestandsaufnahme",
+                    "text": "Heizflächen, Rohrnetz, Aufstellort, Elektroanschluss, Schall."
+                },
+                {
+                    "title": "Auslegung und Angebot",
+                    "text": "Heizlast, Gerätevorschlag, notwendige Anpassungen, Fördereinordnung, Leistungsabgrenzung."
+                },
+                {
+                    "title": "Förderantrag und Vertrag",
+                    "text": "Für die KfW-Heizungsförderung ist ein Liefer- oder Leistungsvertrag mit Förderbedingung erforderlich. Wir stellen die Unterlagen bereit."
+                },
+                {
+                    "title": "Einbau, Inbetriebnahme, Einweisung",
+                    "text": "Montage, hydraulischer Abgleich, Einstellung der Regelung, Dokumentation."
+                }
+            ],
+            "limits": [
+                "Wir nennen keine pauschalen Einsparungen und keine garantierte Amortisation. Diese hängen von Gebäude, Nutzung und Energiepreisen ab.",
+                "Kältemittel- und Elektroarbeiten erfolgen nur im Rahmen nachgewiesener Qualifikationen oder durch qualifizierte Partnerbetriebe.",
+                "Eine Förderzusage erteilt ausschließlich der Fördergeber."
+            ],
+            "faq": [
+                {
+                    "q": "Funktioniert eine Wärmepumpe auch mit Heizkörpern?",
+                    "a": "Häufig ja, wenn die Heizkörper ausreichend groß dimensioniert sind und die benötigte Vorlauftemperatur niedrig genug ist. Das prüfen wir raumweise bei der Bestandsaufnahme."
+                },
+                {
+                    "q": "Muss ich zuerst den Förderantrag stellen oder zuerst den Vertrag unterschreiben?",
+                    "a": "Für die KfW-Heizungsförderung ist in der Regel ein Liefer- oder Leistungsvertrag mit einer Förderbedingung nötig, bevor der Antrag gestellt wird. Wir stimmen den Ablauf mit Ihnen ab, damit keine Frist verletzt wird."
+                },
+                {
+                    "q": "Wie laut ist die Außeneinheit?",
+                    "a": "Das hängt vom Gerät, vom Aufstellort und von der Betriebsweise ab. Wir berücksichtigen bei der Planung die Abstände und den Schallschutz und wählen den Aufstellort entsprechend."
+                }
+            ],
+            "funding": "/foerderung/heizung/",
+            "related": [
+                "/heizung/heizungsmodernisierung/",
+                "/heizung/hydraulischer-abgleich/",
+                "/heizung/heizkoerper-und-heizflaechen/",
+                "/foerderrechner/"
+            ],
+            "form": "contact",
+            "formTopic": "Wärmepumpe",
+            "lastmod": "2026-09-17"
+        },
+        {
+            "path": "/heizung/heizungsmodernisierung/",
+            "template": "service",
+            "parent": "/heizung/",
+            "title": "Heizungsmodernisierung",
+            "metaTitle": "Heizungsmodernisierung in Düren: Austausch und Optimierung | HSM Tec",
+            "metaDescription": "Alte Heizung ersetzen oder optimieren: Bestandsaufnahme, Systemvergleich, Austausch von Wärmeerzeuger, Speicher, Pumpen und Regelung. HSM Tec Düren.",
+            "h1": "Heizungsmodernisierung: bestehende Anlage ersetzen oder optimieren",
+            "lead": "Wir modernisieren Heizungsanlagen im Bestand: vom Austausch des Wärmeerzeugers bis zur Erneuerung von Speicher, Pumpen und Regelung. Für wen: Eigentümer und Verwaltungen mit älteren oder störanfälligen Anlagen. Wie es weitergeht: Wir nehmen die Anlage auf, vergleichen Systeme und zeigen Ihnen, welche Schritte sich in Ihrem Gebäude lohnen.",
+            "sections": [
+                {
+                    "heading": "Wann eine Modernisierung sinnvoll ist",
+                    "list": [
+                        "Die Anlage ist älter als etwa 20 Jahre oder häufig gestört",
+                        "Ersatzteile sind schwer verfügbar oder Reparaturen häufen sich",
+                        "Der Energieverbrauch ist hoch, obwohl das Gebäude gedämmt wurde",
+                        "Das Gebäude soll auf eine Wärmepumpe oder ein anderes System umgestellt werden",
+                        "Speicher, Pumpen oder Regelung stammen aus einer anderen Generation als der Wärmeerzeuger"
+                    ]
+                },
+                {
+                    "heading": "Systemvergleich statt Pauschalempfehlung",
+                    "paragraphs": [
+                        "Wir vergleichen die für Ihr Gebäude passenden Optionen: Wärmepumpe, Weiterbetrieb mit Optimierung, Kombinationen oder der Anschluss an ein Wärmenetz, sofern verfügbar. Dabei betrachten wir Investition, Betrieb, Förderfähigkeit und den baulichen Aufwand. Die Entscheidung treffen Sie auf Grundlage nachvollziehbarer Zahlen."
+                    ]
+                },
+                {
+                    "heading": "Komponenten, die wir erneuern",
+                    "list": [
+                        "Wärmeerzeuger inklusive Abgas- oder Außeneinheit",
+                        "Puffer- und Warmwasserspeicher",
+                        "Umwälz- und Zirkulationspumpen",
+                        "Regelung, Raumthermostate, Fernzugriff",
+                        "Verteilung, Armaturen, Sicherheitseinrichtungen"
+                    ]
+                }
+            ],
+            "steps": [
+                {
+                    "title": "Bestandsaufnahme",
+                    "text": "Anlage, Verbrauch, Heizflächen, Warmwasser, Aufstellraum."
+                },
+                {
+                    "title": "Systemvergleich und Angebot",
+                    "text": "Optionen mit Kosten, Förderung und Leistungsabgrenzung."
+                },
+                {
+                    "title": "Förderabstimmung",
+                    "text": "Prüfung der Voraussetzungen, Vertrag mit Förderbedingung, Antragsunterlagen."
+                },
+                {
+                    "title": "Demontage und Einbau",
+                    "text": "Fachgerechte Entsorgung der Altanlage im vereinbarten Umfang, Montage, Inbetriebnahme."
+                },
+                {
+                    "title": "Einregulierung",
+                    "text": "Hydraulischer Abgleich, Heizkurve, Einweisung, Dokumentation."
+                }
+            ],
+            "limits": [
+                "Ein Austausch ist nicht in jedem Fall förderfähig. Die Voraussetzungen prüfen wir vor Vertragsschluss gemeinsam.",
+                "Gas- und Elektroarbeiten nur im Rahmen nachgewiesener Qualifikationen oder über Partnerbetriebe."
+            ],
+            "faq": [
+                {
+                    "q": "Kann ich die Heizung im Winter tauschen?",
+                    "a": "Grundsätzlich ja. Wir planen den Ausfallzeitraum so kurz wie möglich und stimmen die Termine mit Ihnen ab. Bei Bedarf besprechen wir eine Übergangslösung."
+                },
+                {
+                    "q": "Was passiert mit der alten Anlage?",
+                    "a": "Demontage und Entsorgung übernehmen wir im vereinbarten Umfang. Der Umfang steht im Angebot."
+                }
+            ],
+            "funding": "/foerderung/heizung/",
+            "related": [
+                "/heizung/waermepumpen/",
+                "/heizung/hydraulischer-abgleich/",
+                "/foerderrechner/"
+            ],
+            "form": "contact",
+            "formTopic": "Heizungsmodernisierung",
+            "lastmod": "2026-09-17"
+        },
+        {
+            "path": "/heizung/heizungswartung/",
+            "template": "service",
+            "parent": "/heizung/",
+            "title": "Heizungswartung",
+            "metaTitle": "Heizungswartung in Düren: Prüfung, Reinigung, Einstellung | HSM Tec",
+            "metaDescription": "Regelmäßige Wartung von Heizungsanlagen und Warmwasserbereitern: Sicherheitsprüfung, Reinigung, Einstellung, Wartungsprotokoll. HSM Tec Düren.",
+            "h1": "Heizungswartung: sicher, effizient, dokumentiert",
+            "lead": "Wir warten Heizungsanlagen und Warmwasserbereiter regelmäßig, damit sie sicher und effizient laufen. Für wen: Eigentümer, Vermieter und Hausverwaltungen, die Ausfälle vermeiden und Gewährleistungs- oder Versicherungsanforderungen erfüllen möchten. Wie es weitergeht: Sie nennen uns Anlage und Standort, wir schlagen einen Wartungstermin oder eine regelmäßige Wartungsvereinbarung vor.",
+            "sections": [
+                {
+                    "heading": "Was bei einer Wartung geschieht",
+                    "list": [
+                        "Sicht- und Funktionsprüfung von Wärmeerzeuger, Sicherheitseinrichtungen und Abgasführung",
+                        "Reinigung der relevanten Bauteile, Prüfung von Dichtungen und Verschleißteilen",
+                        "Kontrolle von Druck, Ausdehnungsgefäß, Pumpen und Ventilen",
+                        "Prüfung und Anpassung der Regelungseinstellungen",
+                        "Wartungsprotokoll mit Hinweisen auf empfohlene Maßnahmen"
+                    ]
+                },
+                {
+                    "heading": "Wartung ist keine Förderzusage",
+                    "paragraphs": [
+                        "Die Wartung einer bestehenden fossilen Anlage verlängert ihre Lebensdauer und erhöht die Sicherheit. Ob und wie ein späterer Austausch gefördert wird, hängt von den dann geltenden Programmbedingungen ab und ist eine getrennte Prüfung."
+                    ]
+                }
+            ],
+            "steps": [
+                {
+                    "title": "Terminabstimmung",
+                    "text": "Anlage, Standort und Zugang klären."
+                },
+                {
+                    "title": "Wartung vor Ort",
+                    "text": "Prüfung, Reinigung, Einstellung."
+                },
+                {
+                    "title": "Protokoll und Empfehlung",
+                    "text": "Dokumentation, Hinweise zu Verschleiß und Optimierung."
+                }
+            ],
+            "limits": [
+                "Wartungsintervalle richten sich nach Herstellervorgabe und Anlagentyp. Wir sprechen mit Ihnen ab, was für Ihre Anlage sinnvoll ist."
+            ],
+            "faq": [
+                {
+                    "q": "Wie oft sollte eine Heizung gewartet werden?",
+                    "a": "Üblich ist eine jährliche Wartung. Die Herstellervorgaben und der Anlagentyp geben den Rahmen vor."
+                },
+                {
+                    "q": "Bieten Sie Wartungsverträge für Hausverwaltungen an?",
+                    "a": "Ja, für Objekte mit mehreren Anlagen stimmen wir eine regelmäßige Wartungsplanung mit Objektzuordnung und Rückmeldung ab."
+                }
+            ],
+            "related": [
+                "/heizung/heizungsreparatur/",
+                "/heizung/hydraulischer-abgleich/",
+                "/fuer-hausverwaltungen-und-vermieter/"
+            ],
+            "form": "contact",
+            "formTopic": "Heizungswartung",
+            "lastmod": "2026-09-17"
+        },
+        {
+            "path": "/heizung/heizungsreparatur/",
+            "template": "service",
+            "parent": "/heizung/",
+            "title": "Heizungsreparatur",
+            "metaTitle": "Heizungsreparatur in Düren: Störungssuche und Instandsetzung | HSM Tec",
+            "metaDescription": "Heizung ausgefallen oder gestört? Störungsanalyse, Reparatur, Austausch defekter Bauteile an Heizungsanlagen und Warmwasserbereitern. HSM Tec Düren.",
+            "h1": "Heizungsreparatur: Störung finden und beheben",
+            "lead": "Wir analysieren Störungen an Heizungsanlagen und setzen sie instand. Für wen: Eigentümer, Mieter mit Rücksprache des Vermieters, Hausverwaltungen. Wie es weitergeht: Sie schildern uns Anlage und Symptom, wir stimmen einen Termin ab und klären, ob eine Reparatur wirtschaftlich sinnvoll ist.",
+            "sections": [
+                {
+                    "heading": "Typische Störungen",
+                    "list": [
+                        "Anlage geht auf Störung oder startet nicht",
+                        "Kein oder zu wenig Warmwasser",
+                        "Heizkörper werden ungleichmäßig oder gar nicht warm",
+                        "Druckverlust, Geräusche, undichte Stellen",
+                        "Fehlermeldungen an Regelung oder Wärmepumpe"
+                    ]
+                },
+                {
+                    "heading": "Reparieren oder ersetzen?",
+                    "paragraphs": [
+                        "Bei älteren Anlagen sagen wir Ihnen offen, ob eine Reparatur noch sinnvoll ist oder ob eine Modernisierung wirtschaftlicher wäre. Die Entscheidung bleibt bei Ihnen."
+                    ]
+                }
+            ],
+            "steps": [
+                {
+                    "title": "Störungsmeldung",
+                    "text": "Symptom, Anlage, Erreichbarkeit."
+                },
+                {
+                    "title": "Diagnose vor Ort",
+                    "text": "Fehlerauslesen, Messung, Sichtprüfung."
+                },
+                {
+                    "title": "Reparatur",
+                    "text": "Austausch defekter Bauteile, Wiederinbetriebnahme, Funktionsprüfung."
+                }
+            ],
+            "limits": [
+                "Wir nennen keine garantierte Anfahrtszeit. Bei akutem Wasseraustritt schließen Sie bitte die Absperrung und rufen uns an.",
+                "Ersatzteile für ältere Anlagen sind nicht immer kurzfristig verfügbar."
+            ],
+            "faq": [
+                {
+                    "q": "Was kann ich vor dem Anruf selbst prüfen?",
+                    "a": "Prüfen Sie Stromversorgung, Anlagendruck am Manometer und ob eine Fehlermeldung angezeigt wird. Notieren Sie den Fehlercode. Führen Sie keine Eingriffe an Gas, Elektrik oder Kältekreis durch."
+                }
+            ],
+            "related": [
+                "/heizung/heizungswartung/",
+                "/heizung/heizungsmodernisierung/"
+            ],
+            "form": "contact",
+            "formTopic": "Heizungsreparatur",
+            "lastmod": "2026-09-17"
+        },
+        {
+            "path": "/heizung/fussbodenheizung/",
+            "template": "service",
+            "parent": "/heizung/",
+            "title": "Fußbodenheizung",
+            "metaTitle": "Fußbodenheizung in Düren: Einbau, Nachrüstung, Abgleich | HSM Tec",
+            "metaDescription": "Fußboden- und Flächenheizung im Neubau und Bestand: Planung, Einbau, Nachrüstung, Anbindung an Wärmepumpe, Einregulierung. HSM Tec Düren.",
+            "h1": "Fußbodenheizung und Flächenheizung",
+            "lead": "Wir planen und installieren Fußboden- und Wandflächenheizungen, auch als Nachrüstung im Bestand. Für wen: Eigentümer bei Sanierung oder Umstellung auf niedrige Vorlauftemperaturen. Wie es weitergeht: Wir prüfen Aufbauhöhe, Estrich und Wärmeerzeuger und schlagen ein passendes System vor.",
+            "sections": [
+                {
+                    "heading": "Warum Flächenheizung zur Wärmepumpe passt",
+                    "paragraphs": [
+                        "Flächenheizungen arbeiten mit niedrigen Vorlauftemperaturen und großen Übertragungsflächen. Das ist die Voraussetzung für einen effizienten Wärmepumpenbetrieb und sorgt für gleichmäßige Wärme."
+                    ]
+                },
+                {
+                    "heading": "Systeme für Neubau und Bestand",
+                    "list": [
+                        "Nasssysteme im Estrich bei Neubau oder Kernsanierung",
+                        "Dünnschicht- und Trockensysteme für die Nachrüstung mit geringer Aufbauhöhe",
+                        "Wandheizung für einzelne Räume",
+                        "Einzelraumregelung und Verteiler mit Durchflussanzeige"
+                    ]
+                }
+            ],
+            "steps": [
+                {
+                    "title": "Prüfung von Aufbau und Wärmeerzeuger",
+                    "text": "Aufbauhöhe, Bodenbelag, Estrich, Vorlauftemperatur."
+                },
+                {
+                    "title": "Planung",
+                    "text": "Heizkreise, Verteiler, Regelung, Abstimmung mit Estrich- und Bodenarbeiten."
+                },
+                {
+                    "title": "Einbau und Einregulierung",
+                    "text": "Verlegung, Druckprobe, Aufheizprotokoll, Abgleich."
+                }
+            ],
+            "limits": [
+                "Estrich-, Boden- und Fliesenarbeiten koordinieren wir mit den weiteren Gewerken im vereinbarten Umfang; wir führen sie nicht als eigene Abteilung aus."
+            ],
+            "faq": [
+                {
+                    "q": "Lässt sich eine Fußbodenheizung im Altbau nachrüsten?",
+                    "a": "Oft ja, mit Dünnschicht- oder Trockensystemen. Entscheidend sind Aufbauhöhe, Türanschlüsse und der vorhandene Boden. Das prüfen wir vor Ort."
+                }
+            ],
+            "related": [
+                "/heizung/waermepumpen/",
+                "/heizung/heizkoerper-und-heizflaechen/",
+                "/sanierung/"
+            ],
+            "form": "contact",
+            "formTopic": "Fußbodenheizung",
+            "lastmod": "2026-09-17"
+        },
+        {
+            "path": "/heizung/hydraulischer-abgleich/",
+            "template": "service",
+            "parent": "/heizung/",
+            "title": "Hydraulischer Abgleich",
+            "metaTitle": "Hydraulischer Abgleich in Düren: Heizung optimieren | HSM Tec",
+            "metaDescription": "Hydraulischer Abgleich für Heizungsanlagen: raumweise Heizlast, Ventileinstellung, Pumpenanpassung, Dokumentation. Voraussetzung für effizienten Betrieb. HSM Tec Düren.",
+            "h1": "Hydraulischer Abgleich: jede Heizfläche bekommt, was sie braucht",
+            "lead": "Beim hydraulischen Abgleich stellen wir die Heizungsanlage so ein, dass jeder Heizkörper und jeder Heizkreis die passende Wassermenge erhält. Für wen: Eigentümer und Verwaltungen mit ungleichmäßig warmen Räumen, Fließgeräuschen oder vor einer Wärmepumpen-Umstellung. Wie es weitergeht: Wir nehmen Heizflächen und Räume auf, berechnen und stellen ein.",
+            "sections": [
+                {
+                    "heading": "Was der Abgleich bewirkt",
+                    "list": [
+                        "Gleichmäßige Wärmeverteilung, weniger Geräusche",
+                        "Niedrigere Vorlauftemperatur und Pumpenleistung möglich",
+                        "Voraussetzung für viele Förderprogramme und für den Wärmepumpenbetrieb",
+                        "Dokumentation für Eigentümer, Verwaltung oder Fördergeber"
+                    ]
+                },
+                {
+                    "heading": "Ablauf",
+                    "paragraphs": [
+                        "Wir erfassen Räume, Heizflächen und Ventile, berechnen die raumweise Heizlast und die notwendigen Volumenströme, stellen voreinstellbare Thermostatventile oder Rücklaufverschraubungen ein und passen die Pumpe und Heizkurve an. Fehlen voreinstellbare Ventile, tauschen wir sie im vereinbarten Umfang."
+                    ]
+                }
+            ],
+            "steps": [
+                {
+                    "title": "Aufnahme",
+                    "text": "Räume, Heizflächen, Ventiltypen, Rohrnetz."
+                },
+                {
+                    "title": "Berechnung",
+                    "text": "Heizlast, Volumenströme, Voreinstellwerte."
+                },
+                {
+                    "title": "Einstellung und Protokoll",
+                    "text": "Ventile, Pumpe, Heizkurve, Dokumentation."
+                }
+            ],
+            "limits": [
+                "Ob der Abgleich Teil einer Förderung ist, hängt vom jeweiligen Programm ab. Die Voraussetzungen prüfen wir mit Ihnen."
+            ],
+            "faq": [
+                {
+                    "q": "Ist der hydraulische Abgleich für eine Wärmepumpe Pflicht?",
+                    "a": "Für einen effizienten Betrieb ist er fachlich notwendig. Für die Förderung ist er in der Regel Bestandteil der technischen Anforderungen. Wir führen ihn bei jeder Wärmepumpen-Installation durch."
+                }
+            ],
+            "funding": "/foerderung/heizung/",
+            "related": [
+                "/heizung/waermepumpen/",
+                "/heizung/heizkoerper-und-heizflaechen/"
+            ],
+            "form": "contact",
+            "formTopic": "Hydraulischer Abgleich",
+            "lastmod": "2026-09-17"
+        },
+        {
+            "path": "/heizung/heizkoerper-und-heizflaechen/",
+            "template": "service",
+            "parent": "/heizung/",
+            "title": "Heizkörper und Heizflächen",
+            "metaTitle": "Heizkörper tauschen oder ergänzen in Düren | HSM Tec",
+            "metaDescription": "Heizkörper austauschen, vergrößern oder ergänzen: Niedertemperatur-Heizkörper, Ventile, Anbindung, Anpassung für Wärmepumpen. HSM Tec Düren.",
+            "h1": "Heizkörper und Heizflächen anpassen",
+            "lead": "Wir tauschen, vergrößern und ergänzen Heizkörper und passen Heizflächen an niedrigere Vorlauftemperaturen an. Für wen: Eigentümer, die Räume besser beheizen oder auf eine Wärmepumpe umstellen möchten. Wie es weitergeht: Wir berechnen raumweise, welche Heizfläche benötigt wird, und schlagen passende Heizkörper vor.",
+            "sections": [
+                {
+                    "heading": "Typische Anlässe",
+                    "list": [
+                        "Einzelne Räume werden nicht warm",
+                        "Umstellung auf Wärmepumpe oder niedrige Vorlauftemperatur",
+                        "Alte, korrodierte oder undichte Heizkörper",
+                        "Badsanierung mit neuem Handtuchheizkörper",
+                        "Ergänzung in ausgebauten oder umgenutzten Räumen"
+                    ]
+                },
+                {
+                    "heading": "Auswahl nach Berechnung",
+                    "paragraphs": [
+                        "Wir bestimmen die Heizlast des Raums und wählen den Heizkörpertyp danach: Flachheizkörper, Niedertemperatur-Heizkörper mit Gebläseunterstützung oder Flächenheizung. Dabei berücksichtigen wir Anschlussmaße, Ventile und die Möglichkeit eines späteren Abgleichs."
+                    ]
+                }
+            ],
+            "steps": [
+                {
+                    "title": "Aufnahme und Berechnung",
+                    "text": "Raum, Heizlast, Anschlüsse."
+                },
+                {
+                    "title": "Angebot",
+                    "text": "Heizkörpertyp, Ventile, Anpassungsarbeiten."
+                },
+                {
+                    "title": "Montage",
+                    "text": "Demontage, Anschluss, Entlüftung, Einstellung."
+                }
+            ],
+            "limits": [
+                "Maler- oder Fliesenarbeiten nach dem Austausch koordinieren wir bei Bedarf mit den weiteren Gewerken."
+            ],
+            "faq": [
+                {
+                    "q": "Muss ich für eine Wärmepumpe alle Heizkörper tauschen?",
+                    "a": "Selten. Meist reicht es, einzelne unterdimensionierte Heizkörper zu ersetzen. Welche das sind, ergibt die raumweise Berechnung."
+                }
+            ],
+            "related": [
+                "/heizung/hydraulischer-abgleich/",
+                "/heizung/waermepumpen/",
+                "/heizung/fussbodenheizung/"
+            ],
+            "form": "contact",
+            "formTopic": "Heizkörper",
+            "lastmod": "2026-09-17"
+        },
+        {
+            "path": "/sanitaer/",
+            "template": "hub",
+            "parent": "/leistungen/",
+            "title": "Bad und Sanitär",
+            "metaTitle": "Bad und Sanitär in Düren: Badsanierung, Trinkwasser | HSM Tec",
+            "metaDescription": "Sanitärinstallation in Düren: Komplett- und Teilbadsanierung, barrierearme Bäder, Trink- und Abwasserleitungen, Warmwasser, Rohrreparatur, Wasseraufbereitung.",
+            "h1": "Bad und Sanitär: vom neuen Bad bis zur Rohrreparatur",
+            "lead": "Wir modernisieren Bäder komplett oder in Teilen, installieren Sanitäranlagen und kümmern uns um Trink- und Abwasserleitungen, Warmwasser und Wasseraufbereitung. Für wen: Eigentümer, Vermieter, Hausverwaltungen und Gewerbekunden. Wie es weitergeht: Sie beschreiben Ihr Vorhaben, wir nehmen den Bestand auf und planen mit Ihnen den Ablauf.",
+            "sections": [
+                {
+                    "heading": "Unser Leistungsumfang",
+                    "list": [
+                        "Komplette und teilweise Badmodernisierung",
+                        "Sanitärinstallation: WC, Dusche, Badewanne, Waschtisch, Armaturen",
+                        "Trink- und Abwasserleitungen, Strangsanierung im vereinbarten Umfang",
+                        "Rohrreparatur und Abwasserinstandsetzung",
+                        "Warmwasserbereitung: Speicher, Durchlauferhitzer, Zirkulation",
+                        "Wasseraufbereitung: Filter, Enthärtung, Hygiene"
+                    ]
+                },
+                {
+                    "heading": "Koordination der weiteren Gewerke",
+                    "paragraphs": [
+                        "Ein Bad braucht mehr als Sanitär: Elektro, Fliesen, Trockenbau, Maler. Wir koordinieren diese Arbeiten mit Partnerbetrieben im vereinbarten Umfang und stimmen den Ablauf so ab, dass die Ausfallzeit für Sie möglichst kurz bleibt. Wer welche Leistung ausführt, steht im Angebot."
+                    ]
+                }
+            ],
+            "hubChildren": [
+                "/sanitaer/badsanierung/",
+                "/sanitaer/barrierearmes-bad/",
+                "/sanitaer/trinkwasserinstallation/",
+                "/sanitaer/warmwasserbereitung/",
+                "/sanitaer/rohrreparatur-und-abwasser/",
+                "/sanitaer/wasseraufbereitung/"
+            ],
+            "funding": "/foerderung/bad-und-barriereabbau/",
+            "form": "contact",
+            "formTopic": "Bad und Sanitär",
+            "lastmod": "2026-09-17"
+        },
+        {
+            "path": "/sanitaer/badsanierung/",
+            "template": "service",
+            "parent": "/sanitaer/",
+            "title": "Badsanierung",
+            "metaTitle": "Badsanierung in Düren: Komplettbad geplant und koordiniert | HSM Tec",
+            "metaDescription": "Komplettbadsanierung als geordneter Ablauf: Bedarf, Planung, Rückbau, Rohinstallation, weitere Gewerke, Abdichtung, Fliesen, Endmontage, Übergabe. HSM Tec Düren.",
+            "h1": "Badsanierung: ein Ablauf, ein Ansprechpartner",
+            "lead": "Wir planen Ihr neues Bad, führen die Sanitär- und Heizungsarbeiten aus und koordinieren Elektro, Fliesen, Trockenbau und Maler. Für wen: Eigentümer, Vermieter und Verwaltungen, die ein Bad komplett oder in Teilen modernisieren möchten. Wie es weitergeht: Nach der Bestandsaufnahme erhalten Sie einen Vorschlag mit Ablaufplan und klarer Leistungsabgrenzung.",
+            "sections": [
+                {
+                    "heading": "Komplett oder in Teilen",
+                    "paragraphs": [
+                        "Nicht jedes Bad muss komplett erneuert werden. Manchmal genügt der Austausch von Dusche, WC oder Armaturen, manchmal ist eine Erneuerung der Leitungen sinnvoll, weil sie ohnehin geöffnet werden. Wir zeigen Ihnen beide Wege mit ihren Kosten."
+                    ]
+                },
+                {
+                    "heading": "Wichtige Entscheidungen vor dem Start",
+                    "list": [
+                        "Bodengleiche Dusche oder Badewanne, oder beides",
+                        "Raumaufteilung, Vorwandinstallation und Stauraum",
+                        "Fliesenformate, Fugenbild und Abdichtungskonzept",
+                        "Beleuchtung, Lüftung, Handtuchheizkörper",
+                        "Barrierearme Details, die später den Umbau erleichtern"
+                    ]
+                },
+                {
+                    "heading": "Bewohntes Haus",
+                    "paragraphs": [
+                        "Wir planen den Ablauf so, dass WC und Wasser so kurz wie möglich ausfallen, sprechen Zugangszeiten ab und schützen Wege und angrenzende Räume. Für Mietobjekte stimmen wir Termine mit Bewohnern und Verwaltung ab."
+                    ]
+                }
+            ],
+            "steps": [
+                {
+                    "title": "Bedarf und Bestandsaufnahme",
+                    "text": "Wünsche, Maße, Leitungen, Zustand von Boden und Wänden."
+                },
+                {
+                    "title": "Planung und Angebot",
+                    "text": "Grundriss, Ausstattung, Ablaufplan, Leistungsabgrenzung zwischen HSM Tec und weiteren Gewerken."
+                },
+                {
+                    "title": "Rückbau",
+                    "text": "Demontage, Entsorgung im vereinbarten Umfang, Schutz der angrenzenden Bereiche."
+                },
+                {
+                    "title": "Rohinstallation",
+                    "text": "Trink-, Abwasser- und Heizungsleitungen, Vorwandelemente, Elektrokoordination."
+                },
+                {
+                    "title": "Abdichtung und Fliesen",
+                    "text": "Verbundabdichtung, Fliesen- und Plattenarbeiten durch koordinierte Fachbetriebe."
+                },
+                {
+                    "title": "Oberflächen und Endmontage",
+                    "text": "Maler, Sanitärobjekte, Armaturen, Beleuchtung, Zubehör."
+                },
+                {
+                    "title": "Übergabe",
+                    "text": "Funktionsprüfung, Einweisung, Dokumentation."
+                }
+            ],
+            "limits": [
+                "Wir nennen keine Festpreise oder Fixtermine ohne Bestandsaufnahme. Zusatzarbeiten stimmen wir vor Ausführung mit Ihnen ab.",
+                "Ein neues Bad ist für sich allein kein Fördergrund. Zuschüsse gibt es nur unter bestimmten Voraussetzungen, etwa bei Pflegebedarf."
+            ],
+            "faq": [
+                {
+                    "q": "Wie lange dauert eine Badsanierung?",
+                    "a": "Das hängt von Umfang, Größe und Materialverfügbarkeit ab. Nach der Bestandsaufnahme nennen wir Ihnen einen realistischen Zeitrahmen mit den Abhängigkeiten der einzelnen Gewerke."
+                },
+                {
+                    "q": "Bekomme ich eine Rechnung oder mehrere?",
+                    "a": "Das hängt davon ab, wie der Auftrag vergeben wird. Wir klären vorab, ob wir als Gesamtauftragnehmer auftreten oder ob Partnerbetriebe direkt mit Ihnen abrechnen. Beides ist möglich."
+                },
+                {
+                    "q": "Übernehmen Sie auch nur die Sanitärarbeiten?",
+                    "a": "Ja. Wenn Sie Fliesen oder Elektro selbst vergeben, stimmen wir die Schnittstellen mit Ihren Betrieben ab."
+                }
+            ],
+            "funding": "/foerderung/bad-und-barriereabbau/",
+            "related": [
+                "/sanitaer/barrierearmes-bad/",
+                "/heizung/heizkoerper-und-heizflaechen/",
+                "/sanierung/wohnungssanierung/",
+                "/ratgeber/badsanierung-im-bewohnten-haus/"
+            ],
+            "form": "contact",
+            "formTopic": "Badsanierung",
+            "lastmod": "2026-09-17"
+        },
+        {
+            "path": "/sanitaer/barrierearmes-bad/",
+            "template": "service",
+            "parent": "/sanitaer/",
+            "title": "Barrierearmes Bad",
+            "metaTitle": "Barrierearmes Bad in Düren: bodengleiche Dusche, Umbau | HSM Tec",
+            "metaDescription": "Barrierearmes Bad: bodengleiche Dusche, Haltegriffe, unterfahrbarer Waschtisch. Unterschied barrierearm, bodengleich, barrierefrei. Zuschuss der Pflegekasse möglich.",
+            "h1": "Barrierearmes Bad: komfortabel heute, vorbereitet für morgen",
+            "lead": "Wir bauen Bäder so um, dass sie leichter und sicherer nutzbar werden: bodengleiche Duschen, Haltegriffe, angepasste Höhen und rutschhemmende Böden. Für wen: Eigentümer, die vorausschauend planen, Angehörige von Pflegebedürftigen, Vermieter. Wie es weitergeht: Wir klären Bedarf und Fördermöglichkeiten und planen den Umbau.",
+            "sections": [
+                {
+                    "heading": "Barrierearm, bodengleich, barrierefrei: der Unterschied",
+                    "paragraphs": [
+                        "Barrierearm bedeutet: weniger Hindernisse, etwa eine bodengleiche Dusche, breitere Türen oder Haltegriffe. Bodengleich beschreibt allein die Dusche ohne Einstieg. Barrierefrei im Sinne der Norm stellt umfassende Anforderungen an Bewegungsflächen, Türen, Höhen und Bedienbarkeit, die nachgewiesen werden müssen. Wir sagen Ihnen offen, welche Stufe in Ihrem Bad erreichbar ist."
+                    ]
+                },
+                {
+                    "heading": "Typische Maßnahmen",
+                    "list": [
+                        "Bodengleiche Dusche mit rutschhemmendem Belag und Duschsitz",
+                        "Haltegriffe und Stützklappgriffe an WC und Dusche",
+                        "Erhöhtes WC, unterfahrbarer Waschtisch, Einhebel- oder Sensorarmaturen",
+                        "Türverbreiterung und Schwellenabbau, soweit baulich möglich",
+                        "Gute Beleuchtung und kontrastreiche Gestaltung"
+                    ]
+                },
+                {
+                    "heading": "Zuschuss bei Pflegegrad",
+                    "paragraphs": [
+                        "Liegt ein Pflegegrad vor und erleichtert der Umbau die häusliche Pflege, kann die Pflegekasse einen Zuschuss zur Wohnumfeldverbesserung gewähren. Die Bewilligung erfolgt vor Beginn durch die Kasse. Wir stellen die dafür nötigen Unterlagen bereit. Der Fördercheck gibt eine erste Einordnung."
+                    ]
+                }
+            ],
+            "steps": [
+                {
+                    "title": "Bedarfsgespräch",
+                    "text": "Wer nutzt das Bad, welche Einschränkungen bestehen, was soll vorbereitet werden."
+                },
+                {
+                    "title": "Planung und Fördereinordnung",
+                    "text": "Maßnahmen, Kosten, Unterlagen für die Pflegekasse."
+                },
+                {
+                    "title": "Umbau",
+                    "text": "Sanitär, Abdichtung, koordinierte Gewerke, Endmontage."
+                }
+            ],
+            "limits": [
+                "Nachgewiesene Barrierefreiheit nach Norm ist nicht in jedem Bestandsbad erreichbar. Wir benennen die Grenzen vor Vertragsschluss.",
+                "Keine pauschalen Förderversprechen. Die Pflegekasse entscheidet über den Zuschuss."
+            ],
+            "faq": [
+                {
+                    "q": "Wie hoch ist der Zuschuss der Pflegekasse?",
+                    "a": "Bis 4.180 EUR je berechtigter Person und Maßnahme, bei mehreren Berechtigten in einem Haushalt zusammen bis 16.720 EUR. Maßgeblich sind die tatsächlichen Kosten und die Bewilligung der Kasse. Stand der Angaben: siehe Förderseite."
+                }
+            ],
+            "funding": "/foerderung/bad-und-barriereabbau/",
+            "related": [
+                "/sanitaer/badsanierung/",
+                "/foerderrechner/"
+            ],
+            "form": "contact",
+            "formTopic": "Barrierearmes Bad",
+            "lastmod": "2026-09-17"
+        },
+        {
+            "path": "/sanitaer/trinkwasserinstallation/",
+            "template": "service",
+            "parent": "/sanitaer/",
+            "title": "Trinkwasserinstallation",
+            "metaTitle": "Trinkwasserinstallation in Düren: Leitungen, Hygiene | HSM Tec",
+            "metaDescription": "Trinkwasserleitungen neu verlegen oder erneuern, Strangsanierung, Absperrungen, Hygiene und Druckprüfung. HSM Tec Düren.",
+            "h1": "Trinkwasserinstallation: sicher, hygienisch, dokumentiert",
+            "lead": "Wir installieren und erneuern Trinkwasserleitungen in Wohnungen, Häusern und Gewerbeobjekten. Für wen: Eigentümer und Verwaltungen mit alten Leitungen, Druckproblemen oder bei Sanierung. Wie es weitergeht: Wir nehmen das Leitungsnetz auf und planen die Erneuerung abschnittsweise.",
+            "sections": [
+                {
+                    "heading": "Leistungen",
+                    "list": [
+                        "Neuinstallation bei Sanierung und Umbau",
+                        "Erneuerung alter Leitungen, abschnittsweise Strangsanierung",
+                        "Absperrungen, Rückflussverhinderer, Filter, Druckminderer",
+                        "Druckprüfung, Spülung, Dokumentation",
+                        "Vorbereitung für Zähler und Messstellen"
+                    ]
+                },
+                {
+                    "heading": "Hygiene sachlich betrachtet",
+                    "paragraphs": [
+                        "Stagnation, zu warme Kaltwasserleitungen und ungenutzte Stichleitungen begünstigen Keimwachstum. Wir planen Leitungsführung, Dämmung und Zirkulation so, dass Trinkwasser hygienisch bleibt. Probenahmen und Prüfleistungen erfolgen nur im qualifizierten Leistungsumfang oder über akkreditierte Labore."
+                    ]
+                }
+            ],
+            "steps": [
+                {
+                    "title": "Bestandsaufnahme",
+                    "text": "Leitungsführung, Material, Zustand, Zähler."
+                },
+                {
+                    "title": "Planung und Angebot",
+                    "text": "Abschnitte, Ausfallzeiten, Koordination mit anderen Arbeiten."
+                },
+                {
+                    "title": "Ausführung",
+                    "text": "Verlegung, Druckprüfung, Spülung, Dokumentation."
+                }
+            ],
+            "limits": [
+                "Keine Gesundheitsversprechen und keine Angstwerbung. Wir erklären Risiken sachlich und empfehlen Maßnahmen nach Bedarf."
+            ],
+            "faq": [
+                {
+                    "q": "Wann sollten Trinkwasserleitungen erneuert werden?",
+                    "a": "Bei sichtbaren Schäden, häufigen Leckagen, braunem Wasser, Druckverlust oder wenn ohnehin Wände und Böden geöffnet werden. Eine Aufnahme vor Ort gibt Klarheit."
+                }
+            ],
+            "related": [
+                "/sanitaer/wasseraufbereitung/",
+                "/sanitaer/rohrreparatur-und-abwasser/",
+                "/sanierung/altbausanierung/"
+            ],
+            "form": "contact",
+            "formTopic": "Trinkwasserinstallation",
+            "lastmod": "2026-09-17"
+        },
+        {
+            "path": "/sanitaer/warmwasserbereitung/",
+            "template": "service",
+            "parent": "/sanitaer/",
+            "title": "Warmwasserbereitung",
+            "metaTitle": "Warmwasserbereitung in Düren: Speicher, Zirkulation | HSM Tec",
+            "metaDescription": "Warmwasser zentral oder dezentral: Speicher, Frischwasserstation, Durchlauferhitzer, Zirkulation und Hygiene. Beratung, Einbau und Wartung durch HSM Tec Düren.",
+            "h1": "Warmwasserbereitung: passend zu Haushalt und Anlage",
+            "lead": "Wir planen und installieren Warmwassersysteme: zentral mit Speicher oder Frischwasserstation, dezentral mit Durchlauferhitzern. Für wen: Eigentümer und Verwaltungen bei Austausch, Modernisierung oder Komfortproblemen. Wie es weitergeht: Wir ermitteln Bedarf und Anlage und schlagen ein System vor.",
+            "sections": [
+                {
+                    "heading": "Systeme im Vergleich",
+                    "list": [
+                        "Warmwasserspeicher am Wärmeerzeuger, auch an Wärmepumpen",
+                        "Frischwasserstationen für hygienische Erwärmung im Durchfluss",
+                        "Elektrische Durchlauferhitzer für einzelne Entnahmestellen",
+                        "Zirkulationsleitungen mit zeit- oder bedarfsgesteuerter Pumpe"
+                    ]
+                },
+                {
+                    "heading": "Komfort und Effizienz",
+                    "paragraphs": [
+                        "Speichergröße, Zirkulation und Temperaturführung bestimmen Komfort und Energieverbrauch. Wir dimensionieren nach Personenzahl beziehungsweise Wohneinheiten und stimmen das System auf den Wärmeerzeuger ab."
+                    ]
+                }
+            ],
+            "steps": [
+                {
+                    "title": "Bedarfsermittlung",
+                    "text": "Zapfstellen, Nutzer, Gleichzeitigkeit, vorhandene Anlage."
+                },
+                {
+                    "title": "Systemvorschlag",
+                    "text": "Speicher, Station oder dezentral, mit Kosten."
+                },
+                {
+                    "title": "Einbau und Einstellung",
+                    "text": "Montage, Temperatur- und Zirkulationseinstellung, Einweisung."
+                }
+            ],
+            "limits": [
+                "Elektroanschlüsse für Durchlauferhitzer erfolgen durch qualifizierte Elektrofachkräfte, die wir bei Bedarf koordinieren."
+            ],
+            "faq": [
+                {
+                    "q": "Welche Temperatur soll der Warmwasserspeicher haben?",
+                    "a": "Die Einstellung richtet sich nach Anlagentyp, Hygieneanforderungen und Nutzung. Wir stellen sie bei der Inbetriebnahme fachgerecht ein und erklären Ihnen die Zusammenhänge."
+                }
+            ],
+            "related": [
+                "/heizung/waermepumpen/",
+                "/sanitaer/trinkwasserinstallation/"
+            ],
+            "form": "contact",
+            "formTopic": "Warmwasserbereitung",
+            "lastmod": "2026-09-17"
+        },
+        {
+            "path": "/sanitaer/rohrreparatur-und-abwasser/",
+            "template": "service",
+            "parent": "/sanitaer/",
+            "title": "Rohrreparatur und Abwasser",
+            "metaTitle": "Rohrreparatur und Abwasser in Düren | HSM Tec",
+            "metaDescription": "Undichte oder verstopfte Leitungen reparieren, Abwasserleitungen erneuern, Anschlüsse herstellen. Zusammenarbeit mit Leckortung und Trocknung. HSM Tec Düren.",
+            "h1": "Rohrreparatur und Abwasserinstallation",
+            "lead": "Wir reparieren undichte Wasser- und Heizungsleitungen, setzen Abwasserleitungen instand und stellen Anschlüsse her. Für wen: Eigentümer, Mieter mit Rücksprache des Vermieters, Hausverwaltungen. Wie es weitergeht: Sie schildern Schaden oder Vorhaben, wir stimmen einen Termin ab. Bei unklarer Ursache beginnen wir mit der Leckortung.",
+            "sections": [
+                {
+                    "heading": "Leistungen",
+                    "list": [
+                        "Reparatur undichter Trink-, Heizungs- und Abwasserleitungen",
+                        "Austausch von Leitungsabschnitten, Übergängen und Anschlüssen",
+                        "Neue Abwasseranschlüsse für Bad, Küche, Waschmaschine",
+                        "Erneuerung von Fall- und Grundleitungen im vereinbarten Umfang",
+                        "Abstimmung mit Leckortung, Trocknung und Wiederherstellung"
+                    ]
+                },
+                {
+                    "heading": "Vom Schaden zur dauerhaften Lösung",
+                    "paragraphs": [
+                        "Eine Reparatur ist nur dann dauerhaft, wenn die Ursache bekannt ist. Bei versteckten Leckagen ortet unser Team zuerst die Schadstelle und öffnet gezielt, statt großflächig zu suchen. Danach reparieren wir, dokumentieren und stimmen die Trocknung und Wiederherstellung ab."
+                    ]
+                }
+            ],
+            "steps": [
+                {
+                    "title": "Schadenmeldung",
+                    "text": "Ort, Symptom, Dringlichkeit."
+                },
+                {
+                    "title": "Ursachenklärung",
+                    "text": "Sichtprüfung oder Leckortung."
+                },
+                {
+                    "title": "Reparatur und Dokumentation",
+                    "text": "Instandsetzung, Druckprüfung, Fotodokumentation."
+                }
+            ],
+            "limits": [
+                "Bei akutem Wasseraustritt: Hauptabsperrhahn schließen und anrufen. Wir nennen keine garantierten Anfahrtszeiten."
+            ],
+            "faq": [
+                {
+                    "q": "Übernimmt die Versicherung die Rohrreparatur?",
+                    "a": "Das hängt von Ihrem Vertrag und der Schadenursache ab. Wir dokumentieren den Schaden so, dass Sie ihn Ihrer Versicherung nachvollziehbar melden können. Eine Kostenübernahme können wir nicht zusichern."
+                }
+            ],
+            "related": [
+                "/wasserschaden/leckortung/",
+                "/wasserschaden/",
+                "/sanitaer/trinkwasserinstallation/"
+            ],
+            "form": "contact",
+            "formTopic": "Rohrreparatur",
+            "lastmod": "2026-09-17"
+        },
+        {
+            "path": "/sanitaer/wasseraufbereitung/",
+            "template": "service",
+            "parent": "/sanitaer/",
+            "title": "Wasseraufbereitung",
+            "metaTitle": "Wasseraufbereitung in Düren: Filter, Enthärtung, Hygiene | HSM Tec",
+            "metaDescription": "Wasseraufbereitung im Haus: Hauswasserfilter, Enthärtungsanlagen, Schutz der Installation, Hygiene. Sachliche Beratung ohne Gesundheitsversprechen. HSM Tec Düren.",
+            "h1": "Wasseraufbereitung: Installation schützen, Komfort erhöhen",
+            "lead": "Wir beraten zu Filtern, Enthärtung und Hygienemaßnahmen und installieren die passenden Anlagen. Für wen: Eigentümer und Verwaltungen mit hartem Wasser, Kalkproblemen oder Schutzbedarf für die Installation. Wie es weitergeht: Wir prüfen Wasserhärte, Installation und Nutzung und schlagen eine Lösung vor.",
+            "sections": [
+                {
+                    "heading": "Was Wasseraufbereitung leisten kann",
+                    "list": [
+                        "Hauswasserfilter schützen Armaturen und Geräte vor Partikeln",
+                        "Enthärtungsanlagen reduzieren Kalkablagerungen in Leitungen, Speichern und Geräten",
+                        "Druckminderer und Rückflussverhinderer sichern die Installation",
+                        "Spül- und Hygienemaßnahmen bei Stagnation nach Bedarf"
+                    ]
+                },
+                {
+                    "heading": "Sachlich statt Angstwerbung",
+                    "paragraphs": [
+                        "Trinkwasser aus dem öffentlichen Netz unterliegt strengen Vorgaben. Aufbereitung im Haus dient in erster Linie dem Schutz der Installation und dem Komfort. Wir versprechen keine gesundheitlichen Wirkungen. Probenahmen und Analysen erfolgen nur im qualifizierten Leistungsumfang oder über Labore."
+                    ]
+                }
+            ],
+            "steps": [
+                {
+                    "title": "Beratung",
+                    "text": "Wasserhärte, Beschwerden, Installation."
+                },
+                {
+                    "title": "Angebot",
+                    "text": "Anlage, Einbauort, Wartungsaufwand."
+                },
+                {
+                    "title": "Einbau und Einweisung",
+                    "text": "Montage, Einstellung, Wartungshinweise."
+                }
+            ],
+            "limits": [
+                "Enthärtungsanlagen benötigen regelmäßige Wartung und Salz. Wir nennen den Aufwand vor dem Kauf."
+            ],
+            "faq": [
+                {
+                    "q": "Brauche ich eine Enthärtungsanlage?",
+                    "a": "Das hängt von der Wasserhärte und Ihrer Installation ab. Bei hartem Wasser und Wärmepumpen- oder Speicherbetrieb kann sie die Anlage schützen. Wir prüfen es mit Ihnen."
+                }
+            ],
+            "related": [
+                "/sanitaer/trinkwasserinstallation/",
+                "/sanitaer/warmwasserbereitung/"
+            ],
+            "form": "contact",
+            "formTopic": "Wasseraufbereitung",
+            "lastmod": "2026-09-17"
+        },
+        {
+            "path": "/wasserschaden/",
+            "template": "hub",
+            "parent": "/leistungen/",
+            "title": "Wasserschaden",
+            "metaTitle": "Wasserschaden Düren: Leckortung, Trocknung, Wiederherstellung",
+            "metaDescription": "Vom Leck bis zur Wiederherstellung: Schadenaufnahme, Leckortung, Reparatur, technische Trocknung mit Messprotokollen und koordinierte Wiederherstellung. HSM Tec Düren.",
+            "h1": "Vom Leck bis zur Wiederherstellung: Wasserschäden koordiniert aus einer Hand",
+            "lead": "Wir nehmen den Schaden auf, orten das Leck, reparieren, trocknen mit Messprotokoll und koordinieren die Wiederherstellung. Für wen: Eigentümer, Hausverwaltungen, Vermieter und Gewerbekunden. Wie es weitergeht: Melden Sie den Schaden über das Formular oder telefonisch. Wir klären die ersten Schritte und vereinbaren einen Termin zur Schadenaufnahme.",
+            "emergencyHint": "Bei akutem Wasseraustritt: Hauptabsperrhahn schließen, Strom in betroffenen Bereichen abschalten lassen, Wasser aufnehmen und uns anrufen. Das Formular ist keine laufend besetzte Notrufstelle.",
+            "sections": [
+                {
+                    "heading": "Ablauf eines Wasserschadens bei HSM Tec",
+                    "list": [
+                        "Schadenaufnahme und Ursachenklärung vor Ort",
+                        "Leckortung mit geeigneter Messtechnik, gezielte Öffnung",
+                        "Reparatur der Schadstelle",
+                        "Feuchtemessung, Trocknungskonzept, technische Trocknung",
+                        "Kontrollmessungen, Messprotokolle, Stromverbrauchsdokumentation",
+                        "Koordinierte Wiederherstellung der betroffenen Bauteile und Oberflächen"
+                    ]
+                },
+                {
+                    "heading": "Unterstützung bei der Versicherung",
+                    "paragraphs": [
+                        "Wir dokumentieren den Schaden nachvollziehbar mit Fotos, Messprotokollen und Leistungsbeschreibung. Nach Ihrer Bevollmächtigung stimmen wir uns mit Versicherung oder Regulierer ab. Eine Kostenübernahme können wir nicht zusichern; darüber entscheidet der Versicherer."
+                    ]
+                },
+                {
+                    "heading": "Schadstoffe und Schimmel",
+                    "paragraphs": [
+                        "Bei Schimmelverdacht, Altbauten mit möglichen Schadstoffen oder hygienischen Risiken ist eine fachliche Bewertung nötig, gegebenenfalls durch qualifizierte weitere Betriebe. Wir geben keine Anleitungen zur Selbsthilfe, die Sie gefährden könnten."
+                    ]
+                }
+            ],
+            "hubChildren": [
+                "/wasserschaden/leckortung/",
+                "/wasserschaden/technische-trocknung/",
+                "/wasserschaden/wiederherstellung/"
+            ],
+            "related": [
+                "/fuer-hausverwaltungen-und-vermieter/",
+                "/ratgeber/wie-laeuft-eine-leckortung-ab/"
+            ],
+            "form": "damage",
+            "formTopic": "Leckortung",
+            "lastmod": "2026-09-17"
+        },
+        {
+            "path": "/wasserschaden/leckortung/",
+            "template": "service",
+            "parent": "/wasserschaden/",
+            "title": "Leckortung",
+            "metaTitle": "Leckortung in Düren: Leck finden, gezielt öffnen, reparieren | HSM Tec",
+            "metaDescription": "Leckortung an Wasser- und Heizungsleitungen mit Messtechnik: Ursachenklärung, Eingrenzung, gezielte Öffnung, Reparatur, Dokumentation für die Versicherung. HSM Tec Düren.",
+            "h1": "Leckortung: das Leck finden, bevor geöffnet wird",
+            "lead": "Wir grenzen versteckte Leckagen an Trink-, Heizungs- und Abwasserleitungen mit Messtechnik ein und öffnen nur dort, wo es nötig ist. Für wen: Eigentümer, Hausverwaltungen und Versicherungsnehmer mit Feuchtigkeit unbekannter Herkunft. Wie es weitergeht: Nach Ihrer Schadenmeldung vereinbaren wir einen Termin zur Schadenaufnahme und Ortung.",
+            "sections": [
+                {
+                    "heading": "So gehen wir vor",
+                    "paragraphs": [
+                        "Zuerst klären wir, welches System betroffen ist: Trinkwasser, Heizung, Abwasser oder Feuchtigkeit von außen. Druckprüfungen und Feuchtemessungen grenzen den Bereich ein. Anschließend setzen wir die für den Fall geeigneten Ortungsverfahren ein und markieren die Schadstelle. Erst dann wird gezielt geöffnet."
+                    ]
+                },
+                {
+                    "heading": "Verfahren",
+                    "paragraphs": [
+                        "Welche Verfahren zum Einsatz kommen, hängt von Leitungsart, Bauteil und Zugänglichkeit ab. Wir setzen ausschließlich Methoden ein, die uns tatsächlich zur Verfügung stehen, und erklären Ihnen vorab, was wir tun und warum. Eine immer zerstörungsfreie Ortung können wir nicht garantieren; unser Ziel ist, Öffnungen so klein wie möglich zu halten."
+                    ]
+                },
+                {
+                    "heading": "Dokumentation",
+                    "list": [
+                        "Fotodokumentation vor, während und nach der Ortung",
+                        "Messprotokoll mit Feuchtewerten und Ortungsergebnis",
+                        "Beschreibung der Schadstelle und Reparaturempfehlung",
+                        "Unterlagen in versicherungsgeeigneter Form"
+                    ]
+                }
+            ],
+            "steps": [
+                {
+                    "title": "Schadenmeldung",
+                    "text": "Objekt, Schadenbild, Zeitpunkt der Feststellung."
+                },
+                {
+                    "title": "Schadenaufnahme",
+                    "text": "Sichtung, Systemzuordnung, erste Messungen."
+                },
+                {
+                    "title": "Ortung",
+                    "text": "Eingrenzung, Verfahren, Markierung."
+                },
+                {
+                    "title": "Öffnung und Reparatur",
+                    "text": "Gezielte Öffnung, Instandsetzung, Druckprüfung."
+                },
+                {
+                    "title": "Übergabe an Trocknung",
+                    "text": "Feuchtemessung, Trocknungskonzept."
+                }
+            ],
+            "limits": [
+                "Keine Garantie einer zerstörungsfreien Ortung.",
+                "Keine festen Ortungszeiten ohne Untersuchung vor Ort."
+            ],
+            "faq": [
+                {
+                    "q": "Woran erkenne ich ein verstecktes Leck?",
+                    "a": "Hinweise sind Druckverlust an der Heizung, laufende Wasseruhr bei geschlossenen Zapfstellen, feuchte Flecken, Geruch oder aufquellende Böden. Notieren Sie Ihre Beobachtungen für die Schadenaufnahme."
+                },
+                {
+                    "q": "Zahlt die Versicherung die Leckortung?",
+                    "a": "Viele Gebäudeversicherungen übernehmen die Kosten der Ortung bei versicherten Leitungswasserschäden. Das hängt vom Vertrag ab. Unsere Dokumentation hilft Ihnen bei der Meldung."
+                }
+            ],
+            "related": [
+                "/wasserschaden/technische-trocknung/",
+                "/sanitaer/rohrreparatur-und-abwasser/",
+                "/ratgeber/wie-laeuft-eine-leckortung-ab/"
+            ],
+            "form": "damage",
+            "formTopic": "Leckortung",
+            "lastmod": "2026-09-17"
+        },
+        {
+            "path": "/wasserschaden/technische-trocknung/",
+            "template": "service",
+            "parent": "/wasserschaden/",
+            "title": "Technische Trocknung",
+            "metaTitle": "Technische Trocknung in Düren nach Wasserschaden | HSM Tec",
+            "metaDescription": "Technische Trocknung nach Wasserschaden: Feuchtemessung, Trocknungskonzept, Geräteaufstellung, Kontrollmessungen, Messprotokolle, Stromnachweis. HSM Tec Düren.",
+            "h1": "Technische Trocknung mit Konzept und Messprotokoll",
+            "lead": "Wir trocknen durchfeuchtete Räume, Bauteile und Dämmschichten nach einem Konzept, das auf Messungen beruht, und dokumentieren den Verlauf. Für wen: Eigentümer, Hausverwaltungen, Versicherungsnehmer nach Leitungswasser-, Unwetter- oder Bauschäden. Wie es weitergeht: Nach der Feuchtemessung erhalten Sie ein Trocknungskonzept mit Geräteplan.",
+            "sections": [
+                {
+                    "heading": "Raum, Bauteil oder Dämmschicht: fachlich getrennt",
+                    "paragraphs": [
+                        "Raumtrocknung entzieht der Luft Feuchtigkeit und eignet sich für oberflächlich feuchte Räume. Bauteiltrocknung zielt auf Wände und Decken, oft mit Wärme oder Infrarot. Dämmschichttrocknung führt trockene Luft unter den Estrich in die Dämmebene und saugt feuchte Luft ab. Welches Verfahren passt, entscheidet die Messung, nicht der Standardkatalog."
+                    ]
+                },
+                {
+                    "heading": "Geräteaufstellung und Abstimmung mit Bewohnern",
+                    "paragraphs": [
+                        "Wir besprechen mit Ihnen und den Bewohnern, wo Geräte stehen, wie laut sie sind und wie lange sie laufen. Die Geräte müssen durchgehend betrieben werden; den Stromverbrauch dokumentieren wir mit Zählerständen, damit er gegenüber der Versicherung geltend gemacht werden kann."
+                    ]
+                },
+                {
+                    "heading": "Kontrollmessungen und Abschluss",
+                    "list": [
+                        "Regelmäßige Kontrollmessungen mit Protokoll",
+                        "Anpassung des Konzepts, wenn Werte stagnieren",
+                        "Abschlussmessung und Freigabe für die Wiederherstellung",
+                        "Vollständige Dokumentation für Eigentümer und Versicherung"
+                    ]
+                }
+            ],
+            "steps": [
+                {
+                    "title": "Feuchtemessung",
+                    "text": "Oberfläche, Tiefe, Dämmschicht, Referenzwerte."
+                },
+                {
+                    "title": "Trocknungskonzept",
+                    "text": "Verfahren, Gerätezahl, Aufstellorte, voraussichtliche Dauer als Einschätzung."
+                },
+                {
+                    "title": "Betrieb und Kontrolle",
+                    "text": "Geräteaufstellung, Zählerstände, Kontrollmessungen."
+                },
+                {
+                    "title": "Abschluss",
+                    "text": "Abschlussmessung, Abbau, Protokoll, Freigabe."
+                }
+            ],
+            "limits": [
+                "Wir versprechen keine festen Trocknungszeiten ohne Untersuchung. Die Dauer hängt von Bauteil, Durchfeuchtung und Verfahren ab.",
+                "Schadstoff- oder Schimmelbewertungen erfolgen fachlich, gegebenenfalls durch weitere qualifizierte Betriebe."
+            ],
+            "faq": [
+                {
+                    "q": "Wie lange dauert eine Trocknung?",
+                    "a": "Erfahrungsgemäß mehrere Wochen, abhängig von Bauteil und Durchfeuchtung. Eine belastbare Einschätzung geben wir nach der Feuchtemessung und passen sie anhand der Kontrollmessungen an."
+                },
+                {
+                    "q": "Wer zahlt den Strom für die Trocknungsgeräte?",
+                    "a": "Bei versicherten Schäden wird der dokumentierte Stromverbrauch in der Regel von der Versicherung ersetzt. Wir halten Zählerstände zu Beginn und Ende fest."
+                }
+            ],
+            "related": [
+                "/wasserschaden/leckortung/",
+                "/wasserschaden/wiederherstellung/"
+            ],
+            "form": "damage",
+            "formTopic": "Technische Trocknung",
+            "lastmod": "2026-09-17"
+        },
+        {
+            "path": "/wasserschaden/wiederherstellung/",
+            "template": "service",
+            "parent": "/wasserschaden/",
+            "title": "Wiederherstellung",
+            "metaTitle": "Wiederherstellung nach Wasserschaden in Düren | HSM Tec",
+            "metaDescription": "Nach der Trocknung: Rückbau, Sanitär, Heizung, Elektrokoordination, Estrich, Trockenbau, Putz, Maler-, Boden- und Fliesenarbeiten koordiniert aus einer Hand. HSM Tec Düren.",
+            "h1": "Wiederherstellung nach dem Wasserschaden",
+            "lead": "Nach Reparatur und Trocknung stellen wir die betroffenen Bereiche wieder her und koordinieren die dafür nötigen Gewerke. Für wen: Eigentümer, Hausverwaltungen und Versicherungsnehmer, die einen Ansprechpartner für den gesamten Ablauf wünschen. Wie es weitergeht: Auf Grundlage der Schadendokumentation erstellen wir ein Angebot mit klarer Leistungsabgrenzung.",
+            "sections": [
+                {
+                    "heading": "Was je nach Auftrag zusammenkommt",
+                    "list": [
+                        "Rückbau beschädigter Bauteile und Entsorgung im vereinbarten Umfang",
+                        "Sanitär- und Heizungsinstallation",
+                        "Elektrokoordination mit qualifizierten Elektrofachkräften",
+                        "Estrich, Trockenbau, Putz",
+                        "Maler-, Boden- und Fliesenarbeiten",
+                        "Endreinigung und Übergabe"
+                    ]
+                },
+                {
+                    "heading": "Koordination statt Eigenbehauptung",
+                    "paragraphs": [
+                        "Wir führen Sanitär- und Heizungsarbeiten selbst aus und koordinieren die weiteren Gewerke mit Partnerbetrieben. Wir behaupten nicht, eine eigene Elektro-, Fliesen- oder Malerabteilung zu haben. Wer welche Leistung erbringt und wie abgerechnet wird, steht im Angebot."
+                    ]
+                }
+            ],
+            "steps": [
+                {
+                    "title": "Leistungsabgrenzung",
+                    "text": "Was wird wiederhergestellt, in welcher Qualität, wer führt aus."
+                },
+                {
+                    "title": "Angebot und Versicherungsabstimmung",
+                    "text": "Nach Bevollmächtigung Abstimmung mit dem Versicherer."
+                },
+                {
+                    "title": "Ausführung",
+                    "text": "Gewerke in abgestimmter Reihenfolge, Fotodokumentation."
+                },
+                {
+                    "title": "Übergabe",
+                    "text": "Abnahme, Dokumentation, Restpunkte."
+                }
+            ],
+            "limits": [
+                "Keine ungeprüften Festpreis- oder Fixterminzusagen. Zusatzarbeiten werden vor Ausführung abgestimmt.",
+                "Die Kostenübernahme entscheidet der Versicherer."
+            ],
+            "faq": [
+                {
+                    "q": "Kann ich bei der Wiederherstellung etwas verändern, zum Beispiel andere Fliesen?",
+                    "a": "Ja. Wir trennen im Angebot den versicherten Schadenumfang von gewünschten Verbesserungen, damit die Abrechnung nachvollziehbar bleibt."
+                }
+            ],
+            "related": [
+                "/wasserschaden/technische-trocknung/",
+                "/sanierung/",
+                "/fuer-hausverwaltungen-und-vermieter/"
+            ],
+            "form": "damage",
+            "formTopic": "Wiederherstellung",
+            "lastmod": "2026-09-17"
+        },
+        {
+            "path": "/sanierung/",
+            "template": "hub",
+            "parent": "/leistungen/",
+            "title": "Sanierung",
+            "metaTitle": "Sanierung in Düren: Wohnung, Altbau, Komplettsanierung | HSM Tec",
+            "metaDescription": "Wohnungs-, Altbau- und Komplettsanierung: Bestandsaufnahme, Leistungsabgrenzung, Rückbau, Installationen, Wiederaufbau. Koordination der Gewerke durch HSM Tec Düren.",
+            "h1": "Sanierung: geplant, abgegrenzt, koordiniert",
+            "lead": "Wir sanieren Wohnungen, Altbauten und ganze Objekte von der Bestandsaufnahme bis zur Übergabe. Sanitär und Heizung führen wir selbst aus, die weiteren Gewerke koordinieren wir. Für wen: Eigentümer, Vermieter, Hausverwaltungen und Gewerbekunden. Wie es weitergeht: Wir nehmen den Bestand auf, grenzen die Leistung ab und erstellen einen Ablaufplan.",
+            "sections": [
+                {
+                    "heading": "Leistungen im Sanierungsbereich",
+                    "list": [
+                        "Bestandsaufnahme und Leistungsabgrenzung",
+                        "Rückbau und Abbruch, Entsorgung im vereinbarten Umfang",
+                        "Sanitär-, Heizungs- und Trinkwasserinstallation",
+                        "Koordination von Elektro, Trockenbau, Estrich, Fliesen, Maler, Boden",
+                        "Abdichtungs- und Fliesenarbeiten über koordinierte Fachbetriebe",
+                        "Übergabe mit Dokumentation"
+                    ]
+                },
+                {
+                    "heading": "Klare Regeln für Zusatzarbeiten",
+                    "paragraphs": [
+                        "Im Bestand tauchen Überraschungen auf: alte Leitungen, feuchte Wände, andere Aufbauten als erwartet. Wir stimmen jede Zusatzarbeit vor Ausführung mit Ihnen ab und dokumentieren sie. Ungeprüfte Festpreis- oder Fixterminzusagen geben wir nicht ab."
+                    ]
+                }
+            ],
+            "hubChildren": [
+                "/sanierung/komplettsanierung/",
+                "/sanierung/wohnungssanierung/",
+                "/sanierung/altbausanierung/"
+            ],
+            "extraLinks": [
+                {
+                    "path": "/fuer-hausverwaltungen-und-vermieter/",
+                    "title": "Für Hausverwaltungen und Vermieter"
+                },
+                {
+                    "path": "/fuer-gewerbekunden/",
+                    "title": "Für Gewerbekunden"
+                }
+            ],
+            "funding": "/foerderung/",
+            "form": "contact",
+            "formTopic": "Sanierung",
+            "lastmod": "2026-09-17"
+        },
+        {
+            "path": "/sanierung/komplettsanierung/",
+            "template": "service",
+            "parent": "/sanierung/",
+            "title": "Komplettsanierung",
+            "metaTitle": "Komplettsanierung in Düren: koordiniert aus einer Hand | HSM Tec",
+            "metaDescription": "Komplettsanierung von Häusern und Objekten: Bestandsaufnahme, Konzept, Gewerkeplanung, Heizung, Sanitär, Elektrokoordination, Oberflächen, Übergabe. HSM Tec Düren.",
+            "h1": "Komplettsanierung mit einem Ansprechpartner",
+            "lead": "Wir sanieren Häuser und Objekte komplett: von Heizung und Sanitär über die Koordination aller weiteren Gewerke bis zur Übergabe. Für wen: Käufer von Bestandsimmobilien, Eigentümer vor Eigennutzung oder Vermietung, Investoren. Wie es weitergeht: Bestandsaufnahme, Konzept mit Leistungsabgrenzung, Ablaufplan.",
+            "sections": [
+                {
+                    "heading": "Reihenfolge entscheidet",
+                    "paragraphs": [
+                        "Eine Komplettsanierung gelingt, wenn die Gewerke in der richtigen Reihenfolge arbeiten: Rückbau, Rohinstallation von Sanitär, Heizung und Elektro, Estrich und Trockenbau, Abdichtung und Fliesen, Oberflächen, Endmontage. Wir planen diese Reihenfolge und halten die Schnittstellen zusammen."
+                    ]
+                },
+                {
+                    "heading": "Energetische Maßnahmen einbeziehen",
+                    "paragraphs": [
+                        "Bei einer Komplettsanierung lohnt der Blick auf Heizung, Heizflächen und Warmwasser. Wird ohnehin geöffnet, lassen sich Wärmepumpe, Flächenheizung oder neue Leitungen mit geringem Mehraufwand einplanen. Ob eine Förderung möglich ist, prüfen wir projektbezogen."
+                    ]
+                }
+            ],
+            "steps": [
+                {
+                    "title": "Bestandsaufnahme",
+                    "text": "Bausubstanz, Installationen, Feuchte, Schadstoffverdacht."
+                },
+                {
+                    "title": "Konzept und Angebot",
+                    "text": "Umfang, Qualitäten, Gewerkeplan, Leistungsabgrenzung, Fördereinordnung."
+                },
+                {
+                    "title": "Rückbau und Rohinstallation",
+                    "text": "Sanitär, Heizung, Elektrokoordination."
+                },
+                {
+                    "title": "Ausbau",
+                    "text": "Estrich, Trockenbau, Abdichtung, Fliesen, Oberflächen."
+                },
+                {
+                    "title": "Endmontage und Übergabe",
+                    "text": "Sanitärobjekte, Inbetriebnahme, Dokumentation."
+                }
+            ],
+            "limits": [
+                "Keine eigene Elektro-, Fliesenleger- oder Malerabteilung; diese Gewerke koordinieren wir mit Partnerbetrieben.",
+                "Termine und Kosten hängen von Bestand und Materialverfügbarkeit ab; Zusatzarbeiten werden vor Ausführung abgestimmt."
+            ],
+            "faq": [
+                {
+                    "q": "Übernehmen Sie auch die Bauleitung?",
+                    "a": "Wir koordinieren die von uns beauftragten oder abgestimmten Gewerke im vereinbarten Umfang. Ob dies eine vollständige Bauleitung umfasst, legen wir gemeinsam im Vertrag fest."
+                }
+            ],
+            "funding": "/foerderung/",
+            "related": [
+                "/heizung/waermepumpen/",
+                "/sanitaer/badsanierung/",
+                "/sanierung/altbausanierung/"
+            ],
+            "form": "contact",
+            "formTopic": "Komplettsanierung",
+            "lastmod": "2026-09-17"
+        },
+        {
+            "path": "/sanierung/wohnungssanierung/",
+            "template": "service",
+            "parent": "/sanierung/",
+            "title": "Wohnungssanierung",
+            "metaTitle": "Wohnungssanierung in Düren: Bad, Leitungen, Heizung | HSM Tec",
+            "metaDescription": "Wohnungssanierung für Eigentümer und Vermieter: Bad, Leitungen, Heizkörper, Oberflächen. Koordination der Gewerke, Abstimmung mit Verwaltung und Bewohnern.",
+            "h1": "Wohnungssanierung: bei Mieterwechsel oder Eigennutzung",
+            "lead": "Wir sanieren Wohnungen komplett oder in Teilen: Bad, Küchenanschlüsse, Leitungen, Heizkörper und die Koordination der Oberflächenarbeiten. Für wen: Vermieter und Hausverwaltungen bei Mieterwechsel, Eigentümer vor Einzug. Wie es weitergeht: Wir besichtigen die Wohnung, grenzen den Umfang ab und stimmen Termine mit Verwaltung und Bewohnern ab.",
+            "sections": [
+                {
+                    "heading": "Typischer Umfang",
+                    "list": [
+                        "Bad erneuern oder auffrischen",
+                        "Küchenanschlüsse für Wasser und Abwasser",
+                        "Heizkörper tauschen, Ventile erneuern, Abgleich",
+                        "Leitungen abschnittsweise erneuern",
+                        "Koordination von Elektro, Maler, Boden, Fliesen"
+                    ]
+                },
+                {
+                    "heading": "Für Vermieter und Verwaltungen",
+                    "paragraphs": [
+                        "Wir arbeiten mit Objekt- und Wohnungszuordnung, dokumentieren mit Fotos, melden Fortschritt und Abweichungen zurück und halten Zugangstermine ein. So bleibt der Leerstand kurz und die Abrechnung nachvollziehbar."
+                    ]
+                }
+            ],
+            "steps": [
+                {
+                    "title": "Besichtigung",
+                    "text": "Zustand, Umfang, Termine, Zugänge."
+                },
+                {
+                    "title": "Angebot",
+                    "text": "Leistungen, Gewerke, Zeitplan."
+                },
+                {
+                    "title": "Ausführung",
+                    "text": "In abgestimmter Reihenfolge, mit Fotodokumentation."
+                },
+                {
+                    "title": "Übergabe",
+                    "text": "Abnahme, Dokumentation, Übergabe an Verwaltung oder Eigentümer."
+                }
+            ],
+            "limits": [
+                "Der Umfang wird vor Beginn schriftlich festgelegt. Erweiterungen stimmen wir vor Ausführung ab."
+            ],
+            "faq": [
+                {
+                    "q": "Wie schnell kann eine Wohnung nach Mieterwechsel wieder vermietet werden?",
+                    "a": "Das hängt vom Umfang ab. Nach der Besichtigung nennen wir einen realistischen Zeitrahmen. Wir planen die Gewerke so, dass Leerstand möglichst kurz bleibt."
+                }
+            ],
+            "related": [
+                "/sanitaer/badsanierung/",
+                "/fuer-hausverwaltungen-und-vermieter/",
+                "/heizung/heizkoerper-und-heizflaechen/"
+            ],
+            "form": "contact",
+            "formTopic": "Wohnungssanierung",
+            "lastmod": "2026-09-17"
+        },
+        {
+            "path": "/sanierung/altbausanierung/",
+            "template": "service",
+            "parent": "/sanierung/",
+            "title": "Altbausanierung",
+            "metaTitle": "Altbausanierung in Düren: Leitungen, Heizung, Bad im Bestand | HSM Tec",
+            "metaDescription": "Altbausanierung mit Blick auf Substanz: Bestandsaufnahme, Leitungserneuerung, Heizungskonzept, Bad, Feuchte und Schadstoffe fachlich bewerten. HSM Tec Düren.",
+            "h1": "Altbausanierung: Substanz verstehen, dann sanieren",
+            "lead": "Im Altbau prüfen wir zuerst die Substanz: Leitungen, Heizung, Feuchte, Aufbauten. Danach planen wir Erneuerung und Umbau schrittweise. Für wen: Eigentümer und Käufer älterer Häuser und Wohnungen. Wie es weitergeht: Bestandsaufnahme mit Messungen, Konzept mit Prioritäten und Etappen.",
+            "sections": [
+                {
+                    "heading": "Besonderheiten im Altbau",
+                    "list": [
+                        "Alte Leitungsmaterialien und unbekannte Leitungsführung",
+                        "Heizungsanlagen mit hohen Vorlauftemperaturen und gusseisernen Heizkörpern",
+                        "Feuchte in Kellern und Sockelbereichen",
+                        "Möglicher Schadstoffverdacht in alten Baustoffen",
+                        "Denkmalschutz oder Erhaltungsauflagen"
+                    ]
+                },
+                {
+                    "heading": "Etappen statt alles auf einmal",
+                    "paragraphs": [
+                        "Nicht jede Altbausanierung muss in einem Zug erfolgen. Wir helfen, Prioritäten zu setzen: zuerst Sicherheit und Dichtheit, dann Heizung und Leitungen, dann Bäder und Oberflächen. So bleiben Kosten und Belastung planbar."
+                    ]
+                }
+            ],
+            "steps": [
+                {
+                    "title": "Bestandsaufnahme mit Messung",
+                    "text": "Leitungen, Heizung, Feuchte, Aufbauten."
+                },
+                {
+                    "title": "Konzept mit Etappen",
+                    "text": "Prioritäten, Kosten, Fördereinordnung."
+                },
+                {
+                    "title": "Umsetzung",
+                    "text": "Etappenweise oder komplett, koordiniert."
+                }
+            ],
+            "limits": [
+                "Schadstoffverdacht erfordert eine fachliche Bewertung durch qualifizierte Betriebe oder Gutachter, bevor Arbeiten beginnen."
+            ],
+            "faq": [
+                {
+                    "q": "Kann man eine Wärmepumpe im Altbau einsetzen?",
+                    "a": "Häufig ja, wenn Heizflächen und Gebäude dazu passen oder angepasst werden. Das prüfen wir mit einer Heizlast- und Heizflächenberechnung."
+                }
+            ],
+            "funding": "/foerderung/",
+            "related": [
+                "/heizung/waermepumpen/",
+                "/sanitaer/trinkwasserinstallation/",
+                "/sanierung/komplettsanierung/"
+            ],
+            "form": "contact",
+            "formTopic": "Altbausanierung",
+            "lastmod": "2026-09-17"
+        },
+        {
+            "path": "/fuer-hausverwaltungen-und-vermieter/",
+            "template": "service",
+            "parent": "/leistungen/",
+            "title": "Für Hausverwaltungen und Vermieter",
+            "metaTitle": "Für Hausverwaltungen und Vermieter in Düren | HSM Tec",
+            "metaDescription": "Zusammenarbeit mit Hausverwaltungen und Vermietern: Objektzuordnung, Zugangstermine, Bewohnerabstimmung, Fotodokumentation, klare Auftragsabgrenzung.",
+            "h1": "Für Hausverwaltungen und Vermieter",
+            "lead": "Wir arbeiten so, wie Verwaltungen es brauchen: mit Objekt- und Wohnungszuordnung, abgestimmten Zugangsterminen, Fotodokumentation und nachvollziehbaren Rückmeldungen. Für wen: WEG- und Mietverwaltungen, private und gewerbliche Vermieter. Wie es weitergeht: Sie nennen uns Objekt und Anliegen, wir stimmen Ansprechpartner und Ablauf ab.",
+            "sections": [
+                {
+                    "heading": "So läuft die Zusammenarbeit",
+                    "list": [
+                        "Jeder Auftrag mit Objekt-, Wohnungs- und Ansprechpartnerzuordnung",
+                        "Zugangstermine mit Bewohnern abstimmen, Termine bestätigen",
+                        "Fotodokumentation vor, während und nach den Arbeiten",
+                        "Rückmeldung bei Abweichungen vor Ausführung von Zusatzarbeiten",
+                        "Klare Auftragsabgrenzung zwischen Gemeinschafts- und Sondereigentum, sofern relevant",
+                        "Rechnungen mit Objektbezug"
+                    ]
+                },
+                {
+                    "heading": "Leistungen für den Bestand",
+                    "list": [
+                        "Wartung und Reparatur von Heizungsanlagen",
+                        "Wasserschäden: Leckortung, Trocknung, Wiederherstellung mit Versicherungsdokumentation",
+                        "Wohnungssanierung bei Mieterwechsel",
+                        "Strang- und Leitungssanierung im vereinbarten Umfang",
+                        "Heizungsmodernisierung mit Fördereinordnung"
+                    ]
+                },
+                {
+                    "heading": "Was wir nicht behaupten",
+                    "paragraphs": [
+                        "Wir bieten derzeit kein Kundenportal und keine Softwareintegration in Verwaltungssysteme an. Kommunikation läuft per E-Mail und Telefon, Dokumente stellen wir als PDF bereit."
+                    ]
+                }
+            ],
+            "faq": [
+                {
+                    "q": "Wie melde ich einen Wasserschaden in einem verwalteten Objekt?",
+                    "a": "Über das Schadenformular mit Objektbezug und Ansprechpartner oder telefonisch. Wir stimmen den Zugang mit den Bewohnern ab und halten Sie über den Stand informiert."
+                },
+                {
+                    "q": "Arbeiten Sie mit Rahmenvereinbarungen?",
+                    "a": "Für regelmäßige Wartungen oder wiederkehrende Leistungen stimmen wir gerne eine Vereinbarung ab. Sprechen Sie uns an."
+                }
+            ],
+            "related": [
+                "/wasserschaden/",
+                "/heizung/heizungswartung/",
+                "/sanierung/wohnungssanierung/"
+            ],
+            "form": "contact",
+            "formTopic": "Hausverwaltung",
+            "lastmod": "2026-09-17"
+        },
+        {
+            "path": "/fuer-gewerbekunden/",
+            "template": "service",
+            "parent": "/leistungen/",
+            "title": "Für Gewerbekunden",
+            "metaTitle": "Für Gewerbekunden in Düren: Heizung, Sanitär, Wasserschaden | HSM Tec",
+            "metaDescription": "Heizung, Sanitär, Wasserschaden und Sanierung für Gewerbe, Praxen, Büros und Betriebe. Planung im laufenden Betrieb, Dokumentation, feste Ansprechpartner. HSM Tec Düren.",
+            "h1": "Für Gewerbekunden",
+            "lead": "Wir betreuen Heizung und Sanitär in Gewerbeobjekten, kümmern uns um Wasserschäden und koordinieren Sanierungen mit Rücksicht auf den laufenden Betrieb. Für wen: Büros, Praxen, Ladenlokale, Betriebe, Gastronomie. Wie es weitergeht: Sie schildern Objekt und Anliegen, wir planen den Einsatz mit Ihnen um Ihre Betriebszeiten.",
+            "sections": [
+                {
+                    "heading": "Leistungen",
+                    "list": [
+                        "Wartung und Instandsetzung von Heizungs- und Warmwasseranlagen",
+                        "Sanitärinstallation in Sozialräumen, WC-Anlagen, Küchen",
+                        "Wasserschaden: Ortung, Trocknung, Wiederherstellung mit Dokumentation",
+                        "Umbau und Sanierung mit Koordination der weiteren Gewerke",
+                        "Heizungsmodernisierung mit Einordnung der Förderung für Unternehmen"
+                    ]
+                },
+                {
+                    "heading": "Planung im laufenden Betrieb",
+                    "paragraphs": [
+                        "Wir stimmen Arbeitszeiten, Lärm und Sperrungen mit Ihnen ab, halten Fluchtwege frei und dokumentieren die Arbeiten. Für Nichtwohngebäude ordnen wir Förderprogramme getrennt ein."
+                    ]
+                }
+            ],
+            "faq": [
+                {
+                    "q": "Gibt es Förderung für den Heizungstausch im Unternehmen?",
+                    "a": "Für Wohngebäude im Unternehmensbesitz gibt es die KfW-Heizungsförderung für Unternehmen. Nichtwohngebäude werden separat eingeordnet. Wir prüfen den passenden Weg mit Ihnen."
+                }
+            ],
+            "related": [
+                "/heizung/",
+                "/wasserschaden/",
+                "/foerderung/heizung/"
+            ],
+            "form": "contact",
+            "formTopic": "Gewerbekunden",
+            "lastmod": "2026-09-17"
+        },
+        {
+            "path": "/foerderung/",
+            "template": "foerderung",
+            "parent": null,
+            "title": "Förderung",
+            "navTitle": "Förderung",
+            "metaTitle": "Förderung für Heizung, Bad und Sanierung: Überblick | HSM Tec",
+            "metaDescription": "Welche Förderung passt zu Ihrem Vorhaben? Überblick zu KfW-Heizungsförderung, Pflegekassen-Zuschuss, Krediten und steuerlichen Alternativen. Mit regelbasiertem Fördercheck.",
+            "h1": "Förderung: Überblick, Voraussetzungen und Fördercheck",
+            "lead": "Zuschüsse, Kredite und steuerliche Alternativen unterscheiden sich stark. Wir ordnen die Programme ein, die für Heizung, Bad und Sanierung relevant sind, und geben Ihnen mit dem Fördercheck eine erste Einschätzung. Eine Förderzusage erteilt ausschließlich der Fördergeber.",
+            "sections": [
+                {
+                    "heading": "Zuschuss, Kredit, Steuer: die Unterschiede",
+                    "list": [
+                        "Zuschuss: wird nicht zurückgezahlt, an Voraussetzungen und Höchstbeträge gebunden",
+                        "Kredit: muss zurückgezahlt werden, teils mit Tilgungszuschuss oder Tilgungsnachlass",
+                        "Steuerermäßigung: reduziert die Einkommensteuer über mehrere Jahre, nicht mit Zuschuss für dieselbe Maßnahme kombinierbar",
+                        "Versicherungsleistungen sind keine Förderung"
+                    ]
+                },
+                {
+                    "heading": "Reihenfolge beachten",
+                    "paragraphs": [
+                        "Bei den meisten Programmen muss der Antrag vor Beginn des Vorhabens gestellt werden. Für die KfW-Heizungsförderung ist in der Regel ein Liefer- oder Leistungsvertrag mit Förderbedingung erforderlich. Wir stimmen den Ablauf mit Ihnen ab, damit keine Frist verletzt wird."
+                    ]
+                }
+            ],
+            "hubChildren": [
+                "/foerderung/heizung/",
+                "/foerderung/bad-und-barriereabbau/",
+                "/foerderung/nrw/",
+                "/foerderrechner/"
+            ],
+            "programsFilter": null,
+            "form": "contact",
+            "formTopic": "Förderung",
+            "lastmod": "2026-09-17"
+        },
+        {
+            "path": "/foerderung/heizung/",
+            "template": "foerderung",
+            "parent": "/foerderung/",
+            "title": "Förderung Heizung",
+            "metaTitle": "Heizungsförderung 2026: KfW 458, KfW 459, Boni und Grenzen | HSM Tec",
+            "metaDescription": "Heizungsförderung erklärt: 30 % Grundförderung, Klimageschwindigkeitsbonus, Einkommensbonus, Kostenobergrenzen, Voraussetzungen, Ergänzungskredit.",
+            "h1": "Förderung für Heizungstausch und Heizungsoptimierung",
+            "lead": "Für den Austausch einer alten Heizung durch eine Wärmepumpe oder ein anderes förderfähiges System gibt es einen Zuschuss der KfW. Wer Selbstnutzer ist, kann zusätzliche Boni erhalten. Wir erklären die Bausteine und ihre Grenzen.",
+            "sections": [
+                {
+                    "heading": "Bausteine der KfW-Heizungsförderung für Privatpersonen (458)",
+                    "list": [
+                        "Grundförderung 30 % der förderfähigen Kosten",
+                        "Klimageschwindigkeitsbonus für Selbstnutzer beim Austausch einer funktionstüchtigen Altanlage, im aktuellen Regelstand 16 Prozentpunkte, ab 2027 stufenweise sinkend",
+                        "Einkommensbonus für Selbstnutzer je nach zu versteuerndem Haushaltsjahreseinkommen: 40, 30 oder 10 Prozentpunkte bei Einkommen bis 30.000, 40.000 oder 50.000 EUR; bei einem qualifizierenden minderjährigen Kind erhöhen sich die Schwellen einmalig um 10.000 EUR",
+                        "Deckel: grundsätzlich 70 % der förderfähigen Kosten, in der niedrigsten Einkommensstufe 80 %",
+                        "Kostenobergrenzen: 28.000 EUR für die erste Wohneinheit, je 15.000 EUR für die zweite bis sechste, je 8.000 EUR für weitere; die erste Grenze sinkt ab 01.02.2027 halbjährlich um 750 EUR"
+                    ]
+                },
+                {
+                    "heading": "Voraussetzungen, die geprüft werden",
+                    "list": [
+                        "Bestehendes Wohngebäude und förderfähige Altanlage",
+                        "Selbstnutzung für die Boni, nur für die selbst genutzte Wohneinheit",
+                        "Technische Mindestanforderungen an die neue Anlage",
+                        "Liefer- oder Leistungsvertrag mit Förderbedingung vor Antrag",
+                        "Kein Vorhabenbeginn vor Antragstellung"
+                    ]
+                },
+                {
+                    "heading": "Unternehmen, Vermieter, WEG",
+                    "paragraphs": [
+                        "Unternehmen und GbR nutzen für Wohngebäude die KfW-Förderung 459 mit 30 % Grundförderung ohne private Boni. Vermieter erhalten die Grundförderung ohne Selbstnutzerboni. Wohnungseigentümergemeinschaften, Mischgebäude und Fälle mit mehreren Anträgen prüfen wir manuell, weil die Zuordnung der Boni und Kostenobergrenzen komplex ist."
+                    ]
+                },
+                {
+                    "heading": "Heizungsoptimierung",
+                    "paragraphs": [
+                        "Für die Optimierung bestehender Anlagen, etwa hydraulischen Abgleich oder Pumpentausch, gibt es ein eigenes BAFA-Programm. Die aktuellen Sätze und Bedingungen verifizieren wir vor jeder Berechnung; der Fördercheck weist diesen Zweig derzeit als Prüfung erforderlich aus."
+                    ]
+                }
+            ],
+            "programsFilter": [
+                "heizung-austausch",
+                "heizung-optimierung"
+            ],
+            "related": [
+                "/foerderrechner/",
+                "/heizung/waermepumpen/",
+                "/heizung/heizungsmodernisierung/"
+            ],
+            "form": "contact",
+            "formTopic": "Förderung",
+            "lastmod": "2026-09-17"
+        },
+        {
+            "path": "/foerderung/bad-und-barriereabbau/",
+            "template": "foerderung",
+            "parent": "/foerderung/",
+            "title": "Förderung Bad und Barriereabbau",
+            "metaTitle": "Förderung für barrierearmes Bad und Barriereabbau | HSM Tec",
+            "metaDescription": "Zuschuss der Pflegekasse bis 4.180 EUR je Person, KfW-Kredit Altersgerecht Umbauen, Status des Investitionszuschusses 455-B. Voraussetzungen und Grenzen sachlich erklärt.",
+            "h1": "Förderung für Bad und Barriereabbau",
+            "lead": "Ein neues Bad ist für sich allein kein Fördergrund. Zuschüsse gibt es bei Pflegebedarf über die Pflegekasse; für den Barriereabbau stehen Kredite bereit. Wir erklären, was gilt und was nicht.",
+            "sections": [
+                {
+                    "heading": "Pflegekasse: Zuschuss zur Wohnumfeldverbesserung",
+                    "list": [
+                        "Pflegegrad 1 bis 5 und eine Maßnahme, die die häusliche Pflege ermöglicht oder erheblich erleichtert",
+                        "Bis 4.180 EUR je berechtigter Person und Maßnahme",
+                        "Bei mehreren Berechtigten in einem Haushalt zusammen bis 16.720 EUR",
+                        "Maßgeblich sind die tatsächlichen Kosten und die Bewilligung der Kasse vor Beginn",
+                        "Keine jährliche Badpauschale"
+                    ]
+                },
+                {
+                    "heading": "KfW Altersgerecht Umbauen",
+                    "paragraphs": [
+                        "Der Investitionszuschuss 455-B ist für neue Anträge geschlossen, die Mittel sind ausgeschöpft. Eine Wiederöffnung unterstellen wir nicht. Der Kredit 159 steht mit bis zu 50.000 EUR je Wohneinheit zur Verfügung; er ist kein Zuschuss. Dieselbe Maßnahme, die die Pflegekasse bezuschusst, wird nicht zusätzlich über 159 finanziert."
+                    ]
+                },
+                {
+                    "heading": "Steuerliche Alternative",
+                    "paragraphs": [
+                        "Handwerkerleistungen können unter Voraussetzungen steuerlich berücksichtigt werden. Die Einzelheiten und den Ausschluss einer Doppelbegünstigung klären Sie mit Ihrer Steuerberatung; der Fördercheck rechnet diesen Weg derzeit nicht automatisch."
+                    ]
+                }
+            ],
+            "programsFilter": [
+                "bad-barriere",
+                "bad-barriere-pflege"
+            ],
+            "related": [
+                "/sanitaer/barrierearmes-bad/",
+                "/foerderrechner/"
+            ],
+            "form": "contact",
+            "formTopic": "Förderung",
+            "lastmod": "2026-09-17"
+        },
+        {
+            "path": "/foerderung/nrw/",
+            "template": "foerderung",
+            "parent": "/foerderung/",
+            "title": "Förderung in NRW",
+            "metaTitle": "Förderung in NRW: NRW.BANK, Eigentumsförderung, progres.nrw | HSM Tec",
+            "metaDescription": "Landesprogramme in Nordrhein-Westfalen: NRW.BANK.Gebäudesanierung, Eigentumsförderung Modernisierung, progres.nrw Geothermie. Einordnung und Grenzen. HSM Tec Düren.",
+            "h1": "Förderung in Nordrhein-Westfalen",
+            "lead": "Ergänzend zu den Bundesprogrammen gibt es in NRW Darlehen und einzelne Zuschüsse. Die meisten richten sich an Selbstnutzer und sind an persönliche und objektbezogene Bedingungen geknüpft.",
+            "sections": [
+                {
+                    "heading": "Darlehen für selbstgenutztes Wohneigentum",
+                    "list": [
+                        "NRW.BANK.Gebäudesanierung: bis 150.000 EUR Darlehen für passende Maßnahmen",
+                        "NRW-Eigentumsförderung Modernisierung: bis 220.000 EUR Darlehen und bis 50 % Tilgungsnachlass bei erfüllten Voraussetzungen, kein allgemeiner Sanierungszuschuss"
+                    ]
+                },
+                {
+                    "heading": "progres.nrw Geothermie",
+                    "paragraphs": [
+                        "Für Erdwärmesonden mit Wärmepumpe in Bestands-Mehrfamilienhäusern ab drei Wohneinheiten gab es im geprüften Stand 30 EUR je Bohrmeter, höchstens 15.000 EUR. Verfügbarkeit und Bedingungen prüfen wir vor jeder Aussage erneut. Auf Einfamilienhäuser ist dies nicht übertragbar."
+                    ]
+                },
+                {
+                    "heading": "Kommunale Programme",
+                    "paragraphs": [
+                        "Kommunale Programme ergänzen wir nur nach tatsächlichem Objektstandort und aktueller belastbarer Quelle. Vollständigkeit für alle Gemeinden können wir nicht behaupten."
+                    ]
+                }
+            ],
+            "programsFilter": [
+                "region:NRW"
+            ],
+            "related": [
+                "/foerderung/heizung/",
+                "/foerderrechner/"
+            ],
+            "form": "contact",
+            "formTopic": "Förderung",
+            "lastmod": "2026-09-17"
+        },
+        {
+            "path": "/foerderrechner/",
+            "template": "foerderrechner",
+            "parent": "/foerderung/",
+            "title": "Fördercheck",
+            "navTitle": "Fördercheck",
+            "metaTitle": "Fördercheck: Zuschuss für Heizung und Bad einschätzen | HSM Tec",
+            "metaDescription": "Regelbasierter Fördercheck ohne Registrierung: Heizungstausch, Heizungsoptimierung, Bad und Barriereabbau, Pflege, Sanierung. Einschätzung, keine Förderzusage.",
+            "h1": "Fördercheck: erste Einschätzung in wenigen Schritten",
+            "lead": "Beantworten Sie einige Fragen zu Vorhaben, Gebäude und Kosten. Der Fördercheck rechnet nach dem hinterlegten Regelstand und zeigt, welche Voraussetzungen noch zu prüfen sind. Alle Angaben bleiben in Ihrem Browser. Das Ergebnis ist weder Angebot noch Förderzusage.",
+            "form": "contact",
+            "formTopic": "Fördercheck",
+            "lastmod": "2026-09-17"
+        },
+        {
+            "path": "/unternehmen/",
+            "template": "unternehmen",
+            "parent": null,
+            "title": "Unternehmen",
+            "navTitle": "Unternehmen",
+            "metaTitle": "Unternehmen: HSM Tec GmbH in Düren, Geschäftsführung, Arbeitsweise",
+            "metaDescription": "HSM Tec GmbH aus Düren: Heizung, Sanitär, Wasserschaden und Sanierung. Geschäftsführung Guido Bauer und David Enns. Teil der Enns Holding GmbH und Müller Holding AG.",
+            "h1": "HSM Tec GmbH: Handwerk mit klarer Abstimmung",
+            "lead": "HSM Tec ist ein Handwerksbetrieb aus Düren für Heizung, Bad und Sanitär, Wasserschaden und Sanierung. Wir führen Sanitär- und Heizungsarbeiten selbst aus und koordinieren die weiteren Gewerke, damit Sie einen Ansprechpartner haben.",
+            "sections": [
+                {
+                    "heading": "Wie wir arbeiten",
+                    "list": [
+                        "Erst prüfen, dann empfehlen: Bestandsaufnahme und Messung vor jedem Angebot",
+                        "Leistungsabgrenzung im Angebot: was wir ausführen, was wir koordinieren",
+                        "Zusatzarbeiten vor Ausführung abstimmen",
+                        "Dokumentation mit Fotos und Protokollen",
+                        "Verbindliche Kommunikation mit Eigentümern, Bewohnern und Verwaltungen"
+                    ]
+                },
+                {
+                    "heading": "Unternehmenszugehörigkeit",
+                    "paragraphs": [
+                        "HSM Tec GmbH gehört seit 2024 zur Enns Holding GmbH und seit 2026 zur Müller Holding AG. Die Jahreszahlen bezeichnen die Zugehörigkeit, nicht die Gründung von HSM Tec."
+                    ]
+                }
+            ],
+            "form": "contact",
+            "formTopic": "Allgemeine Anfrage",
+            "lastmod": "2026-09-17"
+        },
+        {
+            "path": "/projekte/",
+            "template": "projekte",
+            "parent": null,
+            "title": "Projekte",
+            "navTitle": "Projekte",
+            "metaTitle": "Projekte und Referenzen | HSM Tec Düren",
+            "metaDescription": "Freigegebene Projekte von HSM Tec aus den Bereichen Heizung, Bad, Wasserschaden und Sanierung.",
+            "h1": "Projekte",
+            "lead": "Hier zeigen wir ausschließlich echte, von den Auftraggebern freigegebene Projekte. Solange keine Freigaben vorliegen, bleibt die Übersicht leer statt gefüllt mit Beispielbildern.",
+            "noindex": true,
+            "excludeFromSitemap": true,
+            "form": "contact",
+            "formTopic": "Allgemeine Anfrage",
+            "lastmod": "2026-09-17"
+        },
+        {
+            "path": "/ratgeber/",
+            "template": "ratgeber",
+            "parent": null,
+            "title": "Ratgeber",
+            "navTitle": "Ratgeber",
+            "metaTitle": "Ratgeber: Heizung, Bad, Wasserschaden, Sanierung | HSM Tec",
+            "metaDescription": "Praktische Ratgeber von HSM Tec: Ablauf einer Leckortung, Angaben für die Heizungsanfrage, Badsanierung im bewohnten Haus und mehr.",
+            "h1": "Ratgeber",
+            "lead": "Konkrete Antworten auf Fragen, die uns in Projekten regelmäßig begegnen. Ohne Werbetexte, mit dem, was Sie für Ihre Entscheidung brauchen.",
+            "form": "contact",
+            "formTopic": "Allgemeine Anfrage",
+            "lastmod": "2026-09-17"
+        },
+        {
+            "path": "/karriere/",
+            "template": "karriere",
+            "parent": null,
+            "title": "Karriere",
+            "navTitle": "Karriere",
+            "metaTitle": "Karriere bei HSM Tec in Düren: offene Stellen und Initiativbewerbung",
+            "metaDescription": "Jobs bei HSM Tec Düren: Anlagenmechaniker SHK, Kundendienstmonteur, SHK-Meister, Leckorter, Trocknungstechniker, Büro, Projektleitung. Kurzbewerbung.",
+            "h1": "Karriere bei HSM Tec",
+            "lead": "Wir suchen Menschen, die Handwerk ernst nehmen und gerne mit Kunden arbeiten. Bewerben Sie sich kurz und unkompliziert: Name und ein Kontaktweg genügen für den ersten Schritt. Alle Stellen richten sich an alle Geschlechter.",
+            "sections": [
+                {
+                    "heading": "So läuft die Bewerbung",
+                    "list": [
+                        "Kurzbewerbung über das Formular oder telefonisch, ohne Anschreiben und ohne Pflicht-Lebenslauf",
+                        "Wir melden uns für ein Kennenlerngespräch",
+                        "Bei Bedarf ein Probearbeitstag nach Absprache",
+                        "Entscheidung und Vertragsangebot"
+                    ]
+                }
+            ],
+            "form": "application",
+            "lastmod": "2026-09-17"
+        },
+        {
+            "path": "/kontakt/",
+            "template": "kontakt",
+            "parent": null,
+            "title": "Kontakt",
+            "navTitle": "Kontakt",
+            "metaTitle": "Kontakt: HSM Tec GmbH, Kreuzauer Straße 70, 52355 Düren",
+            "metaDescription": "Kontakt zu HSM Tec in Düren: Telefon 02421 8899975, E-Mail info@hsm-tec.de, Anfrageformular für Heizung, Bad, Wasserschaden und Sanierung.",
+            "h1": "Kontakt",
+            "lead": "Sie erreichen uns telefonisch, per E-Mail oder über das Formular. Beschreiben Sie Ihr Anliegen kurz, wir melden uns zu unseren Geschäftszeiten.",
+            "form": "contact",
+            "formTopic": "Allgemeine Anfrage",
+            "lastmod": "2026-09-17"
+        },
+        {
+            "path": "/ki/openai/",
+            "template": "ki-openai",
+            "parent": null,
+            "title": "HSM Tec: Unternehmensfakten und Antworten",
+            "navTitle": "Unternehmensfakten",
+            "metaTitle": "HSM Tec: Unternehmensfakten und Antworten",
+            "metaDescription": "Kompakte, überprüfbare Fakten zur HSM Tec GmbH: Sitz, Kontakt, Geschäftsführung, Holdings, Leistungsumfang und Einsatzgebiet, mit Aktualisierungsdatum.",
+            "h1": "HSM Tec: Unternehmensfakten und Antworten",
+            "lead": "Diese Seite fasst überprüfbare Fakten zur HSM Tec GmbH kompakt zusammen. Sie ist eine redaktionelle Informationsseite des Unternehmens und keine Vorlage, Zertifizierung oder Empfehlung eines KI-Anbieters. Menschen und automatisierte Systeme erhalten dieselben Inhalte.",
+            "form": "none",
+            "lastmod": "2026-09-17"
+        },
+        {
+            "path": "/ki/anthropic/",
+            "template": "ki-anthropic",
+            "parent": null,
+            "title": "HSM Tec: Leistungen, Abläufe und Quellen",
+            "navTitle": "Leistungen und Abläufe",
+            "metaTitle": "HSM Tec: Leistungen, Abläufe und Quellen",
+            "metaDescription": "Vertiefung zu Abläufen bei HSM Tec: Eigenleistung versus Koordination weiterer Gewerke, Grenzen des Förderchecks, Quellenpflege und Zuständigkeiten.",
+            "h1": "HSM Tec: Leistungen, Abläufe und Quellen",
+            "lead": "Diese Seite vertieft, wie HSM Tec arbeitet: welche Leistungen das Unternehmen selbst erbringt, welche es koordiniert, wo die Grenzen des Förderchecks liegen und wie Quellen gepflegt werden. Unternehmensfakten stehen auf der Seite Unternehmensfakten und werden hier nicht wiederholt.",
+            "form": "none",
+            "lastmod": "2026-09-17"
+        },
+        {
+            "path": "/impressum/",
+            "template": "impressum",
+            "parent": null,
+            "title": "Impressum",
+            "metaTitle": "Impressum | HSM Tec GmbH",
+            "metaDescription": "Anbieterkennzeichnung der HSM Tec GmbH, Düren.",
+            "h1": "Impressum",
+            "noindex": false,
+            "form": "none",
+            "lastmod": "2026-09-17"
+        },
+        {
+            "path": "/datenschutz/",
+            "template": "legal",
+            "parent": null,
+            "title": "Datenschutzerklärung",
+            "metaTitle": "Datenschutzerklärung | HSM Tec GmbH",
+            "metaDescription": "Informationen zur Verarbeitung personenbezogener Daten auf hsm-tec.de: Hosting, Serverlogs, Kontakt, Bewerbungen, Dateiuploads.",
+            "h1": "Datenschutzerklärung",
+            "lead": "Diese Erklärung beschreibt ausschließlich die tatsächliche Verarbeitung personenbezogener Daten auf dieser Website. Stand: 17.09.2026. Vor Veröffentlichung durch den Betreiber beziehungsweise seine qualifizierte Beratung prüfen zu lassen.",
+            "sections": [
+                {
+                    "heading": "Verantwortlicher",
+                    "paragraphs": [
+                        "HSM Tec GmbH, Kreuzauer Straße 70, 52355 Düren, Telefon 02421 8899975, E-Mail info@hsm-tec.de. Vertreten durch die Geschäftsführer Guido Bauer und David Enns."
+                    ]
+                },
+                {
+                    "heading": "Hosting und Serverlogs",
+                    "paragraphs": [
+                        "Die Website wird bei einem Hostinganbieter betrieben (Name und Sitz vor Veröffentlichung eintragen). Beim Aufruf verarbeitet der Server technisch notwendige Daten: IP-Adresse, Zeitpunkt, aufgerufene Seite, übertragene Datenmenge, Browser- und Betriebssystemangaben, verweisende Seite. Rechtsgrundlage ist unser berechtigtes Interesse an einem sicheren und stabilen Betrieb (Art. 6 Abs. 1 lit. f DSGVO). Die Speicherdauer der Logs richtet sich nach der Konfiguration des Hosters und ist vor Veröffentlichung einzutragen."
+                    ]
+                },
+                {
+                    "heading": "Kontakt-, Schaden- und Bewerbungsformulare",
+                    "paragraphs": [
+                        "Wenn Sie ein Formular absenden, verarbeiten wir die von Ihnen eingegebenen Angaben (Name, Kontaktdaten, Anliegen, Nachricht, bei Schadenmeldungen Objektbezug und Schadenbeschreibung, bei Bewerbungen Angaben zu Qualifikation und Verfügbarkeit) sowie freiwillig angehängte Dateien. Die Daten werden serverseitig per E-Mail an info@hsm-tec.de übermittelt und in unserem E-Mail-System verarbeitet. Die Website speichert keine Kopie Ihrer Nachricht; angehängte Dateien werden nach dem Versand auf dem Server gelöscht. Rechtsgrundlage ist die Bearbeitung Ihrer Anfrage beziehungsweise die Durchführung vorvertraglicher Maßnahmen (Art. 6 Abs. 1 lit. b DSGVO), bei Bewerbungen zusätzlich § 26 BDSG. Bewerbungsunterlagen löschen wir nach Abschluss des Verfahrens, sofern keine Einwilligung zur längeren Speicherung vorliegt oder gesetzliche Pflichten entgegenstehen. Eine Einwilligung in Werbung ist keine Voraussetzung für Ihre Anfrage."
+                    ]
+                },
+                {
+                    "heading": "Bestätigungs-E-Mail",
+                    "paragraphs": [
+                        "Wenn Sie eine E-Mail-Adresse angeben, erhalten Sie eine automatische Eingangsbestätigung ohne Werbezusatz und ohne Wiedergabe Ihrer Nachricht."
+                    ]
+                },
+                {
+                    "heading": "Spamschutz und Rate Limit",
+                    "paragraphs": [
+                        "Zum Schutz der Formulare verwenden wir ein unsichtbares Formularfeld, eine Mindestzeit bis zum Absenden und eine Begrenzung der Anfragen je Absender. Dafür wird Ihre IP-Adresse pseudonymisiert (HMAC mit täglich wechselndem Schlüssel) für höchstens 15 Minuten in einer Serverdatei gehalten. Rechtsgrundlage ist unser berechtigtes Interesse an der Abwehr von Missbrauch (Art. 6 Abs. 1 lit. f DSGVO)."
+                    ]
+                },
+                {
+                    "heading": "Sitzungs-Cookie",
+                    "paragraphs": [
+                        "Für die Formularsicherheit (CSRF-Schutz) setzt die Website ein technisch notwendiges Sitzungs-Cookie, das beim Schließen des Browsers gelöscht wird. Es enthält keine personenbezogenen Inhalte. Rechtsgrundlage ist § 25 Abs. 2 Nr. 2 TDDDG. Marketing-, Analyse- oder Tracking-Cookies setzen wir nicht ein. Eine Einwilligungsabfrage ist deshalb nicht erforderlich."
+                    ]
+                },
+                {
+                    "heading": "Fördercheck",
+                    "paragraphs": [
+                        "Der Fördercheck läuft vollständig in Ihrem Browser. Ihre Eingaben, insbesondere Einkommens- und Pflegeangaben, werden nicht an unseren Server übertragen, nicht in URLs geschrieben, nicht in Cookies gespeichert und nicht protokolliert. Eine Übernahme nicht sensibler Projektdaten in das Kontaktformular erfolgt nur, wenn Sie dies ausdrücklich auswählen."
+                    ]
+                },
+                {
+                    "heading": "Externe Links",
+                    "paragraphs": [
+                        "Die Website verlinkt auf externe Seiten, etwa der Holdinggesellschaften, der KfW oder anderer Fördergeber. Beim Klick gelten die Datenschutzbestimmungen des jeweiligen Anbieters. Externe Schriften, Karten oder Videos werden nicht automatisch geladen."
+                    ]
+                },
+                {
+                    "heading": "Ihre Rechte",
+                    "paragraphs": [
+                        "Sie haben das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung, Datenübertragbarkeit und Widerspruch gegen Verarbeitungen auf Grundlage berechtigter Interessen. Sie können sich bei einer Datenschutzaufsichtsbehörde beschweren; für uns zuständig ist die Landesbeauftragte für Datenschutz und Informationsfreiheit Nordrhein-Westfalen. Wenden Sie sich für Anfragen an info@hsm-tec.de."
+                    ]
+                },
+                {
+                    "heading": "Offene Angaben vor Veröffentlichung",
+                    "paragraphs": [
+                        "Hostinganbieter, Speicherdauer der Serverlogs, E-Mail-Dienstleister und ein etwaiger Datenschutzbeauftragter sind vom Betreiber zu ergänzen. Diese Erklärung ersetzt keine rechtliche Prüfung."
+                    ]
+                }
+            ],
+            "form": "none",
+            "lastmod": "2026-09-17"
+        },
+        {
+            "path": "/cookie-einstellungen/",
+            "template": "legal",
+            "parent": null,
+            "title": "Cookie-Einstellungen",
+            "metaTitle": "Cookie-Einstellungen | HSM Tec GmbH",
+            "metaDescription": "Welche Cookies hsm-tec.de verwendet und warum keine Einwilligungsabfrage erscheint.",
+            "h1": "Cookie-Einstellungen",
+            "lead": "Diese Website verwendet ausschließlich ein technisch notwendiges Sitzungs-Cookie. Es gibt keine optionalen Dienste, deshalb auch keine Einwilligungsabfrage.",
+            "sections": [
+                {
+                    "heading": "Eingesetzte Cookies",
+                    "list": [
+                        "hsmsid: Sitzungs-Cookie für den Schutz der Formulare vor Fremdzugriff (CSRF). Wird beim Schließen des Browsers gelöscht. Keine Einwilligung erforderlich."
+                    ]
+                },
+                {
+                    "heading": "Nicht eingesetzt",
+                    "list": [
+                        "Keine Analyse- oder Marketing-Cookies",
+                        "Keine externen Schriftarten, Karten oder Videos, die automatisch laden",
+                        "Keine Weitergabe an Werbenetzwerke"
+                    ]
+                },
+                {
+                    "heading": "Wenn sich das ändert",
+                    "paragraphs": [
+                        "Sollten künftig optionale Dienste eingesetzt werden, erscheint vor deren Aktivierung eine Auswahl mit der Möglichkeit zur Ablehnung, zur Auswahl einzelner Dienste und zum späteren Widerruf auf dieser Seite. Formulare und Fördercheck funktionieren dann weiterhin ohne Zustimmung zu optionalen Diensten."
+                    ]
+                }
+            ],
+            "form": "none",
+            "lastmod": "2026-09-17"
+        },
+        {
+            "path": "/barrierefreiheit/",
+            "template": "legal",
+            "parent": null,
+            "title": "Barrierefreiheit",
+            "metaTitle": "Erklärung zur Barrierefreiheit | HSM Tec GmbH",
+            "metaDescription": "Wie hsm-tec.de auf barrierearme Bedienung ausgelegt ist, wo Grenzen bestehen und wie Sie Barrieren melden können.",
+            "h1": "Barrierefreiheit dieser Website",
+            "lead": "Wir gestalten diese Website so, dass sie mit Tastatur, Screenreader und bei reduzierter Bewegung nutzbar ist. Qualitätsmaßstab ist WCAG 2.2 auf Stufe AA. Eine vollständige Konformität behaupten wir nicht ohne Prüfung.",
+            "sections": [
+                {
+                    "heading": "Was umgesetzt ist",
+                    "list": [
+                        "Semantische Struktur mit einer Hauptüberschrift je Seite und nachvollziehbaren Zwischenüberschriften",
+                        "Vollständige Bedienbarkeit mit der Tastatur, sichtbarer Fokus, Sprunglink zum Inhalt",
+                        "Formulare mit verständlichen Beschriftungen, Fehlermeldungen im Kontext und ausreichend großen Bedienelementen",
+                        "Kontraste der Farbkombinationen geprüft, Text ab 17 Pixel, skalierbar",
+                        "Bewegungen werden bei aktivierter Systemeinstellung „Bewegung reduzieren“ unterdrückt",
+                        "Inhalte funktionieren ohne JavaScript; JavaScript verbessert die Bedienung"
+                    ]
+                },
+                {
+                    "heading": "Bekannte Grenzen",
+                    "list": [
+                        "Der Fördercheck benötigt JavaScript; ohne JavaScript stehen die Förderinformationen und ein Beratungsweg zur Verfügung.",
+                        "PDF-Dokumente, die wir künftig bereitstellen, sind noch nicht auf Barrierefreiheit geprüft.",
+                        "Eine externe Prüfung nach WCAG 2.2 ist noch nicht erfolgt."
+                    ]
+                },
+                {
+                    "heading": "Barrieren melden",
+                    "paragraphs": [
+                        "Wenn Sie auf eine Barriere stoßen, schreiben Sie uns an info@hsm-tec.de oder rufen Sie uns an: 02421 8899975. Beschreiben Sie bitte die Seite und das Problem. Wir bemühen uns um zeitnahe Behebung. Die rechtliche Anwendbarkeit gesetzlicher Barrierefreiheitspflichten auf diese Website wird gesondert geprüft."
+                    ]
+                }
+            ],
+            "form": "none",
+            "lastmod": "2026-09-17"
+        }
+    ]
+}

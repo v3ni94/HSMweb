@@ -1,0 +1,11 @@
+/config/mail.local.php
+/storage/rate-limits/*
+/storage/sessions/*
+/storage/temporary-uploads/*
+/storage/logs/*
+!/storage/*/.gitkeep
+/.php-cs-fixer.cache
+/node_modules/
+/tests/_output/
+.DS_Store
+Thumbs.db

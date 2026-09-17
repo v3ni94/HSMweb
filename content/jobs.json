@@ -1,0 +1,239 @@
+{
+  "_comment": "Stellen. status: open | closed. type: job | initiative. Veröffentlichungsdatum nur bei echter Änderung anpassen. Arbeitsort, Beschäftigungsmodell und Aufgaben sind vom Betrieb zu bestätigen (docs/release-checklist.md).",
+  "jobs": [
+    {
+      "id": "HSM-2026-001",
+      "slug": "anlagenmechaniker-shk",
+      "title": "Anlagenmechaniker SHK",
+      "aliasTitles": ["Heizungsbauer", "Heizungsinstallateur"],
+      "type": "job",
+      "status": "open",
+      "datePosted": "2026-09-17",
+      "dateModified": "2026-09-17",
+      "validThrough": "",
+      "employmentType": "Vollzeit, unbefristet (zu bestätigen)",
+      "employmentTypeSchema": "FULL_TIME",
+      "location": "Düren, Einsatz auf Baustellen in der Region",
+      "summary": "Installation, Wartung und Reparatur von Heizungs- und Sanitäranlagen in Wohn- und Gewerbeobjekten in Düren und Umgebung.",
+      "tasks": [
+        "Installation von Heizungsanlagen, Wärmepumpen, Heizkörpern und Flächenheizungen",
+        "Sanitärinstallation in Bädern, Trink- und Abwasserleitungen",
+        "Wartung, Störungssuche und Reparatur bestehender Anlagen",
+        "Dokumentation der Arbeiten und Abstimmung mit Kunden und Kolleginnen und Kollegen",
+        "Zusammenarbeit mit den koordinierten weiteren Gewerken auf der Baustelle"
+      ],
+      "required": [
+        "Abgeschlossene Ausbildung als Anlagenmechaniker/in SHK, Gas- und Wasserinstallateur/in, Heizungsbauer/in oder vergleichbar",
+        "Sorgfältige, selbstständige Arbeitsweise und Verantwortungsbewusstsein",
+        "Führerschein Klasse B"
+      ],
+      "desired": [
+        "Erfahrung mit Wärmepumpen und hydraulischem Abgleich",
+        "Erfahrung im Kundendienst",
+        "Freude an Teamarbeit und direktem Kundenkontakt"
+      ],
+      "process": "Kurzbewerbung über das Formular oder telefonisch. Wir melden uns für ein Kennenlerngespräch. Ein Probearbeitstag ist nach Absprache möglich."
+    },
+    {
+      "id": "HSM-2026-002",
+      "slug": "kundendienstmonteur",
+      "title": "Kundendienstmonteur SHK",
+      "type": "job",
+      "status": "open",
+      "datePosted": "2026-09-17",
+      "dateModified": "2026-09-17",
+      "validThrough": "",
+      "employmentType": "Vollzeit (zu bestätigen)",
+      "employmentTypeSchema": "FULL_TIME",
+      "location": "Düren, Einsatz bei Kunden in der Region",
+      "summary": "Wartung, Störungsbeseitigung und Kleinreparaturen an Heizungs- und Sanitäranlagen direkt beim Kunden.",
+      "tasks": [
+        "Wartung von Heizungsanlagen und Warmwasserbereitern",
+        "Störungsanalyse und Reparatur, Austausch von Bauteilen",
+        "Kleinreparaturen im Sanitärbereich",
+        "Beratung der Kunden vor Ort zu Wartung und Optimierung",
+        "Saubere Dokumentation der Einsätze"
+      ],
+      "required": [
+        "Abgeschlossene Ausbildung im SHK-Bereich oder vergleichbare Qualifikation",
+        "Erfahrung in Wartung und Störungssuche",
+        "Führerschein Klasse B, freundliches und verbindliches Auftreten"
+      ],
+      "desired": [
+        "Herstellerschulungen für Wärmeerzeuger",
+        "Erfahrung mit Regelungstechnik"
+      ],
+      "process": "Kurzbewerbung über das Formular oder telefonisch. Wir melden uns für ein Kennenlerngespräch."
+    },
+    {
+      "id": "HSM-2026-003",
+      "slug": "shk-meister",
+      "title": "SHK-Meister",
+      "type": "job",
+      "status": "open",
+      "datePosted": "2026-09-17",
+      "dateModified": "2026-09-17",
+      "validThrough": "",
+      "employmentType": "Vollzeit (zu bestätigen)",
+      "employmentTypeSchema": "FULL_TIME",
+      "location": "Düren",
+      "summary": "Technische Projektverantwortung für Heizungs-, Sanitär- und Sanierungsprojekte: Planung, Kalkulation, Bauleitung und Qualitätssicherung.",
+      "tasks": [
+        "Aufmaß, Planung und Angebotskalkulation",
+        "Bauleitung und Koordination der Monteure und weiterer Gewerke",
+        "Qualitätssicherung, Abnahme und Übergabe an Kunden",
+        "Fachliche Beratung zu Wärmepumpen, Heizungsmodernisierung und Förderung",
+        "Unterstützung bei der Weiterentwicklung der Abläufe"
+      ],
+      "required": [
+        "Meisterprüfung im Installateur- und Heizungsbauerhandwerk oder vergleichbare Qualifikation",
+        "Erfahrung in Bauleitung und Kundenberatung",
+        "Strukturierte Arbeitsweise und Kommunikationsstärke"
+      ],
+      "desired": [
+        "Kenntnisse in Förderprogrammen (BEG, KfW)",
+        "Erfahrung mit Sanierungsprojekten im Bestand"
+      ],
+      "process": "Kurzbewerbung über das Formular. Wir melden uns für ein Gespräch mit der Geschäftsführung."
+    },
+    {
+      "id": "HSM-2026-004",
+      "slug": "leckorter",
+      "title": "Leckorter",
+      "type": "job",
+      "status": "open",
+      "datePosted": "2026-09-17",
+      "dateModified": "2026-09-17",
+      "validThrough": "",
+      "employmentType": "Vollzeit (zu bestätigen)",
+      "employmentTypeSchema": "FULL_TIME",
+      "location": "Düren, Einsatz bei Kunden in der Region",
+      "summary": "Ortung von Leckagen an Wasser- und Heizungsleitungen mit Messtechnik, Dokumentation und Abstimmung der Reparatur.",
+      "tasks": [
+        "Schadenaufnahme und Ursachenklärung vor Ort",
+        "Leckortung mit den vorhandenen Messverfahren",
+        "Feuchtemessung und Dokumentation mit Messprotokoll",
+        "Abstimmung der Reparatur und Trocknung mit Kunden, Hausverwaltungen und Kollegen"
+      ],
+      "required": [
+        "Technische Ausbildung, bevorzugt SHK oder Bautechnik",
+        "Sorgfalt in Messung und Dokumentation",
+        "Führerschein Klasse B"
+      ],
+      "desired": [
+        "Erfahrung in Leckortung oder Bautrocknung",
+        "Erfahrung in der Kommunikation mit Versicherungen und Hausverwaltungen"
+      ],
+      "process": "Kurzbewerbung über das Formular oder telefonisch."
+    },
+    {
+      "id": "HSM-2026-005",
+      "slug": "trocknungstechniker",
+      "title": "Trocknungstechniker",
+      "type": "job",
+      "status": "open",
+      "datePosted": "2026-09-17",
+      "dateModified": "2026-09-17",
+      "validThrough": "",
+      "employmentType": "Vollzeit (zu bestätigen)",
+      "employmentTypeSchema": "FULL_TIME",
+      "location": "Düren, Einsatz bei Kunden in der Region",
+      "summary": "Aufstellung und Betreuung technischer Trocknungen nach Wasserschäden, Kontrollmessungen und Dokumentation.",
+      "tasks": [
+        "Erstellung von Trocknungskonzepten nach Feuchtemessung",
+        "Aufstellung, Kontrolle und Abbau von Trocknungsgeräten",
+        "Kontrollmessungen, Messprotokolle und Stromverbrauchsdokumentation",
+        "Abstimmung mit Bewohnern und Hausverwaltungen"
+      ],
+      "required": [
+        "Technische oder handwerkliche Ausbildung",
+        "Zuverlässigkeit und sorgfältige Dokumentation",
+        "Führerschein Klasse B"
+      ],
+      "desired": [
+        "Erfahrung in Bautrocknung oder Schadensanierung"
+      ],
+      "process": "Kurzbewerbung über das Formular oder telefonisch."
+    },
+    {
+      "id": "HSM-2026-006",
+      "slug": "buero-organisation",
+      "title": "Büro und Organisation",
+      "type": "job",
+      "status": "open",
+      "datePosted": "2026-09-17",
+      "dateModified": "2026-09-17",
+      "validThrough": "",
+      "employmentType": "Teilzeit oder Vollzeit (zu bestätigen)",
+      "employmentTypeSchema": ["FULL_TIME", "PART_TIME"],
+      "location": "Düren",
+      "summary": "Auftragsannahme, Terminkoordination, Angebots- und Rechnungsvorbereitung sowie Kommunikation mit Kunden und Hausverwaltungen.",
+      "tasks": [
+        "Telefonische und schriftliche Auftragsannahme",
+        "Terminplanung für Monteure und Baustellen",
+        "Vorbereitung von Angeboten, Rechnungen und Dokumentationen",
+        "Pflege von Kunden- und Objektdaten",
+        "Unterstützung der Geschäftsführung im Tagesgeschäft"
+      ],
+      "required": [
+        "Kaufmännische Ausbildung oder vergleichbare Erfahrung",
+        "Sicherer Umgang mit Office-Anwendungen",
+        "Organisationsgeschick und klare Kommunikation"
+      ],
+      "desired": [
+        "Erfahrung im Handwerk oder in der Immobilienverwaltung",
+        "Erfahrung mit Handwerkersoftware"
+      ],
+      "process": "Kurzbewerbung über das Formular."
+    },
+    {
+      "id": "HSM-2026-007",
+      "slug": "projektleitung-sanierung",
+      "title": "Projektleitung Sanierung",
+      "type": "job",
+      "status": "open",
+      "datePosted": "2026-09-17",
+      "dateModified": "2026-09-17",
+      "validThrough": "",
+      "employmentType": "Vollzeit (zu bestätigen)",
+      "employmentTypeSchema": "FULL_TIME",
+      "location": "Düren und Baustellen in der Region",
+      "summary": "Steuerung von Wohnungs-, Bad- und Wasserschadensanierungen: Leistungsabgrenzung, Terminplanung, Koordination der Gewerke, Abnahme.",
+      "tasks": [
+        "Bestandsaufnahme und Leistungsabgrenzung mit Kunden und Hausverwaltungen",
+        "Termin- und Kapazitätsplanung, Koordination der weiteren Gewerke",
+        "Baustellenkontrolle, Qualitätssicherung und Fotodokumentation",
+        "Abstimmung von Zusatzarbeiten vor Ausführung",
+        "Abnahme und Übergabe"
+      ],
+      "required": [
+        "Handwerkliche oder bautechnische Qualifikation mit Erfahrung in Sanierungsprojekten",
+        "Strukturierte Arbeitsweise, Verhandlungsgeschick und Verlässlichkeit",
+        "Führerschein Klasse B"
+      ],
+      "desired": [
+        "Erfahrung in der Zusammenarbeit mit Hausverwaltungen und Versicherungen",
+        "Kenntnisse in Feuchtemessung und Trocknung"
+      ],
+      "process": "Kurzbewerbung über das Formular. Gespräch mit der Geschäftsführung."
+    },
+    {
+      "id": "HSM-INIT",
+      "slug": "initiativbewerbung",
+      "title": "Initiativbewerbung",
+      "type": "initiative",
+      "status": "open",
+      "datePosted": "2026-09-17",
+      "dateModified": "2026-09-17",
+      "validThrough": "",
+      "employmentType": "nach Vereinbarung",
+      "employmentTypeSchema": "OTHER",
+      "location": "Düren",
+      "summary": "Sie passen zu keiner ausgeschriebenen Stelle, möchten aber bei HSM Tec arbeiten? Wir freuen uns über Ihre Initiativbewerbung.",
+      "tasks": [],
+      "required": ["Interesse an Heizung, Sanitär, Wasserschaden oder Sanierung", "Zuverlässigkeit und Teamfähigkeit"],
+      "desired": [],
+      "process": "Name, Kontaktweg und ein paar Sätze zu Ihnen genügen. Wir melden uns."
+    }
+  ]
+}

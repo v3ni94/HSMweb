@@ -1,0 +1,51 @@
+{
+  "_comment": "Führende Faktenbasis für sichtbare Texte, Footer, Impressum, JSON-LD und KI-Seiten. Nur bestätigte Angaben eintragen. Offene Punkte stehen in docs/release-checklist.md.",
+  "legalName": "HSM Tec GmbH",
+  "shortName": "HSM Tec",
+  "domain": "hsm-tec.de",
+  "address": {
+    "street": "Kreuzauer Straße 70",
+    "postalCode": "52355",
+    "city": "Düren",
+    "country": "Deutschland",
+    "confirmed": false,
+    "confirmationNote": "Vor Go-live anhand aktueller Unterlagen bestätigen."
+  },
+  "phoneDisplay": "02421 8899975",
+  "phoneE164": "+4924218899975",
+  "email": "info@hsm-tec.de",
+  "management": [
+    {
+      "name": "Guido Bauer",
+      "role": "Meister und Geschäftsführer",
+      "area": "Technische Geschäftsführung",
+      "description": "Verantwortet Technik, Ausführung und die fachliche Abstimmung der Projekte.",
+      "note": "Genaue Meisterberufsbezeichnung vor Veröffentlichung bestätigen."
+    },
+    {
+      "name": "David Enns",
+      "role": "Kaufmännischer Geschäftsführer",
+      "area": "Kaufmännische Geschäftsführung",
+      "description": "Verantwortet Angebot, Abrechnung, Organisation und die Zusammenarbeit mit Hausverwaltungen und Gewerbekunden."
+    }
+  ],
+  "holdings": [
+    { "name": "Enns Holding GmbH", "url": "https://ennsholding.de/", "since": "2024" },
+    { "name": "Müller Holding AG", "url": "https://mueller-holding.ag/", "since": "2026" }
+  ],
+  "areaServedLabel": "Düren und Umgebung",
+  "areaServedNote": "Tatsächliche Einsatzregion vor Veröffentlichung weiterer Orte bestätigen.",
+  "logoPath": "",
+  "logoNote": "Originallogo liegt nicht als geprüfte Datei vor. Bis zur Freigabe wird der ausgeschriebene Firmenname gezeigt.",
+  "factsUpdated": "17.09.2026",
+  "legal": {
+    "registerCourt": "",
+    "registerNumber": "",
+    "vatId": "",
+    "chamber": "",
+    "supervisoryAuthority": "",
+    "responsibleForContent": "",
+    "openingHours": "",
+    "note": "Registerangaben, USt-IdNr., Kammer und Geschäftszeiten sind intern freizugeben. Bis dahin bleibt das Impressum unvollständig und ein Go-live-Hindernis."
+  }
+}

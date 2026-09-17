@@ -1,0 +1,28 @@
+{
+  "_comment": "Private URL-/Redirect-Matrix. Die Bestandswebsite war aus der Entwicklungsumgebung nicht abrufbar (Egress-Proxy 403 am 17.09.2026). Die alten Pfade unten sind Annahmen typischer WordPress-Strukturen und müssen anhand der echten page-sitemap.xml vor Go-live geprüft und ergänzt werden (siehe docs/redirect-matrix.md).",
+  "redirects": [
+    { "from": "/home/", "to": "/", "note": "Annahme, prüfen" },
+    { "from": "/startseite/", "to": "/", "note": "Annahme, prüfen" },
+    { "from": "/leistung/", "to": "/leistungen/", "note": "Annahme, prüfen" },
+    { "from": "/heizungsbau/", "to": "/heizung/", "note": "Annahme, prüfen" },
+    { "from": "/heizungstechnik/", "to": "/heizung/", "note": "Annahme, prüfen" },
+    { "from": "/waermepumpe/", "to": "/heizung/waermepumpen/", "note": "Annahme, prüfen" },
+    { "from": "/sanitaertechnik/", "to": "/sanitaer/", "note": "Annahme, prüfen" },
+    { "from": "/bad/", "to": "/sanitaer/badsanierung/", "note": "Annahme, prüfen" },
+    { "from": "/badsanierung/", "to": "/sanitaer/badsanierung/", "note": "Annahme, prüfen" },
+    { "from": "/leckortung/", "to": "/wasserschaden/leckortung/", "note": "Annahme, prüfen" },
+    { "from": "/trocknung/", "to": "/wasserschaden/technische-trocknung/", "note": "Annahme, prüfen" },
+    { "from": "/bautrocknung/", "to": "/wasserschaden/technische-trocknung/", "note": "Annahme, prüfen" },
+    { "from": "/renovierung/", "to": "/sanierung/", "note": "Annahme, prüfen" },
+    { "from": "/ueber-uns/", "to": "/unternehmen/", "note": "Annahme, prüfen" },
+    { "from": "/team/", "to": "/unternehmen/", "note": "Annahme, prüfen" },
+    { "from": "/jobs/", "to": "/karriere/", "note": "Annahme, prüfen" },
+    { "from": "/stellenangebote/", "to": "/karriere/", "note": "Annahme, prüfen" },
+    { "from": "/karriere/heizungsbauer/", "to": "/karriere/anlagenmechaniker-shk/", "note": "Gemeinsame Anzeige, siehe Abschnitt 11" },
+    { "from": "/datenschutzerklaerung/", "to": "/datenschutz/", "note": "Annahme, prüfen" },
+    { "from": "/foerderrechner", "to": "/foerderrechner/", "note": "Kanonisierung" }
+  ],
+  "gone": [
+    { "from": "/danke/", "note": "Dankeseite alter Formulare, kein Ersatz" }
+  ]
+}

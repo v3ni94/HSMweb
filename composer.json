@@ -1,0 +1,25 @@
+{
+    "name": "hsm-tec/website",
+    "description": "HSM Tec GmbH Unternehmenswebsite, PHP ohne Datenbank",
+    "type": "project",
+    "license": "proprietary",
+    "require": {
+        "php": ">=8.2",
+        "ext-json": "*",
+        "ext-mbstring": "*",
+        "ext-fileinfo": "*",
+        "ext-openssl": "*",
+        "phpmailer/phpmailer": "^6.9"
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "platform-check": false,
+        "sort-packages": true
+    },
+    "autoload": {
+        "classmap": [
+            "app/services/",
+            "app/controllers/"
+        ]
+    }
+}

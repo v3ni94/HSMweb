@@ -1,0 +1,11 @@
+# Begriffe, die in Inhalten und Templates nicht vorkommen dürfen (Redaktionsregel Abschnitt 2 und 5).
+# Eine Zeile je Begriff, Prüfung ohne Groß-/Kleinschreibung. Verneinte Formen wie „keine garantierte“ sind zulässig
+# und deshalb nicht als Begriff gelistet; die Prüfung der Aussagen bleibt redaktionell.
+# Frühere Personen- oder Firmennamen ergänzen, sobald der Betreiber die auszuschließenden Altbezüge benennt.
+24/7
+rund um die Uhr
+Soforthilfe
+Wir garantieren
+garantieren wir
+100 %
+Testsieger

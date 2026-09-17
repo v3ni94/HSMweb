@@ -1,0 +1,70 @@
+{
+  "_comment": "Ratgeberartikel. updated nur bei inhaltlicher Änderung anpassen.",
+  "guides": [
+    {
+      "slug": "wie-laeuft-eine-leckortung-ab",
+      "title": "Wie läuft eine Leckortung ab?",
+      "metaDescription": "Schritt für Schritt: Was bei einer Leckortung passiert, was Sie vorbereiten können, welche Unterlagen die Versicherung braucht und wie es nach der Ortung weitergeht.",
+      "published": "2026-09-17",
+      "updated": "2026-09-17",
+      "topics": ["Wasserschaden"],
+      "formTopic": "Wasserschaden",
+      "intro": "Feuchte Flecken, Druckverlust an der Heizung oder eine laufende Wasseruhr: Irgendwo tritt Wasser aus, aber wo? Eine Leckortung findet die Stelle, bevor Wände und Böden großflächig geöffnet werden. So läuft sie ab.",
+      "sections": [
+        { "heading": "1. Vor dem Termin: was Sie tun können", "paragraphs": ["Schließen Sie bei laufendem Wasseraustritt den Hauptabsperrhahn. Notieren Sie, wann Sie den Schaden bemerkt haben, wo Feuchtigkeit sichtbar ist und ob die Wasseruhr bei geschlossenen Zapfstellen weiterläuft. Fotografieren Sie die Stellen. Melden Sie den Schaden Ihrer Versicherung; die meisten Verträge verlangen eine zeitnahe Meldung."] },
+        { "heading": "2. Schadenaufnahme", "paragraphs": ["Wir sehen uns die betroffenen Bereiche an, prüfen, welches System infrage kommt (Trinkwasser, Heizung, Abwasser, Feuchte von außen) und messen die Oberflächenfeuchte. Diese Eingrenzung entscheidet, welche Verfahren sinnvoll sind."] },
+        { "heading": "3. Ortung", "paragraphs": ["Mit Druckprüfungen und den für den Fall geeigneten Messverfahren grenzen wir die Leckstelle ein und markieren sie. Ziel ist, so wenig wie möglich zu öffnen. Eine vollständig zerstörungsfreie Ortung ist nicht in jedem Fall möglich; das sagen wir Ihnen vorab."] },
+        { "heading": "4. Öffnung und Reparatur", "paragraphs": ["An der markierten Stelle wird gezielt geöffnet, die Leitung repariert und mit einer Druckprüfung kontrolliert. Wir dokumentieren die Schadstelle mit Fotos."] },
+        { "heading": "5. Feuchtemessung und Trocknung", "paragraphs": ["Nach der Reparatur messen wir, wie weit sich die Feuchtigkeit ausgebreitet hat, und erstellen ein Trocknungskonzept. Erst wenn die Kontrollmessungen trockene Werte zeigen, beginnt die Wiederherstellung."] },
+        { "heading": "6. Unterlagen für die Versicherung", "list": ["Fotodokumentation", "Messprotokoll mit Ortungsergebnis", "Beschreibung der Schadenursache und der Reparatur", "Trocknungsprotokolle und Stromverbrauchsnachweis", "Angebot für die Wiederherstellung mit Trennung von Schadenumfang und Wunschverbesserungen"] }
+      ],
+      "faq": [
+        { "q": "Wie lange dauert eine Leckortung?", "a": "Je nach Fall zwischen einer und mehreren Stunden. Bei komplexen Leitungsnetzen kann ein zweiter Termin nötig sein." },
+        { "q": "Muss ich zu Hause sein?", "a": "Ja, oder eine bevollmächtigte Person. Wir benötigen Zugang zu allen betroffenen Räumen und zur Wasseruhr." }
+      ],
+      "related": ["/wasserschaden/leckortung/", "/wasserschaden/technische-trocknung/"]
+    },
+    {
+      "slug": "angaben-fuer-die-heizungsanfrage",
+      "title": "Welche Angaben benötigen wir für eine Heizungsanfrage?",
+      "metaDescription": "Checkliste für Ihre Heizungsanfrage: Gebäude, bestehende Anlage, Heizflächen, Verbrauch, Warmwasser, Zeitplan. So erhalten Sie schneller ein belastbares Angebot.",
+      "published": "2026-09-17",
+      "updated": "2026-09-17",
+      "topics": ["Heizung"],
+      "formTopic": "Heizung",
+      "intro": "Je genauer Ihre ersten Angaben, desto gezielter können wir den Ortstermin vorbereiten. Diese Checkliste zeigt, was hilft. Fehlende Angaben sind kein Hindernis, wir klären sie gemeinsam.",
+      "sections": [
+        { "heading": "Zum Gebäude", "list": ["Baujahr, Gebäudetyp (Einfamilienhaus, Mehrfamilienhaus, Gewerbe), Anzahl Wohneinheiten", "Beheizte Fläche in Quadratmetern", "Dämmzustand: Fenster, Dach, Fassade, soweit bekannt", "Selbstnutzung oder Vermietung"] },
+        { "heading": "Zur bestehenden Anlage", "list": ["Energieträger und Typ der Heizung", "Baujahr der Anlage, Hersteller und Modell (Typenschild fotografieren)", "Funktionstüchtig oder gestört", "Warmwasserbereitung: über die Heizung, Speicher, Durchlauferhitzer"] },
+        { "heading": "Zu den Heizflächen", "list": ["Heizkörper, Fußbodenheizung oder beides", "Räume, die schlecht warm werden", "Bereits durchgeführter hydraulischer Abgleich"] },
+        { "heading": "Zu Verbrauch und Zielen", "list": ["Verbrauch der letzten ein bis drei Jahre (Gas, Öl, Strom)", "Ziel: Austausch, Modernisierung, Wärmepumpe, Optimierung", "Gewünschter Zeitraum", "Interesse an Förderung: dann Angaben zu Selbstnutzung und ungefährem Einkommen nur im Gespräch, nicht über das Formular"] },
+        { "heading": "Fotos, die helfen", "list": ["Heizraum mit Anlage und Speicher", "Typenschild", "Möglicher Aufstellort für eine Außeneinheit", "Zähler- und Sicherungskasten"] }
+      ],
+      "faq": [
+        { "q": "Können Sie ohne Ortstermin ein Angebot machen?", "a": "Eine grobe Einordnung ja, ein belastbares Angebot nein. Heizlast, Heizflächen und Aufstellort müssen vor Ort geprüft werden." }
+      ],
+      "related": ["/heizung/waermepumpen/", "/heizung/heizungsmodernisierung/", "/foerderrechner/"]
+    },
+    {
+      "slug": "badsanierung-im-bewohnten-haus",
+      "title": "Wie planen Sie eine Badsanierung im bewohnten Haus?",
+      "metaDescription": "Badsanierung, während Sie im Haus wohnen: Ablauf, Ausfallzeiten von WC und Wasser, Schutzmaßnahmen, Abstimmung mit Bewohnern und Verwaltung.",
+      "published": "2026-09-17",
+      "updated": "2026-09-17",
+      "topics": ["Bad und Sanitär", "Sanierung"],
+      "formTopic": "Badsanierung",
+      "intro": "Die meisten Bäder werden saniert, während das Haus bewohnt bleibt. Mit guter Planung bleiben die Einschränkungen überschaubar. Das sollten Sie wissen.",
+      "sections": [
+        { "heading": "Ausfallzeiten realistisch planen", "paragraphs": ["WC und Wasser fallen nicht die ganze Zeit aus, aber in bestimmten Phasen: beim Rückbau, bei der Rohinstallation und bei der Endmontage. Wir planen diese Phasen so, dass Sie abends ein nutzbares WC haben, oder besprechen ein zweites Bad beziehungsweise eine Übergangslösung."] },
+        { "heading": "Reihenfolge der Gewerke", "list": ["Rückbau und Entsorgung", "Rohinstallation Sanitär, Heizung, Elektro", "Trockenbau und Vorwand", "Abdichtung", "Fliesen", "Maler", "Endmontage Sanitärobjekte, Armaturen, Zubehör", "Übergabe"] },
+        { "heading": "Schutz der übrigen Wohnung", "list": ["Staubschutzwände und Abdeckungen auf den Laufwegen", "Feste Zeiten für laute Arbeiten", "Tägliche Grobreinigung der Wege", "Klare Absprache, welche Räume betreten werden"] },
+        { "heading": "Mietobjekte", "paragraphs": ["In vermieteten Wohnungen stimmen wir Termine mit Verwaltung und Bewohnern ab, bestätigen sie schriftlich und dokumentieren den Zustand vor und nach den Arbeiten mit Fotos."] },
+        { "heading": "Entscheidungen, die vor dem Start feststehen sollten", "list": ["Ausstattung und Materialien bestellt und geliefert", "Fliesenplan freigegeben", "Elektro- und Beleuchtungsplan", "Umgang mit Überraschungen im Bestand: Wer entscheidet wie schnell?"] }
+      ],
+      "faq": [
+        { "q": "Wie lange bin ich ohne Dusche?", "a": "Das hängt vom Umfang ab. Nach der Planung nennen wir die Phasen, in denen Dusche und WC nicht nutzbar sind, damit Sie sich darauf einstellen können." }
+      ],
+      "related": ["/sanitaer/badsanierung/", "/sanierung/wohnungssanierung/"]
+    }
+  ]
+}
