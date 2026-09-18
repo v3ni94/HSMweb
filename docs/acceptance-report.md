@@ -17,6 +17,10 @@ Testumgebung: PHP 8.4.19 Entwicklungsserver (`php -S`), Chromium (Playwright 1.5
 - Ohne SMTP-Konfiguration: 503 mit verständlicher Meldung, Telefon/E-Mail, alle Eingaben bleiben im Formular erhalten; keine vorgetäuschte Erfolgsmeldung. Log enthält nur `mail_not_configured`, keine Inhalte.
 - Öffentliche Regeldatei ohne `internalNotes`; keine Geheimnisse in JS/JSON.
 
+## PHP-Tests
+
+12 Tests in `tests/php/run.php`: Header-Injection-Schutz und Kürzung der Eingaben, Path-Traversal-Abweisung, Ignorieren von X-Forwarded-For ohne vertrauten Proxy, Rate Limit (5 erlaubt, 6. gesperrt, pseudonyme Dateinamen, Bereinigung), Routen-Allowlist inklusive 301/410-Fällen, Schutz vor offenen Weiterleitungen, Ablehnung fehlerhafter Förderregelwerke ohne Pfadausgabe, öffentlicher Export ohne interne Notizen und mit 30-Tage-Regel, JSON-LD ohne Holdings in sameAs und mit genau zwei Personen, Stellenstatuslogik, Sitemap-Ausschlüsse und XML-Gültigkeit, gesperrte Begriffe in gerenderten Seiten.
+
 ## Fördercheck
 
 - 30 Regressionstests bestanden (`tests/funding-calc.test.js`): Grundförderung 8.400 EUR, Klimabonus 12.880 EUR, Einkommensstufen 22.400 / 19.600 / 15.680 EUR, Kind erhöht Schwelle, Kostenobergrenze, Mehrfamilienhaus-Obergrenze, Vermieter ohne Boni, Unternehmen (459-Hinweis), WEG manuell, Datumswechsel 2027 (angekündigt, nicht berechnet), Datum vor Regelstand, überfällige Quellenprüfung deaktiviert Berechnung, 455-B geschlossen nicht eingerechnet, Pflegekasse 4.180 / tatsächliche Kosten / 16.720 EUR Deckel, ohne Pflegegrad kein Zuschuss, Kredit/Zuschuss/Steuer getrennt, § 35c-Warnung, BAFA nur Prüfung, negative/ungültige Eingaben, Vorhabenbeginn, keine Altanlage, Bundesländerfilter, Rundung.

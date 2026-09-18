@@ -2,7 +2,7 @@
 
 ## Zielumgebung
 
-- Gewöhnliches PHP-Webhosting mit HTTPS, Apache mit `mod_rewrite` (Regeln in `public/.htaccess`). Für nginx müssen die Regeln nachgebaut werden (alle nicht existierenden Pfade auf `index.php`, `/config`, `/storage`, `/content` sind außerhalb des DocumentRoot).
+- Gewöhnliches PHP-Webhosting mit HTTPS, Apache mit `mod_rewrite` (Regeln in `public/.htaccess`). Für nginx liegt eine ungetestete Beispielkonfiguration in `docs/nginx.example.conf`.
 - PHP 8.2 oder neuer; entwickelt und getestet mit PHP 8.4.19. Vor Deployment die tatsächlich unterstützte Version des Hosters prüfen (php.net/supported-versions) und PHP 8.5 nach Erscheinen testen.
 - Benötigte Erweiterungen: `json`, `mbstring`, `fileinfo`, `openssl`, `ctype`, `session`. Optional `gd` (nur für `getimagesize`, Fallback vorhanden), `zlib` (Komprimierung).
 - Kein Composer, npm oder SSH auf dem Server erforderlich: `vendor/` ist im Paket enthalten.

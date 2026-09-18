@@ -18,6 +18,7 @@
 
 ## Offen (nicht blockierend)
 
+- Quellenprüfung der Förderprogramme gegen die Live-Seiten (KfW, BAFA, BMG, NRW.BANK, Bezirksregierung Arnsberg): aus der Entwicklungsumgebung gesperrt, manuell oder nach Domain-Freigabe nachholen und `checkedAt` bestätigen.
 - Realer SMTP-Test aller drei Formulare mit freigegebenem Empfänger nach Eintrag von `config/mail.local.php`; SPF/DKIM/DMARC prüfen.
 - `.htaccess` auf dem Zielhosting testen (HTTPS-Redirect, Sperren); Alternative ohne eigenes DocumentRoot laut `deployment.md` testen.
 - Logo als SVG bei Betreiber oder Agentur anfragen (derzeit PNG 1360×455, ausreichend).

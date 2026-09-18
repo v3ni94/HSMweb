@@ -28,6 +28,8 @@ Kein Live-Scraping. Eine optionale Änderungsprüfung darf Hinweise liefern, Wer
 
 ## Offene Prüfpunkte (Stand 18.09.2026)
 
+- Live-Quellenprüfung aus der Entwicklungsumgebung nicht möglich: `www.kfw.de`, `www.bafa.de`, `www.bundesgesundheitsministerium.de` und weitere Fördergeber-Domains sind in der Netzwerkrichtlinie gesperrt (Stand 18.09.2026). Für die monatliche Prüfung diese Domains freigeben oder die Prüfung manuell im Browser durchführen und `checkedAt` setzen.
+
 - BAFA Heizungsoptimierung und Emissionsminderung: Direktabruf war blockiert, Sätze und iSFP-Bonus unbestätigt.
 - KfW 459: 30 % bestätigt, Kostenobergrenzen für Unternehmen fehlen für eine Betragsberechnung.
 - § 35a EStG: begünstigte Kosten und Doppelbegünstigung vor Berechnung prüfen.

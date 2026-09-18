@@ -12,7 +12,7 @@ Mehrseitige Unternehmenswebsite für die HSM Tec GmbH, Düren. Stack: PHP 8.2+ (
 | `content/` | Redaktion als JSON: `pages.json`, `company.json`, `jobs.json`, `projects.json`, `guides.json`, `redirects.json`, `funding/programs.json` |
 | `storage/` | Laufzeitdateien (Rate Limits, Sessions, temporäre Uploads, Logs), schreibbar, nicht öffentlich |
 | `bin/` | `validate-content.php`, `export-public-data.php`, `cleanup.php` |
-| `tests/` | `funding-calc.test.js` (Node), `smoke.sh` (HTTP) |
+| `tests/` | `php/run.php` (PHP), `funding-calc.test.js` (Node), `smoke.sh` (HTTP) |
 | `docs/` | Diese Dokumentation |
 
 ## Lokal starten
@@ -24,7 +24,7 @@ php bin/export-public-data.php
 HSM_ENV=development php -S 127.0.0.1:8080 -t public public/router.php
 ```
 
-Tests: `node tests/funding-calc.test.js` und `tests/smoke.sh http://127.0.0.1:8080`.
+Tests: `php tests/php/run.php` (Sicherheits- und Inhaltsdienste), `node tests/funding-calc.test.js` (Fördercheck) und `tests/smoke.sh http://127.0.0.1:8080` (HTTP gegen laufenden Server).
 
 ## Pflege
 
