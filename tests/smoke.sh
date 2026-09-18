@@ -7,7 +7,7 @@ check() { local exp="$1" url="$2"; local got; got=$(curl -s -o /dev/null -w "%{h
 # Alle Sitemap-URLs müssen 200 liefern
 for u in $(curl -s "$B/sitemap.xml" | grep -o '<loc>[^<]*' | sed 's#<loc>https://hsm-tec.de##'); do check 200 "$u"; done
 check 200 /robots.txt; check 200 /llms.txt; check 200 /csrf-token; check 200 /assets/data/funding-rules.json; check 200 /favicon.ico
-check 404 /nix/; check 410 /danke/; check 301 /home/; check 301 /heizung; check 301 /karriere/heizungsbauer/
+check 404 /nix/; check 410 /wp-json/; check 410 /sitemap_index.xml; check 301 /ueber-uns/; check 301 /heizung; check 301 /karriere/heizungsbauer/
 check 404 /config/site.php; check 404 /storage/logs/mail.log; check 404 /.git/HEAD; check 404 /composer.json; check 404 /content/company.json
 check 302 /anfrage/senden/
 check 200 /projekte/

@@ -1,51 +1,59 @@
 {
-  "_comment": "Führende Faktenbasis für sichtbare Texte, Footer, Impressum, JSON-LD und KI-Seiten. Nur bestätigte Angaben eintragen. Offene Punkte stehen in docs/release-checklist.md.",
-  "legalName": "HSM Tec GmbH",
-  "shortName": "HSM Tec",
-  "domain": "hsm-tec.de",
-  "address": {
-    "street": "Kreuzauer Straße 70",
-    "postalCode": "52355",
-    "city": "Düren",
-    "country": "Deutschland",
-    "confirmed": false,
-    "confirmationNote": "Vor Go-live anhand aktueller Unterlagen bestätigen."
-  },
-  "phoneDisplay": "02421 8899975",
-  "phoneE164": "+4924218899975",
-  "email": "info@hsm-tec.de",
-  "management": [
-    {
-      "name": "Guido Bauer",
-      "role": "Meister und Geschäftsführer",
-      "area": "Technische Geschäftsführung",
-      "description": "Verantwortet Technik, Ausführung und die fachliche Abstimmung der Projekte.",
-      "note": "Genaue Meisterberufsbezeichnung vor Veröffentlichung bestätigen."
+    "_comment": "Führende Faktenbasis für sichtbare Texte, Footer, Impressum, JSON-LD und KI-Seiten. Nur bestätigte Angaben eintragen. Offene Punkte stehen in docs/release-checklist.md.",
+    "legalName": "HSM Tec GmbH",
+    "shortName": "HSM Tec",
+    "domain": "hsm-tec.de",
+    "address": {
+        "street": "Kreuzauer Straße 70",
+        "postalCode": "52355",
+        "city": "Düren",
+        "country": "Deutschland",
+        "confirmed": false,
+        "confirmationNote": "Stimmt mit dem Impressum der Bestandswebsite (abgerufen 18.09.2026) überein. Vor Go-live anhand aktueller Unterlagen bestätigen."
     },
-    {
-      "name": "David Enns",
-      "role": "Kaufmännischer Geschäftsführer",
-      "area": "Kaufmännische Geschäftsführung",
-      "description": "Verantwortet Angebot, Abrechnung, Organisation und die Zusammenarbeit mit Hausverwaltungen und Gewerbekunden."
+    "phoneDisplay": "02421 8899975",
+    "phoneE164": "+4924218899975",
+    "email": "info@hsm-tec.de",
+    "management": [
+        {
+            "name": "Guido Bauer",
+            "role": "Meister und Geschäftsführer",
+            "area": "Technische Geschäftsführung",
+            "description": "Verantwortet Technik, Ausführung und die fachliche Abstimmung der Projekte.",
+            "note": "Bestandsimpressum (Stand 18.09.2026) nennt „Heizung und Sanitärmeister“. Genaue Meisterberufsbezeichnung vor Veröffentlichung bestätigen."
+        },
+        {
+            "name": "David Enns",
+            "role": "Kaufmännischer Geschäftsführer",
+            "area": "Kaufmännische Geschäftsführung",
+            "description": "Verantwortet Angebot, Abrechnung, Organisation und die Zusammenarbeit mit Hausverwaltungen und Gewerbekunden."
+        }
+    ],
+    "holdings": [
+        {
+            "name": "Enns Holding GmbH",
+            "url": "https://ennsholding.de/",
+            "since": "2024"
+        },
+        {
+            "name": "Müller Holding AG",
+            "url": "https://mueller-holding.ag/",
+            "since": "2026"
+        }
+    ],
+    "areaServedLabel": "Düren und Umgebung",
+    "areaServedNote": "Tatsächliche Einsatzregion vor Veröffentlichung weiterer Orte bestätigen.",
+    "logoPath": "/assets/brand/hsm-tec-logo.png",
+    "logoNote": "Originallogo der Bestandswebsite (wp-content/uploads/2023/07/logo.png, 1360x455 PNG, gesichert 18.09.2026). Zuordnung zur HSM Tec GmbH Düren über Impressum und JSON-LD der Bestandsseite geprüft. Favicon = Streifensymbol der Bestandsseite (uploads/2023/06/favicon.png).",
+    "factsUpdated": "17.09.2026",
+    "legal": {
+        "registerCourt": "",
+        "registerNumber": "",
+        "vatId": "",
+        "chamber": "",
+        "supervisoryAuthority": "",
+        "responsibleForContent": "",
+        "openingHours": "",
+        "note": "Registerangaben, USt-IdNr., Kammer und Geschäftszeiten sind intern freizugeben. Bis dahin bleibt das Impressum unvollständig und ein Go-live-Hindernis."
     }
-  ],
-  "holdings": [
-    { "name": "Enns Holding GmbH", "url": "https://ennsholding.de/", "since": "2024" },
-    { "name": "Müller Holding AG", "url": "https://mueller-holding.ag/", "since": "2026" }
-  ],
-  "areaServedLabel": "Düren und Umgebung",
-  "areaServedNote": "Tatsächliche Einsatzregion vor Veröffentlichung weiterer Orte bestätigen.",
-  "logoPath": "",
-  "logoNote": "Originallogo liegt nicht als geprüfte Datei vor. Bis zur Freigabe wird der ausgeschriebene Firmenname gezeigt.",
-  "factsUpdated": "17.09.2026",
-  "legal": {
-    "registerCourt": "",
-    "registerNumber": "",
-    "vatId": "",
-    "chamber": "",
-    "supervisoryAuthority": "",
-    "responsibleForContent": "",
-    "openingHours": "",
-    "note": "Registerangaben, USt-IdNr., Kammer und Geschäftszeiten sind intern freizugeben. Bis dahin bleibt das Impressum unvollständig und ein Go-live-Hindernis."
-  }
 }

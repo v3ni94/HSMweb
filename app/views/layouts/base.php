@@ -25,7 +25,8 @@ $isActive = fn(string $p): bool => $p === '/' ? $page['path'] === '/' : str_star
 <?php endif; ?>
 <meta name="theme-color" content="#17232D">
 <link rel="icon" href="/favicon.ico" sizes="any">
-<link rel="icon" href="<?= asset('brand/favicon.svg') ?>" type="image/svg+xml">
+<link rel="icon" href="<?= asset('brand/hsm-tec-symbol.png') ?>" type="image/png" sizes="500x500">
+<link rel="apple-touch-icon" href="<?= asset('brand/apple-touch-icon.png') ?>">
 <link rel="stylesheet" href="<?= asset('css/site.css') ?>">
 <?php foreach ($jsonLd as $ld): ?>
 <script type="application/ld+json"><?= json_encode($ld, JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES | JSON_HEX_TAG | JSON_HEX_AMP) ?></script>
@@ -37,7 +38,7 @@ $isActive = fn(string $p): bool => $p === '/' ? $page['path'] === '/' : str_star
   <div class="wrap header-inner">
     <a class="brand" href="/" aria-label="HSM Tec GmbH, zur Startseite">
       <?php if (!empty($company['logoPath'])): ?>
-        <img src="<?= e($company['logoPath']) ?>" alt="HSM Tec GmbH" width="160" height="48">
+        <img src="<?= e($company['logoPath']) ?>?v=<?= rawurlencode($site['assetVersion']) ?>" alt="HSM Tec GmbH" width="1360" height="455" fetchpriority="high">
       <?php else: ?>
         <span class="brand-text"><span class="brand-name">HSM Tec</span><span class="brand-suffix">GmbH</span></span>
       <?php endif; ?>

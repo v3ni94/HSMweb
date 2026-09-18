@@ -1,20 +1,31 @@
-# Brand Guide (Arbeitsstand)
+# Brand Guide
 
-## Ausgangslage, ehrlich
+## Herkunft
 
-Das Originallogo der HSM Tec GmbH und die exakten Bestandsfarbcodes lagen bei der Umsetzung nicht als verifizierte Assets vor. Die Bestandswebsite `https://hsm-tec.de/` war aus der Entwicklungsumgebung nicht erreichbar (Egress-Proxy, HTTP 403 auf alle Pfade am 17.09.2026). Deshalb:
+Grundlage ist das Originallogo der Bestandswebsite (`hsm-tec-logo.png`, gesichert 18.09.2026, siehe `asset-register.md`). Eine schriftliche Markenrichtlinie liegt nicht vor; dieses Dokument leitet die Werte aus der Logodatei ab und schlägt neutrale Ergänzungen vor.
 
-- Die Website zeigt bis zur Freigabe den ausgeschriebenen Firmennamen als Text im Header. Das ist kein neues Logo.
-- Das Favicon (`public/assets/brand/favicon.svg`) ist ein neutraler Platzhalter (Anthrazit-Quadrat mit „HSM“), kein Ersatzlogo, und ist vor Go-live durch eine freigegebene Variante zu ersetzen oder zu entfernen.
-- Die Markenfarben `--brand` und `--accent` in `public/assets/css/site.css` sind vorläufige Arbeitswerte. Sie sind aus dem echten Logo abzuleiten und zu ersetzen. Es wird keine vorhandene Markenrichtlinie behauptet.
+## Logo
 
-## Logo-Regeln nach Freigabe
+- Wortmarke „HSM“ in Schwarz mit vertikalem „Tec“, darunter drei versetzte Streifen in Rot, Cyan, Gelb und „GmbH“. Format 1360×455, Seitenverhältnis rund 3:1.
+- Darstellung nur auf weißem oder sehr hellem Grund; auf dunklen Flächen (Footer) wird es nicht eingesetzt, dort steht der Firmenname als Text. Eine autorisierte Negativversion existiert nicht und wird nicht künstlich erzeugt.
+- Keine Umfärbung, keine Verzerrung, Mindesthöhe 40 px im Header (44 px mobil, 52 px Desktop umgesetzt).
+- Symbolvariante (Streifen ohne Schriftzug) nur als Favicon und Touch-Icon, wie auf der Bestandsseite bereits praktiziert.
+- Ein SVG liegt nicht vor. Bei der Agentur oder dem Betreiber anfragen; bis dahin PNG mit `width`/`height` zur Vermeidung von Layoutsprüngen.
 
-- Originaldatei (bevorzugt SVG, sonst PNG/WebP in ausreichender Auflösung) unter `public/assets/brand/` ablegen und in `content/company.json` als `logoPath` eintragen. Damit erscheint es in Header und JSON-LD.
-- Proportionen, Schriftzug und Farben unverändert. Keine Umfärbung, keine künstliche Negativversion. Auf dunklen Flächen erhält das Logo eine helle Fläche.
-- Vor Verwendung prüfen, dass das Logo zur HSM Tec GmbH in Düren gehört und nicht zu einem ähnlich benannten Unternehmen. Herkunft in `asset-register.md` dokumentieren.
+## Farben aus dem Logo (gemessen)
 
-## Neutrale Ergänzungsfarben (Vorschlag, keine Bestands-CI)
+| Token | Wert | Herkunft | Verwendung |
+|---|---|---|---|
+| `--logo-black` | `#000000` | Wortmarke | Reserve; Fließtext nutzt Anthrazit |
+| `--brand` | `#9C1325` | linker Streifen (Rot) | Primärbuttons, Links, aktive Zustände |
+| `--brand-dark` | `#7E0F1E` | abgeleitet (dunkler) | Hover |
+| `--brand-tint` | `#F6E9EB` | abgeleitet (aufgehellt) | aktive Navigation, Flächen |
+| `--logo-cyan` | `#00FFFF` | mittlerer Streifen | nur dekorativ (Streifenlinie unter dem Header) |
+| `--logo-yellow` | `#FFFF00` | rechter Streifen | nur dekorativ |
+
+Cyan und Gelb erreichen auf Weiß keinen ausreichenden Kontrast und werden deshalb nie für Text, Buttons oder Fokusringe verwendet.
+
+## Neutrale Ergänzungen (Vorschlag, keine Bestands-CI)
 
 | Token | Wert | Verwendung |
 |---|---|---|
@@ -22,21 +33,24 @@ Das Originallogo der HSM Tec GmbH und die exakten Bestandsfarbcodes lagen bei de
 | `--surface` | `#F5F7F8` | Flächen, Formulare, Callouts |
 | `--ink` | `#17232D` | Fließtext, Footer |
 | `--ink-soft` | `#3E4C57` | Sekundärtext |
-| `--line` | `#E0E6EA` | Trennlinien, Rahmen |
-| `--brand` (vorläufig) | `#0B5A8A` | Primärbuttons, Links, Akzente |
-| `--brand-dark` (vorläufig) | `#08466B` | Hover |
-| `--accent` (vorläufig) | `#C8571A` | Fokusring |
+| `--line` | `#E0E6EA` | Trennlinien |
+| `--accent` | `#17232D` | Fokusring |
 
-Kontraste (rechnerisch): Ink auf Weiß 14,6:1; Weiß auf Brand 7,4:1; Brand auf Weiß 7,4:1; Ink-Soft auf Surface 8,6:1. Nach Austausch der Markenfarbe alle Kombinationen erneut prüfen (Ziel WCAG 2.2 AA: 4,5:1 Text, 3:1 große Schrift und UI-Komponenten).
+## Kontraste (rechnerisch, WCAG 2.2 AA Ziel 4,5:1 Text, 3:1 UI)
+
+| Kombination | Verhältnis |
+|---|---|
+| Ink `#17232D` auf Weiß | 14,6:1 |
+| Weiß auf Brand `#9C1325` | 8,3:1 |
+| Brand auf Weiß (Links) | 8,3:1 |
+| Brand-dark auf Brand-tint | 9,4:1 |
+| Ink-soft auf Surface | 8,6:1 |
+| Fokusring `#17232D` auf Weiß | 14,6:1 |
 
 ## Typografie und Raster
 
-- Systemschrift (`system-ui`-Stack), keine externen Schriftaufrufe. Eine lizenzierte Schrift kann lokal eingebunden werden.
-- Fließtext 17 bis 18 px (`clamp`), Überschriften fließend skalierend. Höchstens zwei bis drei Schnitte.
-- Abstandsraster 4/8 px (`--space-1` bis `--space-8`), Inhaltsbreite 1.240 px, Textspalten bis 70 Zeichen.
-- Radien 8/14 px, dezenter Schatten, Bedienelemente mindestens 44 px hoch, Fokus 3 px sichtbar.
-- Bewegung minimal; `prefers-reduced-motion` deaktiviert Übergänge.
+Systemschrift ohne externe Aufrufe, Fließtext 17 bis 18 px, fließende Überschriften, 4/8-px-Raster, Inhaltsbreite 1.240 px, Textspalten bis 70 Zeichen, Radien 8/14 px, Bedienelemente mindestens 44 px, `prefers-reduced-motion` respektiert.
 
 ## Bilder
 
-Nur echte, freigegebene Projekt- und Teamfotos. Ohne Porträts textbasierte Personenprofile (umgesetzt). Keine Stockbilder als eigene Projekte, keine Vorher-nachher-Montagen aus fremdem Material.
+Nur echte, freigegebene Projekt- und Teamfotos. Keine Stockbilder als eigene Projekte, keine Herstellerlogos ohne belegte Partnerschaft.

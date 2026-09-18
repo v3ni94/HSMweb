@@ -35,4 +35,4 @@ Testumgebung: PHP 8.4.19 Entwicklungsserver (`php -S`), Chromium (Playwright 1.5
 - Realer SMTP-Versand, Reply-To, SPF/DKIM/DMARC (kein Zugang).
 - Apache-`.htaccess` in echter Hosting-Umgebung (lokal nur PHP-Router). Insbesondere HTTPS-/Host-Redirect und Sperre von `.json`/`.md` außerhalb `assets/data`.
 - Core Web Vitals mit realen Nutzern; lokal keine belastbaren Felddaten. Seitengewicht ohne Bilder: HTML ca. 20 bis 40 KB, CSS ca. 14 KB, JS ca. 6 + 9 + 8 KB unkomprimiert.
-- Migration der echten alten URLs (Bestandswebsite nicht erreichbar, siehe `inventory.md`).
+- Redirects der realen Alt-URLs lokal geprüft: `/ueber-uns/` 301, `/feed/` 301, `/wp-json/` und `/sitemap_index.xml` 410 (Nachtrag 18.09.2026). Logo-Einbindung in 390 px und 1.280 px per Screenshot geprüft.
