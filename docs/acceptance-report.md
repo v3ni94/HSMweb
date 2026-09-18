@@ -27,6 +27,10 @@ Testumgebung: PHP 8.4.19 Entwicklungsserver (`php -S`), Chromium (Playwright 1.5
 - Browser-Ende-zu-Ende (390 px und 1.280 px): 28.000 EUR, Selbstnutzer, Einkommen bis 30.000 EUR ergibt 22.400,00 EUR.
 - Einkommens- und Pflegeangaben verlassen den Browser nicht (kein Request, keine URL-Parameter, keine Speicherung). Übernahme ins Formular nur nach Klick und nur nicht sensibler Daten.
 
+## Design v2 (18.09.2026)
+
+Neu geprüft in 1.280, 1.100, 1.024 und 390 px: Header einzeilig ab 960 px (Anrufen-Button ab 1.200 px), Hero-Motiv überlappt keinen Text, kein horizontaler Überlauf, keine Konsolenfehler, keine CSP-Verstöße (Inline-Styles entfernt). Ohne JavaScript bleibt aller Inhalt sichtbar (Opacity 1 gemessen). Elemente über der Falz sind beim ersten Paint sichtbar, FAQ-Akkordeon öffnet per Klick, Fördercheck-Ergebnis mit KPI-Kacheln und Anteilsbalken.
+
 ## Barrierearme Bedienung und Layout
 
 - Kein horizontaler Überlauf in 390 px auf 7 geprüften Seiten; genau eine H1 je Seite; keine JavaScript-Fehler in der Konsole.

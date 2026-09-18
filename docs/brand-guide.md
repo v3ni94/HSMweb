@@ -47,6 +47,14 @@ Cyan und Gelb erreichen auf Weiß keinen ausreichenden Kontrast und werden desha
 | Ink-soft auf Surface | 8,6:1 |
 | Fokusring `#17232D` auf Weiß | 14,6:1 |
 
+## Gestaltungsprinzipien (Design v2, 18.09.2026)
+
+- Dunkle Anthrazit-Flächen (`--ink`, `--ink-2`) für Hero, Projektfinder, Fördercheck-Ergebnis und Footer; dazwischen weiße und hellgraue Abschnitte. Das Streifenmotiv des Logos erscheint als 3-px-Linie unter dem Header, als Eyebrow-Marker, als Trennlinie über dem Footer und als großes SVG-Motiv im Hero (ab 1.100 px Breite).
+- Rot ausschließlich für Primäraktionen, Links, aktive Zustände und Icon-Flächen. Cyan und Gelb nur dekorativ.
+- Karten mit Linien-Icons (`app/views/components/icon.php`), sanftem Anheben beim Hover und Pfeil-Links. Ablauf als nummerierte Timeline, mobil vertikal, ab 900 px horizontal.
+- Interaktion: Projektfinder als Tabs, animierte FAQ-Akkordeons, Header-Schatten beim Scrollen, sanftes Einblenden beim Scrollen. Alle Animationen entfallen bei `prefers-reduced-motion`; ohne JavaScript ist der gesamte Inhalt sofort sichtbar (Klasse `js` steuert das Einblenden).
+- Keine Inline-Styles und keine Inline-Skripte (Content-Security-Policy `style-src 'self'; script-src 'self'`).
+
 ## Typografie und Raster
 
 Systemschrift ohne externe Aufrufe, Fließtext 17 bis 18 px, fließende Überschriften, 4/8-px-Raster, Inhaltsbreite 1.240 px, Textspalten bis 70 Zeichen, Radien 8/14 px, Bedienelemente mindestens 44 px, `prefers-reduced-motion` respektiert.

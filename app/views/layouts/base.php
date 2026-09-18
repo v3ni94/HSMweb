@@ -34,7 +34,7 @@ $isActive = fn(string $p): bool => $p === '/' ? $page['path'] === '/' : str_star
 </head>
 <body class="tpl-<?= e($page['template']) ?>">
 <a class="skip-link" href="#inhalt">Zum Inhalt springen</a>
-<header class="site-header">
+<header class="site-header" data-header>
   <div class="wrap header-inner">
     <a class="brand" href="/" aria-label="HSM Tec GmbH, zur Startseite">
       <?php if (!empty($company['logoPath'])): ?>
@@ -54,7 +54,7 @@ $isActive = fn(string $p): bool => $p === '/' ? $page['path'] === '/' : str_star
       </ul>
       <div class="nav-actions">
         <a class="btn btn-ghost" href="tel:<?= e($company['phoneE164']) ?>">Anrufen</a>
-        <a class="btn btn-primary" href="/kontakt/#anfrage">Projekt anfragen</a>
+        <a class="btn btn-primary" href="/kontakt/#anfrage">Projekt anfragen <?= \App\Services\View::component('icon', ['name' => 'arrow']) ?></a>
       </div>
     </nav>
   </div>
@@ -75,6 +75,7 @@ $isActive = fn(string $p): bool => $p === '/' ? $page['path'] === '/' : str_star
   <div class="wrap footer-grid">
     <div>
       <p class="footer-brand">HSM Tec GmbH</p>
+      <p>Heizung. Bad und Sanitär. Wasserschaden. Sanierung. Ein Ansprechpartner, der die Gewerke koordiniert.</p>
       <address>
         <?= e($company['address']['street']) ?><br>
         <?= e($company['address']['postalCode']) ?> <?= e($company['address']['city']) ?><br>

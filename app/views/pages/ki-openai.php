@@ -1,7 +1,7 @@
 <?php use App\Services\Container; $f = Container::funding(); ?>
 <div class="wrap">
 <article>
-<header class="page-head"><h1><?= e($page['h1']) ?></h1><p class="lead"><?= e($page['lead']) ?></p><p class="meta">Stand der Fakten: <?= e($company['factsUpdated']) ?>. Vertiefung: <a href="/ki/anthropic/">Leistungen, Abläufe und Quellen</a>.</p></header>
+<header class="page-head"><div><p class="eyebrow">Unternehmensfakten</p><h1><?= e($page['h1']) ?></h1><p class="lead"><?= e($page['lead']) ?></p><p class="meta">Stand der Fakten: <?= e($company['factsUpdated']) ?>. Vertiefung: <a href="/ki/anthropic/">Leistungen, Abläufe und Quellen</a>.</p></div></header>
 <section class="section"><h2>Unternehmen</h2>
 <dl class="facts">
   <dt>Firma</dt><dd><?= e($company['legalName']) ?></dd>

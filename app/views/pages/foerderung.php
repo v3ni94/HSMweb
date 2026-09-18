@@ -16,11 +16,11 @@ if ($filter) {
 $statusClass = fn(string $s) => 'status-' . preg_replace('/[^a-z]/', '', strtolower(str_replace(['ü', 'ä'], ['ue', 'ae'], $s)));
 ?>
 <div class="wrap">
-<header class="page-head">
+<header class="page-head"><div><p class="eyebrow">Förderung</p>
   <h1><?= e($page['h1']) ?></h1>
   <p class="lead"><?= e($page['lead']) ?></p>
   <p class="btn-row"><a class="btn btn-primary" href="/foerderrechner/">Förderung prüfen</a> <a class="btn btn-ghost" href="#anfrage">Vorhaben besprechen</a></p>
-</header>
+</div></header>
 <?php if (!empty($page['hubChildren'])): ?>
 <section class="section">
   <ul class="card-grid">

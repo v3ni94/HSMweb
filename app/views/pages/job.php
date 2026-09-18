@@ -1,7 +1,7 @@
 <?php use App\Services\View; $init = $job['type'] === 'initiative'; ?>
 <div class="wrap">
 <article>
-<header class="page-head">
+<header class="page-head"><div><p class="eyebrow">Karriere</p>
   <h1><?= e($job['title']) ?><?= $init ? '' : ' (m/w/d)' ?></h1>
   <?php if (!$open): ?><p class="notice">Diese Stelle ist derzeit nicht ausgeschrieben. Sie können sich gerne <a href="/karriere/initiativbewerbung/">initiativ bewerben</a>.</p><?php endif; ?>
   <p class="lead"><?= e($job['summary']) ?></p>
@@ -11,7 +11,7 @@
     <dt>Veröffentlicht</dt><dd><?= e(fmt_date($job['datePosted'])) ?></dd>
     <?php if (!empty($job['aliasTitles'])): ?><dt>Auch bekannt als</dt><dd><?= e(implode(', ', $job['aliasTitles'])) ?></dd><?php endif; ?>
   </dl>
-</header>
+</div></header>
 <?php if (!empty($job['tasks'])): ?><section class="section"><h2>Aufgaben</h2><ul class="checklist"><?php foreach ($job['tasks'] as $t): ?><li><?= e($t) ?></li><?php endforeach; ?></ul></section><?php endif; ?>
 <?php if (!empty($job['required'])): ?><section class="section"><h2>Das bringen Sie mit</h2><ul class="checklist"><?php foreach ($job['required'] as $t): ?><li><?= e($t) ?></li><?php endforeach; ?></ul></section><?php endif; ?>
 <?php if (!empty($job['desired'])): ?><section class="section"><h2>Wünschenswert</h2><ul class="checklist"><?php foreach ($job['desired'] as $t): ?><li><?= e($t) ?></li><?php endforeach; ?></ul></section><?php endif; ?>

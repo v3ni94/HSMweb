@@ -1,6 +1,6 @@
 <?php use App\Services\View; $jobs = $content->jobs(true); $groups = ['Handwerk und Technik' => ['anlagenmechaniker-shk', 'kundendienstmonteur', 'shk-meister'], 'Wasserschaden' => ['leckorter', 'trocknungstechniker'], 'Büro und Projektleitung' => ['buero-organisation', 'projektleitung-sanierung']]; ?>
 <div class="wrap">
-<header class="page-head"><h1><?= e($page['h1']) ?></h1><p class="lead"><?= e($page['lead']) ?></p></header>
+<header class="page-head"><div><p class="eyebrow">Karriere</p><h1><?= e($page['h1']) ?></h1><p class="lead"><?= e($page['lead']) ?></p></div></header>
 <section class="section" aria-labelledby="jobs-h" data-jobfilter>
   <h2 id="jobs-h">Offene Stellen</h2>
   <div class="finder-options" role="group" aria-label="Stellen filtern">

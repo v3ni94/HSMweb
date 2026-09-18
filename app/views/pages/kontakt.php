@@ -1,6 +1,6 @@
 <?php use App\Services\View; $topic = isset($_GET['thema']) && is_string($_GET['thema']) ? mb_substr($_GET['thema'], 0, 60) : $page['formTopic']; ?>
 <div class="wrap">
-<header class="page-head"><h1><?= e($page['h1']) ?></h1><p class="lead"><?= e($page['lead']) ?></p></header>
+<header class="page-head"><div><p class="eyebrow">Kontakt</p><h1><?= e($page['h1']) ?></h1><p class="lead"><?= e($page['lead']) ?></p></div></header>
 <section class="section contact-grid">
   <div>
     <h2>HSM Tec GmbH</h2>

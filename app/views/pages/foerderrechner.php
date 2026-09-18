@@ -1,9 +1,9 @@
 <?php use App\Services\Container; use App\Services\View; $f = Container::funding(); ?>
 <div class="wrap">
-<header class="page-head">
+<header class="page-head"><div><p class="eyebrow">Förderung</p>
   <h1><?= e($page['h1']) ?></h1>
   <p class="lead"><?= e($page['lead']) ?></p>
-</header>
+</div></header>
 <noscript>
   <section class="section notice">
     <h2>Fördercheck ohne JavaScript</h2>
@@ -11,6 +11,7 @@
   </section>
 </noscript>
 <section class="section calc" data-funding-calc data-rules-url="<?= asset('data/funding-rules.json') ?>" hidden>
+  <ol class="calc-progress" data-calc-progress aria-hidden="true"><li></li><li></li><li></li><li></li><li></li></ol>
   <form class="form calc-form" data-calc-form novalidate>
     <fieldset class="calc-step" data-step="1">
       <legend>1. Vorhaben und Ort</legend>
@@ -75,7 +76,7 @@
     <p class="btn-row"><button type="submit" class="btn btn-primary">Ergebnis anzeigen</button> <button type="reset" class="btn btn-ghost">Zurücksetzen</button></p>
   </form>
   <section class="calc-result" data-calc-result aria-live="polite" hidden>
-    <h2>Ihr Ergebnis</h2>
+    <p class="eyebrow">Ergebnis</p><h2>Ihre Einschätzung</h2>
     <div data-result-body></div>
     <p class="hint">Regelstand: <span data-rule-version></span>. Das Ergebnis ist eine Einschätzung auf Basis des hinterlegten Regelwerks, weder Angebot noch Förderzusage. Einkommens- und Pflegeangaben verlassen Ihren Browser nicht.</p>
     <p class="btn-row"><button type="button" class="btn btn-ghost" data-print>Druckansicht</button> <button type="button" class="btn btn-secondary" data-transfer>Vorhaben mit HSM Tec besprechen</button></p>

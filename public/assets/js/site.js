@@ -30,6 +30,55 @@
     });
   }
 
+  var reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  // Header: Schatten nach Scroll
+  var header = document.querySelector('[data-header]');
+  if (header) {
+    var onScroll = function () { header.classList.toggle('is-scrolled', window.scrollY > 8); };
+    onScroll(); window.addEventListener('scroll', onScroll, { passive: true });
+  }
+
+  // Sanftes Einblenden beim Scrollen (ohne IntersectionObserver oder bei reduzierter Bewegung sofort sichtbar)
+  var reveals = document.querySelectorAll('[data-reveal]');
+  if (reveals.length) {
+    if (!('IntersectionObserver' in window) || reduceMotion) {
+      reveals.forEach(function (el) { el.classList.add('is-visible'); });
+    } else {
+      // Elemente im sichtbaren Bereich sofort markieren, dann erst die js-Klasse setzen: kein Flackern über der Falz
+      var vh = window.innerHeight || document.documentElement.clientHeight;
+      reveals.forEach(function (el) { var r = el.getBoundingClientRect(); if (r.top < vh && r.bottom > 0) el.classList.add('is-visible'); });
+      document.documentElement.classList.add('js');
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (en) { if (en.isIntersecting) { en.target.classList.add('is-visible'); io.unobserve(en.target); } });
+      }, { rootMargin: '0px 0px -8% 0px', threshold: 0.05 });
+      reveals.forEach(function (el) { io.observe(el); });
+      // Sicherheitsnetz: nach 2 s alles sichtbar
+      setTimeout(function () { reveals.forEach(function (el) { el.classList.add('is-visible'); }); }, 2000);
+    }
+  }
+
+  // Akkordeon: animiertes Öffnen/Schließen
+  document.querySelectorAll('[data-accordion] details').forEach(function (d) {
+    var summary = d.querySelector('summary'); var panel = d.querySelector('.accordion-panel');
+    if (!summary || !panel || reduceMotion || !panel.animate) return;
+    summary.addEventListener('click', function (e) {
+      e.preventDefault();
+      if (d.classList.contains('is-animating')) return;
+      d.classList.add('is-animating');
+      if (d.open) {
+        var h = panel.offsetHeight;
+        var a = panel.animate([{ height: h + 'px', opacity: 1 }, { height: '0px', opacity: 0 }], { duration: 220, easing: 'ease-out' });
+        a.onfinish = function () { d.open = false; d.classList.remove('is-animating'); panel.style.height = ''; };
+      } else {
+        d.open = true;
+        var h2 = panel.offsetHeight;
+        var a2 = panel.animate([{ height: '0px', opacity: 0 }, { height: h2 + 'px', opacity: 1 }], { duration: 260, easing: 'ease-out' });
+        a2.onfinish = function () { d.classList.remove('is-animating'); };
+      }
+    });
+  });
+
   // Projektfinder
   var finder = document.querySelector('[data-projectfinder]');
   if (finder) {
@@ -39,9 +88,11 @@
       chip.addEventListener('click', function () {
         var key = chip.getAttribute('data-finder');
         chips.forEach(function (c) { c.setAttribute('aria-pressed', c === chip ? 'true' : 'false'); });
+        chips.forEach(function (c) { c.setAttribute('aria-selected', c === chip ? 'true' : 'false'); });
         panels.forEach(function (p) { p.hidden = p.getAttribute('data-finder-panel') !== key; });
+        var ph = finder.querySelector('[data-finder-placeholder]'); if (ph) ph.hidden = true;
         var active = finder.querySelector('[data-finder-panel="' + key + '"]');
-        if (active) { active.setAttribute('tabindex', '-1'); active.focus({ preventScroll: false }); }
+        if (active) { active.setAttribute('tabindex', '-1'); active.focus({ preventScroll: true }); }
       });
     });
   }

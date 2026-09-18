@@ -15,7 +15,7 @@
     .then(function (r) { if (!r.ok) throw new Error('rules'); return r.json(); })
     .then(function (json) {
       if (!json || !Array.isArray(json.programs)) throw new Error('rules');
-      rules = json; root.hidden = false; updateVisibility();
+      rules = json; root.hidden = false; updateVisibility(); updateProgress();
     })
     .catch(function () {
       root.hidden = false;
@@ -34,7 +34,21 @@
       fs.disabled = !show;
     });
   }
+  // Fortschrittsanzeige: ausgefüllte Schritte
+  var progress = root.querySelector('[data-calc-progress]');
+  function updateProgress() {
+    if (!progress) return;
+    var steps = Array.prototype.slice.call(root.querySelectorAll('.calc-step')).filter(function (fs) { return !fs.hidden; });
+    var items = progress.querySelectorAll('li');
+    items.forEach(function (li, i) {
+      var fs = steps[i]; var done = false;
+      if (fs) { var req = fs.querySelectorAll('select, input[type=text], input[type=number], input[type=date]'); done = Array.prototype.every.call(req, function (el) { return el.value !== ''; }) && req.length > 0; }
+      li.classList.toggle('is-done', done); li.hidden = !fs;
+    });
+  }
   form.addEventListener('change', updateVisibility);
+  form.addEventListener('input', updateProgress);
+  form.addEventListener('change', updateProgress);
   form.addEventListener('reset', function () { setTimeout(function () { updateVisibility(); resultBox.hidden = true; body.innerHTML = ''; }, 0); });
 
   form.addEventListener('submit', function (e) {
@@ -63,6 +77,13 @@
     if (r.manualCheck.length) {
       h += '<div class="notice"><p><strong>Manuelle Prüfung empfohlen:</strong></p><ul>' + r.manualCheck.map(function (m) { return '<li>' + esc(m) + '</li>'; }).join('') + '</ul></div>';
     }
+    var share = r.projectCostsCents > 0 ? Math.min(100, Math.round(r.totalGrantCents * 100 / r.projectCostsCents)) : 0;
+    h += '<div class="result-kpis">'
+      + '<div class="kpi"><div class="kpi-label">Projektkosten</div><div class="kpi-value">' + eur(r.projectCostsCents) + '</div></div>'
+      + '<div class="kpi is-brand"><div class="kpi-label">Mögliche Zuschüsse</div><div class="kpi-value">' + eur(r.totalGrantCents) + '</div></div>'
+      + '<div class="kpi"><div class="kpi-label">Verbleibende Investition</div><div class="kpi-value">' + eur(r.remainingCents) + '</div></div>'
+      + '</div>'
+      + '<div class="result-bar" role="img" aria-label="Zuschussanteil ' + share + ' Prozent der Projektkosten"><span data-share="' + share + '"></span></div>';
     h += '<table class="result-table"><tbody>';
     h += '<tr><th scope="row">Projektkosten (Ihre Angabe)</th><td>' + eur(r.projectCostsCents) + '</td></tr>';
     r.grants.forEach(function (g) {
@@ -83,6 +104,7 @@
     if (r.loans.length) { h += '<h3>Kredite und Darlehen (keine Zuschüsse)</h3>'; r.loans.forEach(function (p) { h += card(p, capText(p)); }); }
     if (r.tax.length) { h += '<h3>Steuerliche Alternativen (nicht mit Zuschuss für dieselbe Maßnahme kombinierbar)</h3>'; r.tax.forEach(function (p) { h += card(p, p.status !== 'aktiv' ? 'Regelstand nicht verifiziert.' : 'Individuelle Wirkung mit Steuerberatung klären.'); }); }
     body.innerHTML = h;
+    var bar = body.querySelector('[data-share]'); if (bar) { bar.style.width = '0%'; requestAnimationFrame(function () { bar.style.width = bar.getAttribute('data-share') + '%'; }); }
     resultBox.hidden = false;
     resultBox.setAttribute('tabindex', '-1'); resultBox.focus();
     root.querySelector('[data-transfer]').onclick = function () { transfer(input); };

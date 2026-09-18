@@ -1,4 +1,5 @@
 <?php /** @var array $related @var \App\Services\Content $content */
+use App\Services\View;
 $items = [];
 foreach ($related ?? [] as $path) {
     if ($p = $content->page($path)) { $items[] = ['path' => $path, 'title' => $p['title'], 'text' => $p['metaDescription'] ?? '']; continue; }
@@ -6,10 +7,10 @@ foreach ($related ?? [] as $path) {
 }
 if (!$items) { return; } ?>
 <section class="section" aria-labelledby="related-heading">
-  <h2 id="related-heading"><?= e($heading ?? 'Passende Themen') ?></h2>
-  <ul class="card-grid">
+  <div class="section-head" data-reveal><p class="eyebrow">Weiterlesen</p><h2 id="related-heading"><?= e($heading ?? 'Passende Themen') ?></h2></div>
+  <ul class="card-grid" data-reveal>
     <?php foreach ($items as $it): ?>
-      <li class="card"><a href="<?= e($it['path']) ?>"><h3><?= e($it['title']) ?></h3><p><?= e(mb_strimwidth($it['text'], 0, 140, '…')) ?></p></a></li>
+      <li class="card"><a href="<?= e($it['path']) ?>"><h3><?= e($it['title']) ?></h3><p><?= e(mb_strimwidth($it['text'], 0, 140, '…')) ?></p><span class="card-arrow">Zur Seite <?= View::component('icon', ['name' => 'arrow']) ?></span></a></li>
     <?php endforeach; ?>
   </ul>
 </section>

@@ -1,11 +1,11 @@
 <?php use App\Services\View; ?>
 <div class="wrap">
-<header class="page-head"><h1><?= e($page['h1']) ?></h1><p class="lead"><?= e($page['lead']) ?></p></header>
+<header class="page-head"><div><p class="eyebrow">Unternehmen</p><h1><?= e($page['h1']) ?></h1><p class="lead"><?= e($page['lead']) ?></p></div></header>
 <section class="section" aria-labelledby="gf-h">
   <h2 id="gf-h">Geschäftsführung</h2>
   <ul class="people">
     <?php foreach ($company['management'] as $m): ?>
-      <li class="person"><h3><?= e($m['name']) ?></h3><p class="role"><?= e($m['role']) ?></p><p><?= e($m['area']) ?>. <?= e($m['description']) ?></p></li>
+      <li class="person"><span class="avatar" aria-hidden="true"><?= e(implode('', array_map(fn($w) => mb_substr($w, 0, 1), explode(' ', $m['name'])))) ?></span><div><h3><?= e($m['name']) ?></h3><p class="role"><?= e($m['role']) ?></p><p><?= e($m['area']) ?>. <?= e($m['description']) ?></p></div></li>
     <?php endforeach; ?>
   </ul>
   <p class="hint">Porträts werden nach Freigabe ergänzt. Bis dahin verwenden wir textbasierte Profile.</p>

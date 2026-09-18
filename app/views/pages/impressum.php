@@ -1,6 +1,6 @@
 <?php $l = $company['legal']; $missing = []; foreach (['registerCourt' => 'Registergericht', 'registerNumber' => 'Registernummer', 'vatId' => 'Umsatzsteuer-Identifikationsnummer', 'chamber' => 'Zuständige Kammer', 'supervisoryAuthority' => 'Aufsichtsbehörde'] as $k => $label) { if (empty($l[$k])) $missing[] = $label; } ?>
 <div class="wrap">
-<header class="page-head"><h1>Impressum</h1><p class="lead">Angaben gemäß § 5 DDG.</p></header>
+<header class="page-head"><div><p class="eyebrow">Rechtliches</p><h1>Impressum</h1><p class="lead">Angaben gemäß § 5 DDG.</p></div></header>
 <section class="section">
 <dl class="facts">
   <dt>Anbieter</dt><dd><?= e($company['legalName']) ?></dd>

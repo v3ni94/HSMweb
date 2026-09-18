@@ -1,7 +1,7 @@
 <?php use App\Services\Container; $f = Container::funding(); ?>
 <div class="wrap">
 <article>
-<header class="page-head"><h1><?= e($page['h1']) ?></h1><p class="lead"><?= e($page['lead']) ?></p><p class="meta">Stand: <?= e($company['factsUpdated']) ?>. Fakten: <a href="/ki/openai/">Unternehmensfakten und Antworten</a>.</p></header>
+<header class="page-head"><div><p class="eyebrow">Leistungen und Abläufe</p><h1><?= e($page['h1']) ?></h1><p class="lead"><?= e($page['lead']) ?></p><p class="meta">Stand: <?= e($company['factsUpdated']) ?>. Fakten: <a href="/ki/openai/">Unternehmensfakten und Antworten</a>.</p></div></header>
 <section class="section"><h2>Eigenleistung und Koordination</h2>
 <div class="table-wrap"><table class="programs">
 <thead><tr><th scope="col">Bereich</th><th scope="col">Eigene Ausführung durch HSM Tec</th><th scope="col">Koordination weiterer Gewerke</th></tr></thead>
