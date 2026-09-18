@@ -99,9 +99,30 @@ t('Kredit/Zuschuss getrennt: 358/359 in loans, nicht in grants', () => {
   assert.ok(r.loans.some(p => p.id === 'kfw-358-359')); assert.ok(!r.grants.some(g => g.id === 'kfw-358-359'));
   assert.ok(r.tax.some(p => p.id === 'steuer-35c')); assert.ok(r.warnings.some(w => /35c/.test(w)));
 });
-t('Heizungsoptimierung: BAFA nur Prüfung erforderlich', () => {
+t('Heizungsoptimierung BAFA: 2.000 EUR -> 300 EUR (15 %)', () => {
   const r = F.calculate(rules, { ...base, measure: 'heizung-optimierung', costs: 200000 });
-  assert.equal(r.totalGrantCents, 0); assert.ok(r.infos.some(p => p.id === 'bafa-heizungsoptimierung' && /nicht verifiziert/.test(p.reason)));
+  const g = grant(r, 'bafa-heizungsoptimierung'); assert.equal(g.grantCents, 30000); assert.equal(g.totalPoints, 15);
+  assert.ok(g.notes.some(n => /iSFP/.test(n)));
+});
+t('Heizungsoptimierung BAFA: Obergrenze 30.000 EUR bei 1 WE, 6 WE -> 105.000 EUR', () => {
+  assert.equal(grant(F.calculate(rules, { ...base, measure: 'heizung-optimierung', costs: 4000000 }), 'bafa-heizungsoptimierung').eligibleCostsCents, 3000000);
+  const r = F.calculate(rules, { ...base, measure: 'heizung-optimierung', building: 'mfh', units: 5, applicant: 'privat-vermieter', costs: 20000000 });
+  assert.equal(grant(r, 'bafa-heizungsoptimierung').capCents, 3000000 + 4 * 1500000);
+});
+t('Heizungsoptimierung BAFA: mehr als 5 WE oder unter 300 EUR -> keine Berechnung', () => {
+  assert.equal(F.calculate(rules, { ...base, measure: 'heizung-optimierung', building: 'mfh', units: 6, applicant: 'privat-vermieter', costs: 500000 }).grants.length, 0);
+  assert.equal(F.calculate(rules, { ...base, measure: 'heizung-optimierung', costs: 20000 }).grants.length, 0);
+});
+t('Emissionsminderung Biomasse: nur Information mit 50 %', () => {
+  const r = F.calculate(rules, { ...base, measure: 'heizung-optimierung', costs: 500000 });
+  const p = r.infos.find(p => p.id === 'bafa-emissionsminderung'); assert.ok(p); assert.equal(p.rates.basePoints, 50);
+});
+t('§ 35a als steuerliche Alternative bei Bad ohne Pflegegrad gelistet', () => {
+  const r = F.calculate(rules, { ...base, measure: 'bad-barriere', costs: 1500000 });
+  assert.ok(r.tax.some(p => p.id === 'steuer-35a' && p.status === 'aktiv'));
+});
+t('progres.nrw nach 30.06.2027 weiterhin nur Information, Regelwerk validUntil gesetzt', () => {
+  const p = rules.programs.find(p => p.id === 'progres-nrw-geothermie'); assert.equal(p.validUntil, '2027-06-30'); assert.equal(p.calculationApproved, false);
 });
 t('Negative/ungültige Kosten', () => {
   assert.equal(F.calculate(rules, { ...base, costs: -100 }).ok, false);

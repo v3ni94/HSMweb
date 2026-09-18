@@ -189,6 +189,21 @@
         return;
       }
 
+      if (p.id === 'bafa-heizungsoptimierung') {
+        if (!input.existing || input.building === 'nwg' || input.mixed || input.started) { entry.reason = 'Voraussetzungen für eine automatische Berechnung nicht erfüllt (siehe Prüfhinweise).'; result.infos.push(entry); return; }
+        if (units > p.eligibility.maxUnits) { entry.reason = 'Heizungsoptimierung wird nur für Bestandsgebäude mit höchstens ' + p.eligibility.maxUnits + ' Wohneinheiten gefördert.'; result.infos.push(entry); return; }
+        if (costs < p.costRules.minInvestCents) { entry.reason = 'Das förderfähige Mindestinvestitionsvolumen von ' + (p.costRules.minInvestCents / 100) + ' EUR ist nicht erreicht.'; result.infos.push(entry); return; }
+        var bcaps = p.costRules.unitCapsCents;
+        var bcap = bcaps.first + (Math.min(units, 6) - 1) * bcaps.secondToSixth + (units > 6 ? (units - 6) * bcaps.further : 0);
+        var beligible = Math.min(costs, bcap);
+        var bgrant = pct(beligible, p.rates.basePoints);
+        result.grants.push({ id: p.id, name: p.name, provider: p.provider, fundingType: p.fundingType, status: p.status, checkedAt: p.checkedAt, ruleVersion: p.ruleVersion, sourceUrls: p.sourceUrls,
+          eligibleCostsCents: beligible, capCents: bcap, costsCapped: costs > bcap, lines: [{ label: 'Grundförderung Heizungsoptimierung', points: p.rates.basePoints }], totalPoints: p.rates.basePoints, capPoints: p.caps.defaultCapPoints, capApplied: false, grantCents: bgrant,
+          notes: entry.notes.concat(['Ein möglicher iSFP-Bonus von ' + p.rates.isfpBonusPoints + ' Prozentpunkten ist nicht enthalten; er gilt nur oberhalb des Mindestinvestitionsvolumens von 30.000 EUR.']) });
+        result.totalGrantCents += bgrant;
+        return;
+      }
+
       // Aktive, freigegebene, aber hier nicht implementierte Berechnung: nur Information
       entry.reason = 'Berechnung für dieses Programm ist nicht implementiert; Einordnung als Information.';
       result.infos.push(entry);

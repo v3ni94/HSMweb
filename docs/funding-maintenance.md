@@ -10,7 +10,7 @@ Regeln der Validierung: `calculationApproved: true` nur bei `status: aktiv` und 
 
 ## Aktiv versus berechnet
 
-Ein Programm kann aktiv sein, ohne dass der Rechner Beträge ausgibt (`calculationApproved: false`). Dann zeigt der Fördercheck Status, Voraussetzungen und Quelle. Ein gesperrter Rechenzweig bedeutet nicht, dass kein Anspruch besteht. Aktuell berechnet: KfW 458 (Periode ab 21.07.2026) und Pflegekasse Wohnumfeldverbesserung. Angekündigte KfW-458-Perioden ab 01.02.2027 sind hinterlegt, aber nicht freigegeben.
+Ein Programm kann aktiv sein, ohne dass der Rechner Beträge ausgibt (`calculationApproved: false`). Dann zeigt der Fördercheck Status, Voraussetzungen und Quelle. Ein gesperrter Rechenzweig bedeutet nicht, dass kein Anspruch besteht. Aktuell berechnet: KfW 458 (Periode ab 21.07.2026), BAFA Heizungsoptimierung (15 %, ohne iSFP-Bonus, bis 5 WE) und Pflegekasse Wohnumfeldverbesserung. Angekündigte KfW-458-Perioden ab 01.02.2027 sind hinterlegt, aber nicht freigegeben.
 
 ## 30-Tage-Regel
 
@@ -26,12 +26,15 @@ Ein Programm kann aktiv sein, ohne dass der Rechner Beträge ausgibt (`calculati
 
 Kein Live-Scraping. Eine optionale Änderungsprüfung darf Hinweise liefern, Werte aber nicht überschreiben.
 
+## Quellenprüfung 18.09.2026
+
+Abgerufen und bestätigt: BAFA Heizungsoptimierung (15 %, iSFP 5 %, Mindestinvestition 300 EUR, Höchstgrenzen 30.000/15.000/8.000 EUR, max. 5 WE, Anlage älter als 2 Jahre, fossil max. 20 Jahre, EEE), BAFA Emissionsminderung (50 %), Pflegekasse (4.180 EUR je Person, bis 16.720 EUR; BMG-Stand 14.09.2026), NRW.BANK.Gebäudesanierung (150.000 EUR, bis 100 %), NRW-Eigentumsförderung Modernisierung (220.000 EUR, Tilgungsnachlass 25 % bis 50 %), progres.nrw Geothermie (30 EUR/Bohrmeter, 15.000 EUR, ab 3 WE, Richtlinie bis 30.06.2027), § 35c EStG (7/7/6 %, 40.000 EUR, Gebäude älter als 10 Jahre), § 35a EStG (20 %, 1.200 EUR).
+
+Nicht erreichbar: alle KfW-Seiten (Verbindung ohne Antwort aus der Entwicklungsumgebung). Die KfW-Werte beruhen weiterhin auf der Auftragsgrundlage vom 18.09.2026 und sind manuell im Browser gegenzuprüfen.
+
 ## Offene Prüfpunkte (Stand 18.09.2026)
 
-- Live-Quellenprüfung aus der Entwicklungsumgebung nicht möglich: `www.kfw.de`, `www.bafa.de`, `www.bundesgesundheitsministerium.de` und weitere Fördergeber-Domains sind in der Netzwerkrichtlinie gesperrt (Stand 18.09.2026). Für die monatliche Prüfung diese Domains freigeben oder die Prüfung manuell im Browser durchführen und `checkedAt` setzen.
-
-- BAFA Heizungsoptimierung und Emissionsminderung: Direktabruf war blockiert, Sätze und iSFP-Bonus unbestätigt.
-- KfW 459: 30 % bestätigt, Kostenobergrenzen für Unternehmen fehlen für eine Betragsberechnung.
-- § 35a EStG: begünstigte Kosten und Doppelbegünstigung vor Berechnung prüfen.
-- progres.nrw Geothermie: Verfügbarkeit erneut prüfen.
+- KfW 458, 459, 455-B, 159, 358/359, 261: Live-Abruf nicht möglich, manuell prüfen.
+- KfW 459: Kostenobergrenzen für Unternehmen fehlen für eine Betragsberechnung.
+- BAFA iSFP-Bonus: Mindestvolumen-Logik nicht automatisiert, nur Hinweis.
 - Kommunale Programme (Düren, Kreis Düren): nur nach belastbarer Quelle ergänzen.

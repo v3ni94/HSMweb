@@ -85,7 +85,7 @@
 <section class="section">
   <h2>Was der Fördercheck kann und was nicht</h2>
   <ul class="checklist">
-    <li>Rechnet nur Programme, deren Berechnung nach Quellenprüfung freigegeben ist (aktuell: KfW 458 im geprüften Regelstand, Zuschuss der Pflegekasse).</li>
+    <li>Rechnet nur Programme, deren Berechnung nach Quellenprüfung freigegeben ist (aktuell: KfW 458 im geprüften Regelstand, BAFA Heizungsoptimierung ohne iSFP-Bonus, Zuschuss der Pflegekasse).</li>
     <li>Zeigt bei allen anderen Programmen Einordnung, Voraussetzungen und Quelle, aber keinen Betrag.</li>
     <li>Trennt Projektkosten, förderfähige Kosten, Zuschuss, verbleibende Investition, mögliche Kredite und steuerliche Alternativen.</li>
     <li>Leitet Wohnungseigentümergemeinschaften, Mischgebäude, Contracting und Fälle mit mehreren Anträgen in eine manuelle Prüfung.</li>

@@ -1,6 +1,6 @@
 {
     "generatedFrom": "content/funding/programs.json",
-    "ruleSetVersion": "2026-09-18.1",
+    "ruleSetVersion": "2026-09-18.2",
     "programs": [
         {
             "id": "kfw-458",
@@ -194,7 +194,7 @@
             "provider": "BAFA",
             "region": "DE",
             "fundingType": "Zuschuss",
-            "status": "Prüfung erforderlich",
+            "status": "aktiv",
             "applicantTypes": [
                 "privat-selbstnutzer",
                 "privat-vermieter",
@@ -210,15 +210,32 @@
                     "zfh",
                     "mfh"
                 ],
+                "maxUnits": 5,
                 "requiresExistingBuilding": true,
                 "notes": [
-                    "Grundfördersatz, technische Bedingungen und iSFP-Bonus vor Berechnung aus den aktuellen Unterlagen verifizieren.",
-                    "Keine Übernahme älterer 15 %/20 %-Rechner."
+                    "Nur Bestandsgebäude mit höchstens fünf Wohneinheiten.",
+                    "Wärmeerzeuger älter als zwei Jahre; bei fossilen Brennstoffen nicht älter als zwanzig Jahre.",
+                    "Bei wassergeführten Systemen ist ein hydraulisch abgeglichenes System Voraussetzung (Verfahren B, VdZ-Bestätigungsformular).",
+                    "Antragstellung mit Einbindung eines Energieeffizienz-Experten (EEE).",
+                    "iSFP-Bonus von 5 Prozentpunkten nur ab 30.000 EUR förderfähigem Mindestinvestitionsvolumen (bei mehreren Wohneinheiten entsprechend höher) und nur auf den übersteigenden Betrag; wird hier nicht automatisch berechnet."
                 ]
             },
-            "costRules": [],
-            "rates": [],
-            "caps": [],
+            "costRules": {
+                "minInvestCents": 30000,
+                "unitCapsCents": {
+                    "first": 3000000,
+                    "secondToSixth": 1500000,
+                    "further": 800000
+                },
+                "note": "Höchstgrenzen ohne iSFP-Bonus. Mit iSFP 60.000/30.000/15.000 EUR, nicht automatisiert."
+            },
+            "rates": {
+                "basePoints": 15,
+                "isfpBonusPoints": 5
+            },
+            "caps": {
+                "defaultCapPoints": 20
+            },
             "combinations": [],
             "exclusions": [],
             "validFrom": null,
@@ -228,8 +245,8 @@
             "sourceUrls": [
                 "https://www.bafa.de/DE/Energie/Effiziente_Gebaeude/Sanierung_Wohngebaeude/Heizungsoptimierung/heizungsoptimierung_node.html"
             ],
-            "ruleVersion": "bafa-ho-unbestaetigt",
-            "calculationApproved": false
+            "ruleVersion": "bafa-ho-2026-09",
+            "calculationApproved": true
         },
         {
             "id": "bafa-emissionsminderung",
@@ -237,7 +254,7 @@
             "provider": "BAFA",
             "region": "DE",
             "fundingType": "Zuschuss",
-            "status": "Prüfung erforderlich",
+            "status": "aktiv",
             "applicantTypes": [
                 "privat-selbstnutzer",
                 "privat-vermieter",
@@ -249,11 +266,15 @@
             ],
             "eligibility": {
                 "notes": [
-                    "Eigenständiger Prüfpfad für bestehende Biomasseanlagen. Keine Gleichsetzung mit Wartung."
+                    "Fördersatz 50 % der förderfähigen Ausgaben für Maßnahmen zur Reduzierung der Staubemissionen (mindestens 80 %) bestehender Biomasseanlagen ab 4 kW, älter als zwei Jahre, ausgenommen Einzelraumfeuerungen.",
+                    "Kein iSFP-Bonus. Eigenständiger Prüfpfad, keine Gleichsetzung mit Wartung.",
+                    "Keine automatische Berechnung, da Maßnahmenumfang und Nachweise einzelfallabhängig sind."
                 ]
             },
             "costRules": [],
-            "rates": [],
+            "rates": {
+                "basePoints": 50
+            },
             "caps": [],
             "combinations": [],
             "exclusions": [],
@@ -264,7 +285,7 @@
             "sourceUrls": [
                 "https://www.bafa.de/DE/Energie/Effiziente_Gebaeude/Sanierung_Wohngebaeude/Heizungsoptimierung/heizungsoptimierung_node.html"
             ],
-            "ruleVersion": "bafa-em-unbestaetigt",
+            "ruleVersion": "bafa-em-2026-09",
             "calculationApproved": false
         },
         {
@@ -293,7 +314,8 @@
                 "notes": [
                     "Maßnahme muss die häusliche Pflege ermöglichen oder erheblich erleichtern.",
                     "Bewilligung durch die Pflegekasse vor Beginn. Tatsächliche Kosten maßgeblich.",
-                    "Keine jährliche Badpauschale."
+                    "Keine jährliche Badpauschale.",
+                    "Bearbeitungsfrist der Pflegekasse drei Wochen, bei Gutachten fünf Wochen; ohne rechtzeitige Mitteilung gilt die Leistung als genehmigt."
                 ]
             },
             "costRules": {
@@ -498,7 +520,8 @@
             "eligibility": {
                 "notes": [
                     "Bis 150.000 EUR Darlehen für passende Maßnahmen an selbstgenutztem Wohneigentum in NRW.",
-                    "Persönliche, Objekt- und Finanzierungsbedingungen prüfen."
+                    "Persönliche, Objekt- und Finanzierungsbedingungen prüfen.",
+                    "Finanzierungsanteil bis 100 % der förderfähigen Investitionskosten, Laufzeiten bis 35 Jahre (Quelle NRW.BANK, abgerufen 18.09.2026)."
                 ]
             },
             "costRules": [],
@@ -534,8 +557,9 @@
             ],
             "eligibility": {
                 "notes": [
-                    "Bis 220.000 EUR Darlehen und bis 50 % Tilgungsnachlass bei erfüllten Voraussetzungen (u. a. Einkommensgrenzen).",
-                    "Kein allgemeiner 50-%-Sanierungszuschuss."
+                    "Bis 220.000 EUR Darlehen, Finanzierungsanteil bis 100 %, für Haushalte mit kleinen und mittleren Einkommen (Einkommensgruppen).",
+                    "Tilgungsnachlass 25 % (Einkommensgruppe A), jeweils zusätzlich 5 Prozentpunkte für besondere Qualitäten, insgesamt bis 50 %; 50 % bei individuellen Maßnahmen für Menschen mit Schwerbehinderung (GdB ab 50) oder Pflegegrad.",
+                    "Kein allgemeiner 50-%-Sanierungszuschuss; der Nachlass reduziert die Darlehensschuld nach Vollauszahlung (Quelle NRW.BANK, abgerufen 18.09.2026)."
                 ]
             },
             "costRules": [],
@@ -562,7 +586,7 @@
             "provider": "Bezirksregierung Arnsberg",
             "region": "NRW",
             "fundingType": "Zuschuss",
-            "status": "Prüfung erforderlich",
+            "status": "aktiv",
             "applicantTypes": [
                 "privat-vermieter",
                 "weg",
@@ -578,8 +602,10 @@
                 ],
                 "minUnits": 3,
                 "notes": [
-                    "Erdwärmesonden mit Wärmepumpe in Bestands-Mehrfamilienhäusern ab drei Wohneinheiten: 30 EUR je Bohrmeter, höchstens 15.000 EUR.",
-                    "Verfügbarkeit und vollständige Bedingungen erneut prüfen. Nicht auf Einfamilienhäuser übertragen."
+                    "Erdwärmesonden mit Wärmepumpe in Bestands-Mehrfamilienhäusern mit drei oder mehr Wohneinheiten: 30 EUR je Bohrmeter, Förderhöchstgrenze 15.000 EUR.",
+                    "Bestand: Bauantrag oder Bauanzeige liegt bei Antragstellung mindestens fünf Jahre zurück.",
+                    "Anträge im Rahmen verfügbarer Haushaltsmittel; Richtlinie tritt zum 30.06.2027 außer Kraft. Beauftragung erst nach Entscheidung über den Antrag.",
+                    "Keine automatische Berechnung, da die Bohrmeter erst aus der Planung folgen (Quelle Bezirksregierung Arnsberg, abgerufen 18.09.2026)."
                 ]
             },
             "costRules": [],
@@ -592,13 +618,13 @@
             "combinations": [],
             "exclusions": [],
             "validFrom": null,
-            "validUntil": null,
+            "validUntil": "2027-06-30",
             "checkedAt": "2026-09-18",
             "reviewDueAt": "2026-10-18",
             "sourceUrls": [
                 "https://www.bra.nrw.de/energie-bergbau/foerderprogramme-fuer-klimaschutz-und-energiewende/foerderbereiche/stromerzeugung-waermeerzeugung/foerderung-von-oberflaechennaher-geothermie-verbindung-mit-einer-waermepumpe"
             ],
-            "ruleVersion": "progres-geo-unbestaetigt",
+            "ruleVersion": "progres-geo-2026-09",
             "calculationApproved": false
         },
         {
@@ -618,9 +644,9 @@
             ],
             "eligibility": {
                 "notes": [
-                    "Insgesamt 20 % der Aufwendungen verteilt über drei Jahre, höchstens 40.000 EUR je Objekt, bei erfüllten Voraussetzungen.",
-                    "Nur selbstgenutztes Wohneigentum, Fachunternehmerbescheinigung erforderlich.",
-                    "Keine Doppelbegünstigung: nicht für Maßnahmen, für die ein Zuschuss in Anspruch genommen wird."
+                    "Je 7 % der Aufwendungen im Jahr des Abschlusses und im Folgejahr (höchstens je 14.000 EUR), 6 % im dritten Jahr (höchstens 12.000 EUR); insgesamt höchstens 40.000 EUR je Objekt.",
+                    "Nur zu eigenen Wohnzwecken genutztes Gebäude, älter als zehn Jahre, Ausführung durch Fachunternehmen mit Bescheinigung nach amtlichem Muster.",
+                    "Keine Doppelbegünstigung: nicht für Maßnahmen, für die ein Zuschuss in Anspruch genommen wird (Quelle § 35c EStG, abgerufen 18.09.2026)."
                 ]
             },
             "costRules": [],
@@ -652,7 +678,7 @@
             "provider": "Finanzverwaltung",
             "region": "DE",
             "fundingType": "Steuerermäßigung",
-            "status": "Prüfung erforderlich",
+            "status": "aktiv",
             "applicantTypes": [
                 "privat-selbstnutzer",
                 "privat-mieter"
@@ -664,12 +690,18 @@
             ],
             "eligibility": {
                 "notes": [
-                    "Begünstigte Kosten, Nachweise und Ausschluss einer Doppelbegünstigung vor Berechnung vollständig prüfen."
+                    "Handwerkerleistungen für Renovierung, Erhaltung und Modernisierung: 20 % der Aufwendungen, höchstens 1.200 EUR Steuerermäßigung im Jahr (§ 35a Abs. 3 EStG).",
+                    "Begünstigt sind in der Regel nur Arbeitskosten, nicht Material; Rechnung und unbare Zahlung erforderlich. Keine Doppelbegünstigung mit anderen Förderungen für dieselbe Leistung.",
+                    "Keine automatische Berechnung; individuelle Wirkung mit Steuerberatung klären (Quelle § 35a EStG, abgerufen 18.09.2026)."
                 ]
             },
             "costRules": [],
-            "rates": [],
-            "caps": [],
+            "rates": {
+                "basePoints": 20
+            },
+            "caps": {
+                "totalCapCents": 120000
+            },
             "combinations": [],
             "exclusions": [],
             "validFrom": null,
@@ -679,7 +711,7 @@
             "sourceUrls": [
                 "https://www.gesetze-im-internet.de/estg/__35a.html"
             ],
-            "ruleVersion": "35a-unbestaetigt",
+            "ruleVersion": "35a-2026-09",
             "calculationApproved": false
         }
     ]

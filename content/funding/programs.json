@@ -1,368 +1,727 @@
 {
-  "_comment": "Zentrales Förderregelwerk. Einzige Quelle für Rechner, Förderübersichten und den öffentlichen Export (bin/export-public-data.php). Geldbeträge in Cent, Prozentsätze in ganzen Prozentpunkten. checkedAt nie automatisch setzen. Nach reviewDueAt: Quellen prüfen, sonst Berechnung deaktivieren. Recherchebasis: Anhang A des Auftrags vom 18.09.2026.",
-  "ruleSetVersion": "2026-09-18.1",
-  "programs": [
-    {
-      "id": "kfw-458",
-      "name": "KfW 458 Heizungsförderung für Privatpersonen (Wohngebäude)",
-      "provider": "KfW",
-      "region": "DE",
-      "fundingType": "Zuschuss",
-      "status": "aktiv",
-      "applicantTypes": ["privat-selbstnutzer", "privat-vermieter", "weg"],
-      "measures": ["heizung-austausch"],
-      "eligibility": {
-        "buildingTypes": ["efh", "zfh", "mfh"],
-        "requiresExistingBuilding": true,
-        "requiresOldSystem": true,
-        "manualCheckIf": ["weg", "mehrere-antraege", "mischgebaeude", "contracting", "vorhabenbeginn-vor-antrag"],
-        "notes": [
-          "Für den Antrag ist grundsätzlich ein Liefer- oder Leistungsvertrag mit aufschiebender oder auflösender Förderbedingung erforderlich.",
-          "Altanlage, Selbstnutzung, Einkommensdefinition, Gebäudealter, technische Mindestanforderungen und Vorhabenbeginn sind vollständig zu prüfen.",
-          "Boni für Selbstnutzer gelten nur für die selbst genutzte Wohneinheit, nicht für das ganze Gebäude."
-        ]
-      },
-      "costRules": {
-        "unitCapsCents": { "first": 2800000, "secondToSixth": 1500000, "further": 800000 },
-        "note": "Kostenobergrenze der ersten Wohneinheit sinkt ab 01.02.2027 halbjährlich um 75.000 Cent (siehe periods)."
-      },
-      "rates": {
-        "basePoints": 30,
-        "climateSpeedBonusPoints": 16,
-        "climateBonusOnlySelfUse": true,
-        "incomeBonus": {
-          "onlySelfUse": true,
-          "childThresholdIncreaseCents": 1000000,
-          "tiers": [
-            { "maxIncomeCents": 3000000, "points": 40, "capPoints": 80 },
-            { "maxIncomeCents": 4000000, "points": 30, "capPoints": 70 },
-            { "maxIncomeCents": 5000000, "points": 10, "capPoints": 70 }
-          ]
+    "_comment": "Zentrales Förderregelwerk. Einzige Quelle für Rechner, Förderübersichten und den öffentlichen Export (bin/export-public-data.php). Geldbeträge in Cent, Prozentsätze in ganzen Prozentpunkten. checkedAt nie automatisch setzen. Nach reviewDueAt: Quellen prüfen, sonst Berechnung deaktivieren. Recherchebasis: Anhang A des Auftrags vom 18.09.2026.",
+    "ruleSetVersion": "2026-09-18.2",
+    "programs": [
+        {
+            "id": "kfw-458",
+            "name": "KfW 458 Heizungsförderung für Privatpersonen (Wohngebäude)",
+            "provider": "KfW",
+            "region": "DE",
+            "fundingType": "Zuschuss",
+            "status": "aktiv",
+            "applicantTypes": [
+                "privat-selbstnutzer",
+                "privat-vermieter",
+                "weg"
+            ],
+            "measures": [
+                "heizung-austausch"
+            ],
+            "eligibility": {
+                "buildingTypes": [
+                    "efh",
+                    "zfh",
+                    "mfh"
+                ],
+                "requiresExistingBuilding": true,
+                "requiresOldSystem": true,
+                "manualCheckIf": [
+                    "weg",
+                    "mehrere-antraege",
+                    "mischgebaeude",
+                    "contracting",
+                    "vorhabenbeginn-vor-antrag"
+                ],
+                "notes": [
+                    "Für den Antrag ist grundsätzlich ein Liefer- oder Leistungsvertrag mit aufschiebender oder auflösender Förderbedingung erforderlich.",
+                    "Altanlage, Selbstnutzung, Einkommensdefinition, Gebäudealter, technische Mindestanforderungen und Vorhabenbeginn sind vollständig zu prüfen.",
+                    "Boni für Selbstnutzer gelten nur für die selbst genutzte Wohneinheit, nicht für das ganze Gebäude."
+                ]
+            },
+            "costRules": {
+                "unitCapsCents": {
+                    "first": 2800000,
+                    "secondToSixth": 1500000,
+                    "further": 800000
+                },
+                "note": "Kostenobergrenze der ersten Wohneinheit sinkt ab 01.02.2027 halbjährlich um 75.000 Cent (siehe periods)."
+            },
+            "rates": {
+                "basePoints": 30,
+                "climateSpeedBonusPoints": 16,
+                "climateBonusOnlySelfUse": true,
+                "incomeBonus": {
+                    "onlySelfUse": true,
+                    "childThresholdIncreaseCents": 1000000,
+                    "tiers": [
+                        {
+                            "maxIncomeCents": 3000000,
+                            "points": 40,
+                            "capPoints": 80
+                        },
+                        {
+                            "maxIncomeCents": 4000000,
+                            "points": 30,
+                            "capPoints": 70
+                        },
+                        {
+                            "maxIncomeCents": 5000000,
+                            "points": 10,
+                            "capPoints": 70
+                        }
+                    ]
+                }
+            },
+            "caps": {
+                "defaultCapPoints": 70
+            },
+            "combinations": [
+                "kfw-358-359"
+            ],
+            "exclusions": [
+                "steuer-35c-gleiche-massnahme",
+                "kfw-459"
+            ],
+            "periods": [
+                {
+                    "validFrom": "2026-07-21",
+                    "validUntil": "2027-01-31",
+                    "firstUnitCapCents": 2800000,
+                    "climateSpeedBonusPoints": 16,
+                    "calculationApproved": true,
+                    "note": "Geprüfter Regelstand Merkblatt 07/2026."
+                },
+                {
+                    "validFrom": "2027-02-01",
+                    "validUntil": "2027-07-31",
+                    "firstUnitCapCents": 2725000,
+                    "climateSpeedBonusPoints": 12,
+                    "calculationApproved": false,
+                    "note": "Angekündigte Absenkung, vor Freigabe erneut prüfen."
+                },
+                {
+                    "validFrom": "2027-08-01",
+                    "validUntil": "2028-01-31",
+                    "firstUnitCapCents": 2650000,
+                    "climateSpeedBonusPoints": 8,
+                    "calculationApproved": false,
+                    "note": "Angekündigte Absenkung, vor Freigabe erneut prüfen."
+                },
+                {
+                    "validFrom": "2028-02-01",
+                    "validUntil": "2028-07-31",
+                    "firstUnitCapCents": 2575000,
+                    "climateSpeedBonusPoints": 4,
+                    "calculationApproved": false,
+                    "note": "Angekündigte Absenkung, vor Freigabe erneut prüfen."
+                },
+                {
+                    "validFrom": "2028-08-01",
+                    "validUntil": null,
+                    "firstUnitCapCents": 2500000,
+                    "climateSpeedBonusPoints": 0,
+                    "calculationApproved": false,
+                    "note": "Klimageschwindigkeitsbonus entfällt. Weitere Absenkung der Obergrenze prüfen."
+                }
+            ],
+            "validFrom": "2026-07-21",
+            "validUntil": null,
+            "checkedAt": "2026-09-18",
+            "reviewDueAt": "2026-10-18",
+            "sourceUrls": [
+                "https://www.kfw.de/inlandsfoerderung/Privatpersonen/Bestehende-Immobilie/F%C3%B6rderprodukte/Heizungsf%C3%B6rderung-f%C3%BCr-Privatpersonen-Wohngeb%C3%A4ude-(458)/",
+                "https://www.kfw.de/PDF/Download-Center/F%C3%B6rderprogramme-(Inlandsf%C3%B6rderung)/PDF-Dokumente/6000005131_M_458.pdf"
+            ],
+            "ruleVersion": "458-2026-07",
+            "calculationApproved": true,
+            "internalNotes": "Beispielsollwerte bei 28.000 EUR: 8.400 / 12.880 / 22.400 / 19.600 / 15.680 EUR. Siehe tests/funding-calc.test.js. Live-Abruf der KfW-Seiten am 18.09.2026 aus der Entwicklungsumgebung nicht möglich (Verbindung ohne Antwort). Prüfdatum stammt aus der Auftragsgrundlage vom 18.09.2026; manuell im Browser gegenprüfen."
+        },
+        {
+            "id": "kfw-459",
+            "name": "KfW 459 Heizungsförderung für Unternehmen (Wohngebäude)",
+            "provider": "KfW",
+            "region": "DE",
+            "fundingType": "Zuschuss",
+            "status": "aktiv",
+            "applicantTypes": [
+                "unternehmen",
+                "gbr"
+            ],
+            "measures": [
+                "heizung-austausch"
+            ],
+            "eligibility": {
+                "buildingTypes": [
+                    "efh",
+                    "zfh",
+                    "mfh"
+                ],
+                "requiresExistingBuilding": true,
+                "requiresOldSystem": true,
+                "manualCheckIf": [
+                    "nichtwohngebaeude"
+                ],
+                "notes": [
+                    "Keine privaten Selbstnutzerboni.",
+                    "Nichtwohngebäude separat einordnen."
+                ]
+            },
+            "costRules": {
+                "note": "Förderfähige Kosten und Obergrenzen vor automatischer Berechnung aus dem aktuellen Merkblatt prüfen."
+            },
+            "rates": {
+                "basePoints": 30
+            },
+            "caps": {
+                "defaultCapPoints": 30
+            },
+            "combinations": [],
+            "exclusions": [
+                "kfw-458"
+            ],
+            "validFrom": "2026-07-21",
+            "validUntil": null,
+            "checkedAt": "2026-09-18",
+            "reviewDueAt": "2026-10-18",
+            "sourceUrls": [
+                "https://www.kfw.de/inlandsfoerderung/Unternehmen/Wohnwirtschaft/F%C3%B6rderprodukte/Heizungsf%C3%B6rderung-f%C3%BCr-Unternehmen-Wohngeb%C3%A4ude-(459)/"
+            ],
+            "ruleVersion": "459-2026-07",
+            "calculationApproved": false,
+            "internalNotes": "Grundsatz 30 % bestätigt, Kostenobergrenzen für Unternehmen nicht in der Startgrundlage enthalten. Deshalb nur Hinweis, keine Betragsberechnung. Live-Abruf der KfW-Seiten am 18.09.2026 aus der Entwicklungsumgebung nicht möglich (Verbindung ohne Antwort). Prüfdatum stammt aus der Auftragsgrundlage vom 18.09.2026; manuell im Browser gegenprüfen."
+        },
+        {
+            "id": "bafa-heizungsoptimierung",
+            "name": "BAFA Heizungsoptimierung (BEG EM)",
+            "provider": "BAFA",
+            "region": "DE",
+            "fundingType": "Zuschuss",
+            "status": "aktiv",
+            "applicantTypes": [
+                "privat-selbstnutzer",
+                "privat-vermieter",
+                "weg",
+                "unternehmen"
+            ],
+            "measures": [
+                "heizung-optimierung"
+            ],
+            "eligibility": {
+                "buildingTypes": [
+                    "efh",
+                    "zfh",
+                    "mfh"
+                ],
+                "maxUnits": 5,
+                "requiresExistingBuilding": true,
+                "notes": [
+                    "Nur Bestandsgebäude mit höchstens fünf Wohneinheiten.",
+                    "Wärmeerzeuger älter als zwei Jahre; bei fossilen Brennstoffen nicht älter als zwanzig Jahre.",
+                    "Bei wassergeführten Systemen ist ein hydraulisch abgeglichenes System Voraussetzung (Verfahren B, VdZ-Bestätigungsformular).",
+                    "Antragstellung mit Einbindung eines Energieeffizienz-Experten (EEE).",
+                    "iSFP-Bonus von 5 Prozentpunkten nur ab 30.000 EUR förderfähigem Mindestinvestitionsvolumen (bei mehreren Wohneinheiten entsprechend höher) und nur auf den übersteigenden Betrag; wird hier nicht automatisch berechnet."
+                ]
+            },
+            "costRules": {
+                "minInvestCents": 30000,
+                "unitCapsCents": {
+                    "first": 3000000,
+                    "secondToSixth": 1500000,
+                    "further": 800000
+                },
+                "note": "Höchstgrenzen ohne iSFP-Bonus. Mit iSFP 60.000/30.000/15.000 EUR, nicht automatisiert."
+            },
+            "rates": {
+                "basePoints": 15,
+                "isfpBonusPoints": 5
+            },
+            "caps": {
+                "defaultCapPoints": 20
+            },
+            "combinations": [],
+            "exclusions": [],
+            "validFrom": null,
+            "validUntil": null,
+            "checkedAt": "2026-09-18",
+            "reviewDueAt": "2026-10-18",
+            "sourceUrls": [
+                "https://www.bafa.de/DE/Energie/Effiziente_Gebaeude/Sanierung_Wohngebaeude/Heizungsoptimierung/heizungsoptimierung_node.html"
+            ],
+            "ruleVersion": "bafa-ho-2026-09",
+            "calculationApproved": true,
+            "internalNotes": "Quelle BAFA-Seite abgerufen 18.09.2026: Grundfördersatz 15 %, Mindestinvestition 300 EUR brutto, Höchstgrenzen 30.000/15.000/8.000 EUR, max. 5 WE, iSFP-Bonus 5 % mit Mindestvolumen 30.000 EUR."
+        },
+        {
+            "id": "bafa-emissionsminderung",
+            "name": "BAFA Emissionsminderung bestehender Biomasseanlagen",
+            "provider": "BAFA",
+            "region": "DE",
+            "fundingType": "Zuschuss",
+            "status": "aktiv",
+            "applicantTypes": [
+                "privat-selbstnutzer",
+                "privat-vermieter",
+                "weg",
+                "unternehmen"
+            ],
+            "measures": [
+                "heizung-optimierung"
+            ],
+            "eligibility": {
+                "notes": [
+                    "Fördersatz 50 % der förderfähigen Ausgaben für Maßnahmen zur Reduzierung der Staubemissionen (mindestens 80 %) bestehender Biomasseanlagen ab 4 kW, älter als zwei Jahre, ausgenommen Einzelraumfeuerungen.",
+                    "Kein iSFP-Bonus. Eigenständiger Prüfpfad, keine Gleichsetzung mit Wartung.",
+                    "Keine automatische Berechnung, da Maßnahmenumfang und Nachweise einzelfallabhängig sind."
+                ]
+            },
+            "costRules": [],
+            "rates": {
+                "basePoints": 50
+            },
+            "caps": [],
+            "combinations": [],
+            "exclusions": [],
+            "validFrom": null,
+            "validUntil": null,
+            "checkedAt": "2026-09-18",
+            "reviewDueAt": "2026-10-18",
+            "sourceUrls": [
+                "https://www.bafa.de/DE/Energie/Effiziente_Gebaeude/Sanierung_Wohngebaeude/Heizungsoptimierung/heizungsoptimierung_node.html"
+            ],
+            "ruleVersion": "bafa-em-2026-09",
+            "calculationApproved": false
+        },
+        {
+            "id": "pflegekasse-wohnumfeld",
+            "name": "Pflegekasse: Zuschuss zur Wohnumfeldverbesserung",
+            "provider": "Pflegekassen",
+            "region": "DE",
+            "fundingType": "Zuschuss",
+            "status": "aktiv",
+            "applicantTypes": [
+                "privat-selbstnutzer",
+                "privat-mieter"
+            ],
+            "measures": [
+                "bad-barriere-pflege"
+            ],
+            "eligibility": {
+                "requiresCareGrade": true,
+                "careGrades": [
+                    1,
+                    2,
+                    3,
+                    4,
+                    5
+                ],
+                "notes": [
+                    "Maßnahme muss die häusliche Pflege ermöglichen oder erheblich erleichtern.",
+                    "Bewilligung durch die Pflegekasse vor Beginn. Tatsächliche Kosten maßgeblich.",
+                    "Keine jährliche Badpauschale.",
+                    "Bearbeitungsfrist der Pflegekasse drei Wochen, bei Gutachten fünf Wochen; ohne rechtzeitige Mitteilung gilt die Leistung als genehmigt."
+                ]
+            },
+            "costRules": {
+                "actualCostsOnly": true
+            },
+            "rates": {
+                "basePoints": 100
+            },
+            "caps": {
+                "perPersonCents": 418000,
+                "maxPersons": 4,
+                "totalCapCents": 1672000
+            },
+            "combinations": [],
+            "exclusions": [
+                "kfw-159-gleiche-massnahme"
+            ],
+            "validFrom": "2025-01-01",
+            "validUntil": null,
+            "checkedAt": "2026-09-18",
+            "reviewDueAt": "2026-10-18",
+            "sourceUrls": [
+                "https://www.bundesgesundheitsministerium.de/pflege-zu-hause/zuschuesse-zur-wohnungsanpassung"
+            ],
+            "ruleVersion": "pflege-40-2025",
+            "calculationApproved": true,
+            "internalNotes": "BMG-Seite abgerufen 18.09.2026, Stand dort 14.09.2026: 4.180 EUR je Person, bis viermal (16.720 EUR), Pflegegrad 1 bis 5. Bestätigt."
+        },
+        {
+            "id": "kfw-455-b",
+            "name": "KfW 455-B Altersgerecht Umbauen, Investitionszuschuss Barrierereduzierung",
+            "provider": "KfW",
+            "region": "DE",
+            "fundingType": "Zuschuss",
+            "status": "derzeit geschlossen",
+            "applicantTypes": [
+                "privat-selbstnutzer",
+                "privat-vermieter",
+                "privat-mieter"
+            ],
+            "measures": [
+                "bad-barriere"
+            ],
+            "eligibility": {
+                "notes": [
+                    "Für neue Anträge geschlossen, Fördermittel ausgeschöpft. Wiederöffnung nicht unterstellen."
+                ]
+            },
+            "costRules": [],
+            "rates": [],
+            "caps": [],
+            "combinations": [],
+            "exclusions": [],
+            "validFrom": null,
+            "validUntil": null,
+            "checkedAt": "2026-09-18",
+            "reviewDueAt": "2026-10-18",
+            "sourceUrls": [
+                "https://www.kfw.de/inlandsfoerderung/Privatpersonen/Bestandsimmobilie/F%C3%B6rderprodukte/Altersgerecht-Umbauen-Investitionszuschuss-(455)/"
+            ],
+            "ruleVersion": "455b-geschlossen",
+            "calculationApproved": false,
+            "internalNotes": " Live-Abruf der KfW-Seiten am 18.09.2026 aus der Entwicklungsumgebung nicht möglich (Verbindung ohne Antwort). Prüfdatum stammt aus der Auftragsgrundlage vom 18.09.2026; manuell im Browser gegenprüfen."
+        },
+        {
+            "id": "kfw-159",
+            "name": "KfW 159 Altersgerecht Umbauen, Kredit",
+            "provider": "KfW",
+            "region": "DE",
+            "fundingType": "Kredit",
+            "status": "aktiv",
+            "applicantTypes": [
+                "privat-selbstnutzer",
+                "privat-vermieter",
+                "privat-mieter",
+                "weg"
+            ],
+            "measures": [
+                "bad-barriere",
+                "bad-barriere-pflege"
+            ],
+            "eligibility": {
+                "notes": [
+                    "Kredit bis 50.000 EUR je Wohneinheit. Kein Zuschuss.",
+                    "Nicht dieselbe bereits von der Pflegekasse bezuschusste Maßnahme finanzieren."
+                ]
+            },
+            "costRules": [],
+            "rates": [],
+            "caps": {
+                "loanPerUnitCents": 5000000
+            },
+            "combinations": [],
+            "exclusions": [
+                "pflegekasse-gleiche-massnahme"
+            ],
+            "validFrom": null,
+            "validUntil": null,
+            "checkedAt": "2026-09-18",
+            "reviewDueAt": "2026-10-18",
+            "sourceUrls": [
+                "https://www.kfw.de/inlandsfoerderung/Privatpersonen/Bestehende-Immobilie/F%C3%B6rderprodukte/Altersgerecht-Umbauen-(159)/"
+            ],
+            "ruleVersion": "159-2026-09",
+            "calculationApproved": false,
+            "internalNotes": " Live-Abruf der KfW-Seiten am 18.09.2026 aus der Entwicklungsumgebung nicht möglich (Verbindung ohne Antwort). Prüfdatum stammt aus der Auftragsgrundlage vom 18.09.2026; manuell im Browser gegenprüfen."
+        },
+        {
+            "id": "kfw-358-359",
+            "name": "KfW 358/359 Ergänzungskredit Einzelmaßnahmen",
+            "provider": "KfW",
+            "region": "DE",
+            "fundingType": "Kredit",
+            "status": "aktiv",
+            "applicantTypes": [
+                "privat-selbstnutzer",
+                "privat-vermieter",
+                "weg",
+                "unternehmen"
+            ],
+            "measures": [
+                "heizung-austausch",
+                "heizung-optimierung"
+            ],
+            "eligibility": {
+                "notes": [
+                    "Nur mit zugehöriger Zuschusszusage. Bis 120.000 EUR je Wohneinheit.",
+                    "Voraussetzungen zu Zusagedatum, Auszahlung und Zwischenfinanzierung prüfen. Kein zusätzlicher Zuschuss."
+                ]
+            },
+            "costRules": [],
+            "rates": [],
+            "caps": {
+                "loanPerUnitCents": 12000000
+            },
+            "combinations": [
+                "kfw-458",
+                "kfw-459"
+            ],
+            "exclusions": [],
+            "validFrom": null,
+            "validUntil": null,
+            "checkedAt": "2026-09-18",
+            "reviewDueAt": "2026-10-18",
+            "sourceUrls": [
+                "https://www.kfw.de/inlandsfoerderung/Privatpersonen/Bestehende-Immobilie/F%C3%B6rderprodukte/Einzelma%C3%9Fnahmen-Erg%C3%A4nzungskredit-Wohngeb%C3%A4ude-(358-359)/"
+            ],
+            "ruleVersion": "358-2026-09",
+            "calculationApproved": false,
+            "internalNotes": " Live-Abruf der KfW-Seiten am 18.09.2026 aus der Entwicklungsumgebung nicht möglich (Verbindung ohne Antwort). Prüfdatum stammt aus der Auftragsgrundlage vom 18.09.2026; manuell im Browser gegenprüfen."
+        },
+        {
+            "id": "kfw-261",
+            "name": "KfW 261 Wohngebäude Kredit (Effizienzhaus-Sanierung)",
+            "provider": "KfW",
+            "region": "DE",
+            "fundingType": "Kredit mit Tilgungszuschuss",
+            "status": "aktiv",
+            "applicantTypes": [
+                "privat-selbstnutzer",
+                "privat-vermieter",
+                "weg",
+                "unternehmen"
+            ],
+            "measures": [
+                "energetische-sanierung"
+            ],
+            "eligibility": {
+                "notes": [
+                    "Bis 150.000 EUR Kredit je Wohneinheit bei qualifizierender Gesamtsanierung.",
+                    "Effizienzhaus-Standard und Tilgungszuschuss projektbezogen prüfen. Gewöhnliche Renovierung ist nicht förderfähig."
+                ]
+            },
+            "costRules": [],
+            "rates": [],
+            "caps": {
+                "loanPerUnitCents": 15000000
+            },
+            "combinations": [],
+            "exclusions": [],
+            "validFrom": null,
+            "validUntil": null,
+            "checkedAt": "2026-09-18",
+            "reviewDueAt": "2026-10-18",
+            "sourceUrls": [
+                "https://www.kfw.de/inlandsfoerderung/Privatpersonen/Bestehende-Immobilie/F%C3%B6rderprodukte/Bundesf%C3%B6rderung-f%C3%BCr-effiziente-Geb%C3%A4ude-Wohngeb%C3%A4ude-Kredit-(261-262)/"
+            ],
+            "ruleVersion": "261-2026-09",
+            "calculationApproved": false,
+            "internalNotes": " Live-Abruf der KfW-Seiten am 18.09.2026 aus der Entwicklungsumgebung nicht möglich (Verbindung ohne Antwort). Prüfdatum stammt aus der Auftragsgrundlage vom 18.09.2026; manuell im Browser gegenprüfen."
+        },
+        {
+            "id": "nrw-bank-gebaeudesanierung",
+            "name": "NRW.BANK.Gebäudesanierung",
+            "provider": "NRW.BANK",
+            "region": "NRW",
+            "fundingType": "Darlehen",
+            "status": "aktiv",
+            "applicantTypes": [
+                "privat-selbstnutzer"
+            ],
+            "measures": [
+                "energetische-sanierung",
+                "heizung-austausch",
+                "bad-barriere"
+            ],
+            "eligibility": {
+                "notes": [
+                    "Bis 150.000 EUR Darlehen für passende Maßnahmen an selbstgenutztem Wohneigentum in NRW.",
+                    "Persönliche, Objekt- und Finanzierungsbedingungen prüfen.",
+                    "Finanzierungsanteil bis 100 % der förderfähigen Investitionskosten, Laufzeiten bis 35 Jahre (Quelle NRW.BANK, abgerufen 18.09.2026)."
+                ]
+            },
+            "costRules": [],
+            "rates": [],
+            "caps": {
+                "loanCents": 15000000
+            },
+            "combinations": [],
+            "exclusions": [],
+            "validFrom": null,
+            "validUntil": null,
+            "checkedAt": "2026-09-18",
+            "reviewDueAt": "2026-10-18",
+            "sourceUrls": [
+                "https://www.nrwbank.de/de/foerderung/foerderprodukte/15603/nrwbank-gebaeudesanierung.html"
+            ],
+            "ruleVersion": "nrwbank-gs-2026-09",
+            "calculationApproved": false
+        },
+        {
+            "id": "nrw-eigentumsfoerderung-modernisierung",
+            "name": "NRW-Eigentumsförderung Modernisierung",
+            "provider": "NRW.BANK / Land NRW",
+            "region": "NRW",
+            "fundingType": "Darlehen mit Tilgungsnachlass",
+            "status": "aktiv",
+            "applicantTypes": [
+                "privat-selbstnutzer"
+            ],
+            "measures": [
+                "energetische-sanierung",
+                "bad-barriere"
+            ],
+            "eligibility": {
+                "notes": [
+                    "Bis 220.000 EUR Darlehen, Finanzierungsanteil bis 100 %, für Haushalte mit kleinen und mittleren Einkommen (Einkommensgruppen).",
+                    "Tilgungsnachlass 25 % (Einkommensgruppe A), jeweils zusätzlich 5 Prozentpunkte für besondere Qualitäten, insgesamt bis 50 %; 50 % bei individuellen Maßnahmen für Menschen mit Schwerbehinderung (GdB ab 50) oder Pflegegrad.",
+                    "Kein allgemeiner 50-%-Sanierungszuschuss; der Nachlass reduziert die Darlehensschuld nach Vollauszahlung (Quelle NRW.BANK, abgerufen 18.09.2026)."
+                ]
+            },
+            "costRules": [],
+            "rates": [],
+            "caps": {
+                "loanCents": 22000000,
+                "maxRepaymentWaiverPoints": 50
+            },
+            "combinations": [],
+            "exclusions": [],
+            "validFrom": null,
+            "validUntil": null,
+            "checkedAt": "2026-09-18",
+            "reviewDueAt": "2026-10-18",
+            "sourceUrls": [
+                "https://www.nrwbank.de/de/foerderung/foerderprodukte/15342/eigentumsfoerderung---modernisierung.html"
+            ],
+            "ruleVersion": "nrw-ef-mod-2026-09",
+            "calculationApproved": false
+        },
+        {
+            "id": "progres-nrw-geothermie",
+            "name": "progres.nrw Oberflächennahe Geothermie mit Wärmepumpe",
+            "provider": "Bezirksregierung Arnsberg",
+            "region": "NRW",
+            "fundingType": "Zuschuss",
+            "status": "aktiv",
+            "applicantTypes": [
+                "privat-vermieter",
+                "weg",
+                "unternehmen",
+                "privat-selbstnutzer"
+            ],
+            "measures": [
+                "heizung-austausch"
+            ],
+            "eligibility": {
+                "buildingTypes": [
+                    "mfh"
+                ],
+                "minUnits": 3,
+                "notes": [
+                    "Erdwärmesonden mit Wärmepumpe in Bestands-Mehrfamilienhäusern mit drei oder mehr Wohneinheiten: 30 EUR je Bohrmeter, Förderhöchstgrenze 15.000 EUR.",
+                    "Bestand: Bauantrag oder Bauanzeige liegt bei Antragstellung mindestens fünf Jahre zurück.",
+                    "Anträge im Rahmen verfügbarer Haushaltsmittel; Richtlinie tritt zum 30.06.2027 außer Kraft. Beauftragung erst nach Entscheidung über den Antrag.",
+                    "Keine automatische Berechnung, da die Bohrmeter erst aus der Planung folgen (Quelle Bezirksregierung Arnsberg, abgerufen 18.09.2026)."
+                ]
+            },
+            "costRules": [],
+            "rates": {
+                "perMeterCents": 3000
+            },
+            "caps": {
+                "totalCapCents": 1500000
+            },
+            "combinations": [],
+            "exclusions": [],
+            "validFrom": null,
+            "validUntil": "2027-06-30",
+            "checkedAt": "2026-09-18",
+            "reviewDueAt": "2026-10-18",
+            "sourceUrls": [
+                "https://www.bra.nrw.de/energie-bergbau/foerderprogramme-fuer-klimaschutz-und-energiewende/foerderbereiche/stromerzeugung-waermeerzeugung/foerderung-von-oberflaechennaher-geothermie-verbindung-mit-einer-waermepumpe"
+            ],
+            "ruleVersion": "progres-geo-2026-09",
+            "calculationApproved": false
+        },
+        {
+            "id": "steuer-35c",
+            "name": "Steuerermäßigung für energetische Maßnahmen (§ 35c EStG)",
+            "provider": "Finanzverwaltung",
+            "region": "DE",
+            "fundingType": "Steuerermäßigung",
+            "status": "aktiv",
+            "applicantTypes": [
+                "privat-selbstnutzer"
+            ],
+            "measures": [
+                "heizung-austausch",
+                "heizung-optimierung",
+                "energetische-sanierung"
+            ],
+            "eligibility": {
+                "notes": [
+                    "Je 7 % der Aufwendungen im Jahr des Abschlusses und im Folgejahr (höchstens je 14.000 EUR), 6 % im dritten Jahr (höchstens 12.000 EUR); insgesamt höchstens 40.000 EUR je Objekt.",
+                    "Nur zu eigenen Wohnzwecken genutztes Gebäude, älter als zehn Jahre, Ausführung durch Fachunternehmen mit Bescheinigung nach amtlichem Muster.",
+                    "Keine Doppelbegünstigung: nicht für Maßnahmen, für die ein Zuschuss in Anspruch genommen wird (Quelle § 35c EStG, abgerufen 18.09.2026)."
+                ]
+            },
+            "costRules": [],
+            "rates": {
+                "totalPoints": 20,
+                "years": 3
+            },
+            "caps": {
+                "totalCapCents": 4000000
+            },
+            "combinations": [],
+            "exclusions": [
+                "kfw-458-gleiche-massnahme",
+                "bafa-gleiche-massnahme"
+            ],
+            "validFrom": "2020-01-01",
+            "validUntil": null,
+            "checkedAt": "2026-09-18",
+            "reviewDueAt": "2026-10-18",
+            "sourceUrls": [
+                "https://www.gesetze-im-internet.de/estg/__35c.html"
+            ],
+            "ruleVersion": "35c-2026-09",
+            "calculationApproved": false,
+            "internalNotes": "Nur als Alternative erklären; individuelle Steuerwirkung durch Steuerberatung."
+        },
+        {
+            "id": "steuer-35a",
+            "name": "Steuerermäßigung für Handwerkerleistungen (§ 35a EStG)",
+            "provider": "Finanzverwaltung",
+            "region": "DE",
+            "fundingType": "Steuerermäßigung",
+            "status": "aktiv",
+            "applicantTypes": [
+                "privat-selbstnutzer",
+                "privat-mieter"
+            ],
+            "measures": [
+                "bad-barriere",
+                "heizung-optimierung",
+                "sanierung-allgemein"
+            ],
+            "eligibility": {
+                "notes": [
+                    "Handwerkerleistungen für Renovierung, Erhaltung und Modernisierung: 20 % der Aufwendungen, höchstens 1.200 EUR Steuerermäßigung im Jahr (§ 35a Abs. 3 EStG).",
+                    "Begünstigt sind in der Regel nur Arbeitskosten, nicht Material; Rechnung und unbare Zahlung erforderlich. Keine Doppelbegünstigung mit anderen Förderungen für dieselbe Leistung.",
+                    "Keine automatische Berechnung; individuelle Wirkung mit Steuerberatung klären (Quelle § 35a EStG, abgerufen 18.09.2026)."
+                ]
+            },
+            "costRules": [],
+            "rates": {
+                "basePoints": 20
+            },
+            "caps": {
+                "totalCapCents": 120000
+            },
+            "combinations": [],
+            "exclusions": [],
+            "validFrom": null,
+            "validUntil": null,
+            "checkedAt": "2026-09-18",
+            "reviewDueAt": "2026-10-18",
+            "sourceUrls": [
+                "https://www.gesetze-im-internet.de/estg/__35a.html"
+            ],
+            "ruleVersion": "35a-2026-09",
+            "calculationApproved": false
         }
-      },
-      "caps": { "defaultCapPoints": 70 },
-      "combinations": ["kfw-358-359"],
-      "exclusions": ["steuer-35c-gleiche-massnahme", "kfw-459"],
-      "periods": [
-        { "validFrom": "2026-07-21", "validUntil": "2027-01-31", "firstUnitCapCents": 2800000, "climateSpeedBonusPoints": 16, "calculationApproved": true, "note": "Geprüfter Regelstand Merkblatt 07/2026." },
-        { "validFrom": "2027-02-01", "validUntil": "2027-07-31", "firstUnitCapCents": 2725000, "climateSpeedBonusPoints": 12, "calculationApproved": false, "note": "Angekündigte Absenkung, vor Freigabe erneut prüfen." },
-        { "validFrom": "2027-08-01", "validUntil": "2028-01-31", "firstUnitCapCents": 2650000, "climateSpeedBonusPoints": 8, "calculationApproved": false, "note": "Angekündigte Absenkung, vor Freigabe erneut prüfen." },
-        { "validFrom": "2028-02-01", "validUntil": "2028-07-31", "firstUnitCapCents": 2575000, "climateSpeedBonusPoints": 4, "calculationApproved": false, "note": "Angekündigte Absenkung, vor Freigabe erneut prüfen." },
-        { "validFrom": "2028-08-01", "validUntil": null, "firstUnitCapCents": 2500000, "climateSpeedBonusPoints": 0, "calculationApproved": false, "note": "Klimageschwindigkeitsbonus entfällt. Weitere Absenkung der Obergrenze prüfen." }
-      ],
-      "validFrom": "2026-07-21",
-      "validUntil": null,
-      "checkedAt": "2026-09-18",
-      "reviewDueAt": "2026-10-18",
-      "sourceUrls": [
-        "https://www.kfw.de/inlandsfoerderung/Privatpersonen/Bestehende-Immobilie/F%C3%B6rderprodukte/Heizungsf%C3%B6rderung-f%C3%BCr-Privatpersonen-Wohngeb%C3%A4ude-(458)/",
-        "https://www.kfw.de/PDF/Download-Center/F%C3%B6rderprogramme-(Inlandsf%C3%B6rderung)/PDF-Dokumente/6000005131_M_458.pdf"
-      ],
-      "ruleVersion": "458-2026-07",
-      "calculationApproved": true,
-      "internalNotes": "Beispielsollwerte bei 28.000 EUR: 8.400 / 12.880 / 22.400 / 19.600 / 15.680 EUR. Siehe tests/funding-calc.test.js."
-    },
-    {
-      "id": "kfw-459",
-      "name": "KfW 459 Heizungsförderung für Unternehmen (Wohngebäude)",
-      "provider": "KfW",
-      "region": "DE",
-      "fundingType": "Zuschuss",
-      "status": "aktiv",
-      "applicantTypes": ["unternehmen", "gbr"],
-      "measures": ["heizung-austausch"],
-      "eligibility": { "buildingTypes": ["efh", "zfh", "mfh"], "requiresExistingBuilding": true, "requiresOldSystem": true, "manualCheckIf": ["nichtwohngebaeude"], "notes": ["Keine privaten Selbstnutzerboni.", "Nichtwohngebäude separat einordnen."] },
-      "costRules": { "note": "Förderfähige Kosten und Obergrenzen vor automatischer Berechnung aus dem aktuellen Merkblatt prüfen." },
-      "rates": { "basePoints": 30 },
-      "caps": { "defaultCapPoints": 30 },
-      "combinations": [],
-      "exclusions": ["kfw-458"],
-      "validFrom": "2026-07-21",
-      "validUntil": null,
-      "checkedAt": "2026-09-18",
-      "reviewDueAt": "2026-10-18",
-      "sourceUrls": ["https://www.kfw.de/inlandsfoerderung/Unternehmen/Wohnwirtschaft/F%C3%B6rderprodukte/Heizungsf%C3%B6rderung-f%C3%BCr-Unternehmen-Wohngeb%C3%A4ude-(459)/"],
-      "ruleVersion": "459-2026-07",
-      "calculationApproved": false,
-      "internalNotes": "Grundsatz 30 % bestätigt, Kostenobergrenzen für Unternehmen nicht in der Startgrundlage enthalten. Deshalb nur Hinweis, keine Betragsberechnung."
-    },
-    {
-      "id": "bafa-heizungsoptimierung",
-      "name": "BAFA Heizungsoptimierung (BEG EM)",
-      "provider": "BAFA",
-      "region": "DE",
-      "fundingType": "Zuschuss",
-      "status": "Prüfung erforderlich",
-      "applicantTypes": ["privat-selbstnutzer", "privat-vermieter", "weg", "unternehmen"],
-      "measures": ["heizung-optimierung"],
-      "eligibility": { "buildingTypes": ["efh", "zfh", "mfh"], "requiresExistingBuilding": true, "notes": ["Grundfördersatz, technische Bedingungen und iSFP-Bonus vor Berechnung aus den aktuellen Unterlagen verifizieren.", "Keine Übernahme älterer 15 %/20 %-Rechner."] },
-      "costRules": {},
-      "rates": {},
-      "caps": {},
-      "combinations": [],
-      "exclusions": [],
-      "validFrom": null,
-      "validUntil": null,
-      "checkedAt": "2026-09-18",
-      "reviewDueAt": "2026-10-18",
-      "sourceUrls": ["https://www.bafa.de/DE/Energie/Effiziente_Gebaeude/Sanierung_Wohngebaeude/Heizungsoptimierung/heizungsoptimierung_node.html"],
-      "ruleVersion": "bafa-ho-unbestaetigt",
-      "calculationApproved": false,
-      "internalNotes": "Direktabruf der BAFA-Seite war am 18.09.2026 blockiert."
-    },
-    {
-      "id": "bafa-emissionsminderung",
-      "name": "BAFA Emissionsminderung bestehender Biomasseanlagen",
-      "provider": "BAFA",
-      "region": "DE",
-      "fundingType": "Zuschuss",
-      "status": "Prüfung erforderlich",
-      "applicantTypes": ["privat-selbstnutzer", "privat-vermieter", "weg", "unternehmen"],
-      "measures": ["heizung-optimierung"],
-      "eligibility": { "notes": ["Eigenständiger Prüfpfad für bestehende Biomasseanlagen. Keine Gleichsetzung mit Wartung."] },
-      "costRules": {},
-      "rates": {},
-      "caps": {},
-      "combinations": [],
-      "exclusions": [],
-      "validFrom": null,
-      "validUntil": null,
-      "checkedAt": "2026-09-18",
-      "reviewDueAt": "2026-10-18",
-      "sourceUrls": ["https://www.bafa.de/DE/Energie/Effiziente_Gebaeude/Sanierung_Wohngebaeude/Heizungsoptimierung/heizungsoptimierung_node.html"],
-      "ruleVersion": "bafa-em-unbestaetigt",
-      "calculationApproved": false
-    },
-    {
-      "id": "pflegekasse-wohnumfeld",
-      "name": "Pflegekasse: Zuschuss zur Wohnumfeldverbesserung",
-      "provider": "Pflegekassen",
-      "region": "DE",
-      "fundingType": "Zuschuss",
-      "status": "aktiv",
-      "applicantTypes": ["privat-selbstnutzer", "privat-mieter"],
-      "measures": ["bad-barriere-pflege"],
-      "eligibility": { "requiresCareGrade": true, "careGrades": [1, 2, 3, 4, 5], "notes": ["Maßnahme muss die häusliche Pflege ermöglichen oder erheblich erleichtern.", "Bewilligung durch die Pflegekasse vor Beginn. Tatsächliche Kosten maßgeblich.", "Keine jährliche Badpauschale."] },
-      "costRules": { "actualCostsOnly": true },
-      "rates": { "basePoints": 100 },
-      "caps": { "perPersonCents": 418000, "maxPersons": 4, "totalCapCents": 1672000 },
-      "combinations": [],
-      "exclusions": ["kfw-159-gleiche-massnahme"],
-      "validFrom": "2025-01-01",
-      "validUntil": null,
-      "checkedAt": "2026-09-18",
-      "reviewDueAt": "2026-10-18",
-      "sourceUrls": ["https://www.bundesgesundheitsministerium.de/pflege-zu-hause/zuschuesse-zur-wohnungsanpassung"],
-      "ruleVersion": "pflege-40-2025",
-      "calculationApproved": true
-    },
-    {
-      "id": "kfw-455-b",
-      "name": "KfW 455-B Altersgerecht Umbauen, Investitionszuschuss Barrierereduzierung",
-      "provider": "KfW",
-      "region": "DE",
-      "fundingType": "Zuschuss",
-      "status": "derzeit geschlossen",
-      "applicantTypes": ["privat-selbstnutzer", "privat-vermieter", "privat-mieter"],
-      "measures": ["bad-barriere"],
-      "eligibility": { "notes": ["Für neue Anträge geschlossen, Fördermittel ausgeschöpft. Wiederöffnung nicht unterstellen."] },
-      "costRules": {},
-      "rates": {},
-      "caps": {},
-      "combinations": [],
-      "exclusions": [],
-      "validFrom": null,
-      "validUntil": null,
-      "checkedAt": "2026-09-18",
-      "reviewDueAt": "2026-10-18",
-      "sourceUrls": ["https://www.kfw.de/inlandsfoerderung/Privatpersonen/Bestandsimmobilie/F%C3%B6rderprodukte/Altersgerecht-Umbauen-Investitionszuschuss-(455)/"],
-      "ruleVersion": "455b-geschlossen",
-      "calculationApproved": false
-    },
-    {
-      "id": "kfw-159",
-      "name": "KfW 159 Altersgerecht Umbauen, Kredit",
-      "provider": "KfW",
-      "region": "DE",
-      "fundingType": "Kredit",
-      "status": "aktiv",
-      "applicantTypes": ["privat-selbstnutzer", "privat-vermieter", "privat-mieter", "weg"],
-      "measures": ["bad-barriere", "bad-barriere-pflege"],
-      "eligibility": { "notes": ["Kredit bis 50.000 EUR je Wohneinheit. Kein Zuschuss.", "Nicht dieselbe bereits von der Pflegekasse bezuschusste Maßnahme finanzieren."] },
-      "costRules": {},
-      "rates": {},
-      "caps": { "loanPerUnitCents": 5000000 },
-      "combinations": [],
-      "exclusions": ["pflegekasse-gleiche-massnahme"],
-      "validFrom": null,
-      "validUntil": null,
-      "checkedAt": "2026-09-18",
-      "reviewDueAt": "2026-10-18",
-      "sourceUrls": ["https://www.kfw.de/inlandsfoerderung/Privatpersonen/Bestehende-Immobilie/F%C3%B6rderprodukte/Altersgerecht-Umbauen-(159)/"],
-      "ruleVersion": "159-2026-09",
-      "calculationApproved": false
-    },
-    {
-      "id": "kfw-358-359",
-      "name": "KfW 358/359 Ergänzungskredit Einzelmaßnahmen",
-      "provider": "KfW",
-      "region": "DE",
-      "fundingType": "Kredit",
-      "status": "aktiv",
-      "applicantTypes": ["privat-selbstnutzer", "privat-vermieter", "weg", "unternehmen"],
-      "measures": ["heizung-austausch", "heizung-optimierung"],
-      "eligibility": { "notes": ["Nur mit zugehöriger Zuschusszusage. Bis 120.000 EUR je Wohneinheit.", "Voraussetzungen zu Zusagedatum, Auszahlung und Zwischenfinanzierung prüfen. Kein zusätzlicher Zuschuss."] },
-      "costRules": {},
-      "rates": {},
-      "caps": { "loanPerUnitCents": 12000000 },
-      "combinations": ["kfw-458", "kfw-459"],
-      "exclusions": [],
-      "validFrom": null,
-      "validUntil": null,
-      "checkedAt": "2026-09-18",
-      "reviewDueAt": "2026-10-18",
-      "sourceUrls": ["https://www.kfw.de/inlandsfoerderung/Privatpersonen/Bestehende-Immobilie/F%C3%B6rderprodukte/Einzelma%C3%9Fnahmen-Erg%C3%A4nzungskredit-Wohngeb%C3%A4ude-(358-359)/"],
-      "ruleVersion": "358-2026-09",
-      "calculationApproved": false
-    },
-    {
-      "id": "kfw-261",
-      "name": "KfW 261 Wohngebäude Kredit (Effizienzhaus-Sanierung)",
-      "provider": "KfW",
-      "region": "DE",
-      "fundingType": "Kredit mit Tilgungszuschuss",
-      "status": "aktiv",
-      "applicantTypes": ["privat-selbstnutzer", "privat-vermieter", "weg", "unternehmen"],
-      "measures": ["energetische-sanierung"],
-      "eligibility": { "notes": ["Bis 150.000 EUR Kredit je Wohneinheit bei qualifizierender Gesamtsanierung.", "Effizienzhaus-Standard und Tilgungszuschuss projektbezogen prüfen. Gewöhnliche Renovierung ist nicht förderfähig."] },
-      "costRules": {},
-      "rates": {},
-      "caps": { "loanPerUnitCents": 15000000 },
-      "combinations": [],
-      "exclusions": [],
-      "validFrom": null,
-      "validUntil": null,
-      "checkedAt": "2026-09-18",
-      "reviewDueAt": "2026-10-18",
-      "sourceUrls": ["https://www.kfw.de/inlandsfoerderung/Privatpersonen/Bestehende-Immobilie/F%C3%B6rderprodukte/Bundesf%C3%B6rderung-f%C3%BCr-effiziente-Geb%C3%A4ude-Wohngeb%C3%A4ude-Kredit-(261-262)/"],
-      "ruleVersion": "261-2026-09",
-      "calculationApproved": false
-    },
-    {
-      "id": "nrw-bank-gebaeudesanierung",
-      "name": "NRW.BANK.Gebäudesanierung",
-      "provider": "NRW.BANK",
-      "region": "NRW",
-      "fundingType": "Darlehen",
-      "status": "aktiv",
-      "applicantTypes": ["privat-selbstnutzer"],
-      "measures": ["energetische-sanierung", "heizung-austausch", "bad-barriere"],
-      "eligibility": { "notes": ["Bis 150.000 EUR Darlehen für passende Maßnahmen an selbstgenutztem Wohneigentum in NRW.", "Persönliche, Objekt- und Finanzierungsbedingungen prüfen."] },
-      "costRules": {},
-      "rates": {},
-      "caps": { "loanCents": 15000000 },
-      "combinations": [],
-      "exclusions": [],
-      "validFrom": null,
-      "validUntil": null,
-      "checkedAt": "2026-09-18",
-      "reviewDueAt": "2026-10-18",
-      "sourceUrls": ["https://www.nrwbank.de/de/foerderung/foerderprodukte/15603/nrwbank-gebaeudesanierung.html"],
-      "ruleVersion": "nrwbank-gs-2026-09",
-      "calculationApproved": false
-    },
-    {
-      "id": "nrw-eigentumsfoerderung-modernisierung",
-      "name": "NRW-Eigentumsförderung Modernisierung",
-      "provider": "NRW.BANK / Land NRW",
-      "region": "NRW",
-      "fundingType": "Darlehen mit Tilgungsnachlass",
-      "status": "aktiv",
-      "applicantTypes": ["privat-selbstnutzer"],
-      "measures": ["energetische-sanierung", "bad-barriere"],
-      "eligibility": { "notes": ["Bis 220.000 EUR Darlehen und bis 50 % Tilgungsnachlass bei erfüllten Voraussetzungen (u. a. Einkommensgrenzen).", "Kein allgemeiner 50-%-Sanierungszuschuss."] },
-      "costRules": {},
-      "rates": {},
-      "caps": { "loanCents": 22000000, "maxRepaymentWaiverPoints": 50 },
-      "combinations": [],
-      "exclusions": [],
-      "validFrom": null,
-      "validUntil": null,
-      "checkedAt": "2026-09-18",
-      "reviewDueAt": "2026-10-18",
-      "sourceUrls": ["https://www.nrwbank.de/de/foerderung/foerderprodukte/15342/eigentumsfoerderung---modernisierung.html"],
-      "ruleVersion": "nrw-ef-mod-2026-09",
-      "calculationApproved": false
-    },
-    {
-      "id": "progres-nrw-geothermie",
-      "name": "progres.nrw Oberflächennahe Geothermie mit Wärmepumpe",
-      "provider": "Bezirksregierung Arnsberg",
-      "region": "NRW",
-      "fundingType": "Zuschuss",
-      "status": "Prüfung erforderlich",
-      "applicantTypes": ["privat-vermieter", "weg", "unternehmen", "privat-selbstnutzer"],
-      "measures": ["heizung-austausch"],
-      "eligibility": { "buildingTypes": ["mfh"], "minUnits": 3, "notes": ["Erdwärmesonden mit Wärmepumpe in Bestands-Mehrfamilienhäusern ab drei Wohneinheiten: 30 EUR je Bohrmeter, höchstens 15.000 EUR.", "Verfügbarkeit und vollständige Bedingungen erneut prüfen. Nicht auf Einfamilienhäuser übertragen."] },
-      "costRules": {},
-      "rates": { "perMeterCents": 3000 },
-      "caps": { "totalCapCents": 1500000 },
-      "combinations": [],
-      "exclusions": [],
-      "validFrom": null,
-      "validUntil": null,
-      "checkedAt": "2026-09-18",
-      "reviewDueAt": "2026-10-18",
-      "sourceUrls": ["https://www.bra.nrw.de/energie-bergbau/foerderprogramme-fuer-klimaschutz-und-energiewende/foerderbereiche/stromerzeugung-waermeerzeugung/foerderung-von-oberflaechennaher-geothermie-verbindung-mit-einer-waermepumpe"],
-      "ruleVersion": "progres-geo-unbestaetigt",
-      "calculationApproved": false
-    },
-    {
-      "id": "steuer-35c",
-      "name": "Steuerermäßigung für energetische Maßnahmen (§ 35c EStG)",
-      "provider": "Finanzverwaltung",
-      "region": "DE",
-      "fundingType": "Steuerermäßigung",
-      "status": "aktiv",
-      "applicantTypes": ["privat-selbstnutzer"],
-      "measures": ["heizung-austausch", "heizung-optimierung", "energetische-sanierung"],
-      "eligibility": { "notes": ["Insgesamt 20 % der Aufwendungen verteilt über drei Jahre, höchstens 40.000 EUR je Objekt, bei erfüllten Voraussetzungen.", "Nur selbstgenutztes Wohneigentum, Fachunternehmerbescheinigung erforderlich.", "Keine Doppelbegünstigung: nicht für Maßnahmen, für die ein Zuschuss in Anspruch genommen wird."] },
-      "costRules": {},
-      "rates": { "totalPoints": 20, "years": 3 },
-      "caps": { "totalCapCents": 4000000 },
-      "combinations": [],
-      "exclusions": ["kfw-458-gleiche-massnahme", "bafa-gleiche-massnahme"],
-      "validFrom": "2020-01-01",
-      "validUntil": null,
-      "checkedAt": "2026-09-18",
-      "reviewDueAt": "2026-10-18",
-      "sourceUrls": ["https://www.gesetze-im-internet.de/estg/__35c.html"],
-      "ruleVersion": "35c-2026-09",
-      "calculationApproved": false,
-      "internalNotes": "Nur als Alternative erklären; individuelle Steuerwirkung durch Steuerberatung."
-    },
-    {
-      "id": "steuer-35a",
-      "name": "Steuerermäßigung für Handwerkerleistungen (§ 35a EStG)",
-      "provider": "Finanzverwaltung",
-      "region": "DE",
-      "fundingType": "Steuerermäßigung",
-      "status": "Prüfung erforderlich",
-      "applicantTypes": ["privat-selbstnutzer", "privat-mieter"],
-      "measures": ["bad-barriere", "heizung-optimierung", "sanierung-allgemein"],
-      "eligibility": { "notes": ["Begünstigte Kosten, Nachweise und Ausschluss einer Doppelbegünstigung vor Berechnung vollständig prüfen."] },
-      "costRules": {},
-      "rates": {},
-      "caps": {},
-      "combinations": [],
-      "exclusions": [],
-      "validFrom": null,
-      "validUntil": null,
-      "checkedAt": "2026-09-18",
-      "reviewDueAt": "2026-10-18",
-      "sourceUrls": ["https://www.gesetze-im-internet.de/estg/__35a.html"],
-      "ruleVersion": "35a-unbestaetigt",
-      "calculationApproved": false
-    }
-  ]
+    ]
 }
