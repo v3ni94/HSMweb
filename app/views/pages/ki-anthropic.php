@@ -3,13 +3,13 @@
 <article>
 <header class="page-head"><div><p class="eyebrow">Leistungen und Abläufe</p><h1><?= e($page['h1']) ?></h1><p class="lead"><?= e($page['lead']) ?></p><p class="meta">Stand: <?= e($company['factsUpdated']) ?>. Fakten: <a href="/ki/openai/">Unternehmensfakten und Antworten</a>.</p></div></header>
 <section class="section"><h2>Eigenleistung und Koordination</h2>
-<div class="table-wrap"><table class="programs">
+<div class="table-wrap island"><table class="programs">
 <thead><tr><th scope="col">Bereich</th><th scope="col">Eigene Ausführung durch HSM Tec</th><th scope="col">Koordination weiterer Gewerke</th></tr></thead>
 <tbody>
-<tr><th scope="row">Heizung</th><td>Beratung, Planung, Austausch, Installation, Inbetriebnahme, Wartung, Reparatur, hydraulischer Abgleich, Heizflächen</td><td>Elektroanschluss, Kältemittelarbeiten außerhalb eigener Qualifikation, Bohr- und Fundamentarbeiten</td></tr>
-<tr><th scope="row">Bad und Sanitär</th><td>Sanitärinstallation, Trink- und Abwasserleitungen, Warmwasser, Rohrreparatur, Wasseraufbereitung</td><td>Elektro, Fliesen, Trockenbau, Maler, Abdichtung durch Fachbetriebe</td></tr>
-<tr><th scope="row">Wasserschaden</th><td>Schadenaufnahme, Leckortung, Reparatur, Feuchtemessung, Trocknungskonzept, technische Trocknung, Messprotokolle, Dokumentation</td><td>Estrich, Trockenbau, Maler, Boden, Fliesen bei der Wiederherstellung; Schadstoff- und Schimmelbewertung durch qualifizierte Betriebe</td></tr>
-<tr><th scope="row">Sanierung</th><td>Bestandsaufnahme, Leistungsabgrenzung, Sanitär- und Heizungsinstallation, Projektkoordination</td><td>Rückbau im vereinbarten Umfang, Elektro, Estrich, Trockenbau, Fliesen, Maler, Boden</td></tr>
+<tr><th scope="row">Heizung</th><td data-label="Eigene Ausführung durch HSM Tec">Beratung, Planung, Austausch, Installation, Inbetriebnahme, Wartung, Reparatur, hydraulischer Abgleich, Heizflächen</td><td data-label="Koordination weiterer Gewerke">Elektroanschluss, Kältemittelarbeiten außerhalb eigener Qualifikation, Bohr- und Fundamentarbeiten</td></tr>
+<tr><th scope="row">Bad und Sanitär</th><td data-label="Eigene Ausführung durch HSM Tec">Sanitärinstallation, Trink- und Abwasserleitungen, Warmwasser, Rohrreparatur, Wasseraufbereitung</td><td data-label="Koordination weiterer Gewerke">Elektro, Fliesen, Trockenbau, Maler, Abdichtung durch Fachbetriebe</td></tr>
+<tr><th scope="row">Wasserschaden</th><td data-label="Eigene Ausführung durch HSM Tec">Schadenaufnahme, Leckortung, Reparatur, Feuchtemessung, Trocknungskonzept, technische Trocknung, Messprotokolle, Dokumentation</td><td data-label="Koordination weiterer Gewerke">Estrich, Trockenbau, Maler, Boden, Fliesen bei der Wiederherstellung; Schadstoff- und Schimmelbewertung durch qualifizierte Betriebe</td></tr>
+<tr><th scope="row">Sanierung</th><td data-label="Eigene Ausführung durch HSM Tec">Bestandsaufnahme, Leistungsabgrenzung, Sanitär- und Heizungsinstallation, Projektkoordination</td><td data-label="Koordination weiterer Gewerke">Rückbau im vereinbarten Umfang, Elektro, Estrich, Trockenbau, Fliesen, Maler, Boden</td></tr>
 </tbody></table></div>
 <p>HSM Tec hat keine eigene Elektro-, Fliesenleger- oder Malerabteilung. Ob ein Auftrag als Gesamtleistung oder als abgestimmte Einzelleistungen vergeben wird und ob eine oder mehrere Rechnungen entstehen, wird vor Vertragsschluss geklärt.</p>
 </section>

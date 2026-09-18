@@ -5,13 +5,16 @@
   <p class="lead"><?= e($page['lead']) ?></p>
 </div></header>
 <noscript>
-  <section class="section notice">
+  <section class="section notice island">
     <h2>Fördercheck ohne JavaScript</h2>
     <p>Der interaktive Fördercheck benötigt JavaScript. Die Förderinformationen finden Sie auf den Seiten <a href="/foerderung/heizung/">Förderung Heizung</a>, <a href="/foerderung/bad-und-barriereabbau/">Bad und Barriereabbau</a> und <a href="/foerderung/nrw/">Förderung in NRW</a>. Für eine persönliche Einschätzung nutzen Sie das Formular unten. Bitte geben Sie dort keine Einkommens- oder Pflegeangaben ein; diese besprechen wir im Gespräch.</p>
   </section>
 </noscript>
-<section class="section calc" data-funding-calc data-rules-url="<?= asset('data/funding-rules.json') ?>" hidden>
+</div>
+<section class="calc" data-funding-calc data-rules-url="<?= asset('data/funding-rules.json') ?>" hidden>
+  <div class="wrap">
   <ol class="calc-progress" data-calc-progress aria-hidden="true"><li></li><li></li><li></li><li></li><li></li></ol>
+  <p class="hint calc-progress-text" data-calc-progress-text aria-live="polite" hidden></p>
   <form class="form calc-form" data-calc-form novalidate>
     <fieldset class="calc-step" data-step="1">
       <legend>1. Vorhaben und Ort</legend>
@@ -75,14 +78,18 @@
     </fieldset>
     <p class="btn-row"><button type="submit" class="btn btn-primary">Ergebnis anzeigen</button> <button type="reset" class="btn btn-ghost">Zurücksetzen</button></p>
   </form>
-  <section class="calc-result" data-calc-result aria-live="polite" hidden>
+  </div>
+  <section class="calc-result band band-deep" data-calc-result aria-live="polite" hidden>
+    <div class="wrap">
     <p class="eyebrow">Ergebnis</p><h2>Ihre Einschätzung</h2>
     <div data-result-body></div>
     <p class="hint">Regelstand: <span data-rule-version></span>. Das Ergebnis ist eine Einschätzung auf Basis des hinterlegten Regelwerks, weder Angebot noch Förderzusage. Einkommens- und Pflegeangaben verlassen Ihren Browser nicht.</p>
     <p class="btn-row"><button type="button" class="btn btn-ghost" data-print>Druckansicht</button> <button type="button" class="btn btn-secondary" data-transfer>Vorhaben mit HSM Tec besprechen</button></p>
     <p class="hint" data-transfer-note hidden>Es werden nur Vorhaben, Gebäudeart, Wohneinheiten und die Kostengröße in das Formular übernommen. Keine Einkommens- oder Pflegeangaben.</p>
+    </div>
   </section>
 </section>
+<div class="wrap">
 <section class="section">
   <h2>Was der Fördercheck kann und was nicht</h2>
   <ul class="checklist">

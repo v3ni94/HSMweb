@@ -21,9 +21,20 @@
       root.hidden = false;
       form.hidden = true;
       resultBox.hidden = false;
-      body.innerHTML = '<p class="notice">Das Regelwerk konnte nicht geladen werden. Bitte nutzen Sie die Förderübersicht oder das Formular unten.</p>';
+      body.innerHTML = '<p class="notice island">Das Regelwerk konnte nicht geladen werden. Bitte nutzen Sie die Förderübersicht oder das Formular unten.</p>';
     });
 
+  // Legenden ohne feste Nummer merken, die Nummer folgt der Reihenfolge der sichtbaren Schritte
+  var legends = Array.prototype.slice.call(root.querySelectorAll('.calc-step legend'));
+  legends.forEach(function (lg) { lg.setAttribute('data-title', lg.textContent.replace(/^\s*\d+[a-z]?\.\s*/, '')); });
+  function renumber() {
+    var n = 0;
+    root.querySelectorAll('.calc-step').forEach(function (fs) {
+      var lg = fs.querySelector('legend');
+      if (fs.hidden || !lg) return;
+      n++; lg.textContent = n + '. ' + lg.getAttribute('data-title');
+    });
+  }
   function updateVisibility() {
     var measure = form.elements.measure.value;
     var applicant = form.elements.applicant.value;
@@ -33,18 +44,24 @@
       fs.hidden = !show;
       fs.disabled = !show;
     });
+    renumber();
   }
   // Fortschrittsanzeige: ausgefüllte Schritte
   var progress = root.querySelector('[data-calc-progress]');
+  var progressText = root.querySelector('[data-calc-progress-text]');
   function updateProgress() {
     if (!progress) return;
     var steps = Array.prototype.slice.call(root.querySelectorAll('.calc-step')).filter(function (fs) { return !fs.hidden; });
     var items = progress.querySelectorAll('li');
+    var doneCount = 0;
     items.forEach(function (li, i) {
       var fs = steps[i]; var done = false;
       if (fs) { var req = fs.querySelectorAll('select, input[type=text], input[type=number], input[type=date]'); done = Array.prototype.every.call(req, function (el) { return el.value !== ''; }) && req.length > 0; }
+      if (done) doneCount++;
       li.classList.toggle('is-done', done); li.hidden = !fs;
     });
+    // Sichtbare Zeile aus echten DOM-Werten, sobald das Regelwerk geladen ist
+    if (progressText && rules) { progressText.textContent = 'Schritt ' + doneCount + ' von ' + steps.length + ' ausgefüllt'; progressText.hidden = false; }
   }
   form.addEventListener('change', updateVisibility);
   form.addEventListener('input', updateProgress);

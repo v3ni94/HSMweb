@@ -33,6 +33,21 @@ function paragraphs(array|string $text): string
     return $out;
 }
 
+/** Kürzt einen Text auf höchstens $width Zeichen an einer Wortgrenze und hängt eine Ellipse an. */
+function excerpt(string $text, int $width): string
+{
+    $text = trim($text);
+    if (mb_strlen($text) <= $width) {
+        return $text;
+    }
+    $cut = mb_substr($text, 0, $width);
+    $pos = mb_strrpos($cut, ' ');
+    if ($pos !== false && $pos > (int)($width * 0.5)) {
+        $cut = mb_substr($cut, 0, $pos);
+    }
+    return rtrim($cut, " ,;:.") . ' …';
+}
+
 function fmt_date(string $iso): string
 {
     $t = strtotime($iso);

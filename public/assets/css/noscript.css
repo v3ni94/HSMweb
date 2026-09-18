@@ -1,0 +1,6 @@
+/* HSM Tec: wird nur über <noscript><link> geladen. Ohne JavaScript ist die Hauptnavigation unter 960 px aufgeklappt, der Toggle entfällt. */
+.main-nav { display: block; }
+.nav-toggle { display: none; }
+.read-progress, [data-jobcount], [data-calc-progress-text] { display: none; }
+/* Die aufgeklappte Navigation ist bis zu 480 px hoch, deshalb bleibt der Header ohne JavaScript im Fluss statt sticky */
+@media (max-width: 959px) { .site-header { position: static; } }

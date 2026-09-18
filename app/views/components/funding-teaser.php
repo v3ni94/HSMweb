@@ -1,5 +1,5 @@
 <?php use App\Services\View; if (empty($funding)) { return; } $fp = $content->page($funding); ?>
-<aside class="callout callout-dark on-dark" aria-labelledby="funding-teaser" data-reveal>
+<aside class="callout callout-dark" aria-labelledby="funding-teaser" data-reveal>
   <?= View::component('stripes', ['class' => 'stripes-sm']) ?>
   <p class="eyebrow">Förderung</p>
   <h2 id="funding-teaser">Förderung prüfen</h2>

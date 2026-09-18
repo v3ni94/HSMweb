@@ -23,17 +23,20 @@ $isActive = fn(string $p): bool => $p === '/' ? $page['path'] === '/' : str_star
 <?php if ($noindex): ?><meta name="robots" content="noindex, nofollow">
 <?php else: ?><link rel="canonical" href="<?= e($canonical) ?>">
 <?php endif; ?>
-<meta name="theme-color" content="#17232D">
+<meta name="theme-color" content="#0E161D">
 <link rel="icon" href="/favicon.ico" sizes="any">
 <link rel="icon" href="<?= asset('brand/hsm-tec-symbol.png') ?>" type="image/png" sizes="500x500">
 <link rel="apple-touch-icon" href="<?= asset('brand/apple-touch-icon.png') ?>">
 <link rel="stylesheet" href="<?= asset('css/site.css') ?>">
+<noscript><link rel="stylesheet" href="<?= asset('css/noscript.css') ?>"></noscript>
 <?php foreach ($jsonLd as $ld): ?>
 <script type="application/ld+json"><?= json_encode($ld, JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES | JSON_HEX_TAG | JSON_HEX_AMP) ?></script>
 <?php endforeach; ?>
 </head>
 <body class="tpl-<?= e($page['template']) ?>">
 <a class="skip-link" href="#inhalt">Zum Inhalt springen</a>
+<?php if (in_array($page['template'], ['guide', 'legal'], true)): ?><div class="read-progress" data-read-progress hidden aria-hidden="true"></div>
+<?php endif; ?>
 <header class="site-header" data-header>
   <div class="wrap header-inner">
     <a class="brand" href="/" aria-label="HSM Tec GmbH, zur Startseite">

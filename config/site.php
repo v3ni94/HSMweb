@@ -13,7 +13,7 @@ return [
     'publicDir' => dirname(__DIR__) . '/public',
     // Staging: Suchmaschinen aussperren. Auf Produktion muss dies false sein (siehe release-checklist.md).
     'noindexAll' => (getenv('HSM_ENV') ?: 'production') !== 'production',
-    'assetVersion' => '2026.09.18-2',
+    'assetVersion' => '2026.09.18-3',
     // Vertrauenswürdige vorgeschaltete Proxys (nur dann X-Forwarded-For auswerten).
     'trustedProxies' => [],
 ];

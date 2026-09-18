@@ -25,7 +25,7 @@ $selTopic = $data['topic'] ?? $topic;
 <section class="section form-section" id="anfrage" aria-labelledby="<?= $fid ?>-h">
   <h2 id="<?= $fid ?>-h"><?= e($heading) ?></h2>
   <?php if ($type === 'damage'): ?>
-    <p class="notice">Bei akutem Wasseraustritt: Hauptabsperrhahn schließen und anrufen: <a href="tel:<?= e($company['phoneE164']) ?>"><?= e($company['phoneDisplay']) ?></a>. Dieses Formular ist keine laufend besetzte Notrufstelle.</p>
+    <p class="notice island">Bei akutem Wasseraustritt: Hauptabsperrhahn schließen und anrufen: <a href="tel:<?= e($company['phoneE164']) ?>"><?= e($company['phoneDisplay']) ?></a>. Dieses Formular ist keine laufend besetzte Notrufstelle.</p>
   <?php elseif ($type === 'application'): ?>
     <p>Name und ein Kontaktweg genügen für den ersten Schritt. Anschreiben und Lebenslauf sind nicht erforderlich. Bitte keine Geburtsdaten, Gesundheitsdaten oder Fotos.</p>
   <?php else: ?>

@@ -7,6 +7,7 @@
     <button type="button" class="chip" data-filter="alle" aria-pressed="true">Alle</button>
     <?php foreach (array_keys($groups) as $g): ?><button type="button" class="chip" data-filter="<?= e($g) ?>" aria-pressed="false"><?= e($g) ?></button><?php endforeach; ?>
   </div>
+  <p class="meta" data-jobcount aria-live="polite" hidden></p>
   <ul class="card-grid">
     <?php foreach ($jobs as $j): if ($j['type'] === 'initiative') continue; $grp = 'Weitere'; foreach ($groups as $gn => $slugs) { if (in_array($j['slug'], $slugs, true)) { $grp = $gn; } } ?>
       <li class="card" data-group="<?= e($grp) ?>"><a href="/karriere/<?= e($j['slug']) ?>/"><h3><?= e($j['title']) ?> (m/w/d)</h3><p><?= e($j['summary']) ?></p><p class="meta"><?= e($j['employmentType']) ?>, <?= e($j['location']) ?></p></a></li>

@@ -1,6 +1,7 @@
 <?php $l = $company['legal']; $missing = []; foreach (['registerCourt' => 'Registergericht', 'registerNumber' => 'Registernummer', 'vatId' => 'Umsatzsteuer-Identifikationsnummer', 'chamber' => 'Zuständige Kammer', 'supervisoryAuthority' => 'Aufsichtsbehörde'] as $k => $label) { if (empty($l[$k])) $missing[] = $label; } ?>
 <div class="wrap">
 <header class="page-head"><div><p class="eyebrow">Rechtliches</p><h1>Impressum</h1><p class="lead">Angaben gemäß § 5 DDG.</p></div></header>
+<div class="island island-read">
 <section class="section">
 <dl class="facts">
   <dt>Anbieter</dt><dd><?= e($company['legalName']) ?></dd>
@@ -25,4 +26,5 @@
   <h2>Haftung für Inhalte und Links</h2>
   <p>Wir erstellen die Inhalte dieser Website mit Sorgfalt. Für externe Links übernehmen wir keine Gewähr; für deren Inhalte sind die jeweiligen Anbieter verantwortlich. Förderangaben sind Einschätzungen auf Basis der genannten Quellen und keine Zusage.</p>
 </section>
+</div>
 </div>

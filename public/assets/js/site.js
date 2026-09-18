@@ -53,8 +53,8 @@
         entries.forEach(function (en) { if (en.isIntersecting) { en.target.classList.add('is-visible'); io.unobserve(en.target); } });
       }, { rootMargin: '0px 0px -8% 0px', threshold: 0.05 });
       reveals.forEach(function (el) { io.observe(el); });
-      // Sicherheitsnetz: nach 2 s alles sichtbar
-      setTimeout(function () { reveals.forEach(function (el) { el.classList.add('is-visible'); }); }, 2000);
+      // Sicherheitsnetz: nach 800 ms alles sichtbar
+      setTimeout(function () { reveals.forEach(function (el) { el.classList.add('is-visible'); }); }, 800);
     }
   }
 
@@ -79,36 +79,86 @@
     });
   });
 
-  // Projektfinder
+  // Projektfinder als Tabs: Klick, Pfeiltasten, Pos1 und Ende wählen ein Thema, roving tabindex erst ab der ersten Auswahl
   var finder = document.querySelector('[data-projectfinder]');
   if (finder) {
-    var chips = finder.querySelectorAll('[data-finder]');
+    var chips = Array.prototype.slice.call(finder.querySelectorAll('[data-finder]'));
     var panels = finder.querySelectorAll('[data-finder-panel]');
-    chips.forEach(function (chip) {
-      chip.addEventListener('click', function () {
-        var key = chip.getAttribute('data-finder');
-        chips.forEach(function (c) { c.setAttribute('aria-pressed', c === chip ? 'true' : 'false'); });
-        chips.forEach(function (c) { c.setAttribute('aria-selected', c === chip ? 'true' : 'false'); });
-        panels.forEach(function (p) { p.hidden = p.getAttribute('data-finder-panel') !== key; });
-        var ph = finder.querySelector('[data-finder-placeholder]'); if (ph) ph.hidden = true;
-        var active = finder.querySelector('[data-finder-panel="' + key + '"]');
-        if (active) { active.setAttribute('tabindex', '-1'); active.focus({ preventScroll: true }); }
+    var selectChip = function (chip, focusChip) {
+      var key = chip.getAttribute('data-finder');
+      chips.forEach(function (c) {
+        var on = c === chip;
+        c.setAttribute('aria-selected', on ? 'true' : 'false');
+        c.setAttribute('tabindex', on ? '0' : '-1');
+      });
+      panels.forEach(function (p) { p.hidden = p.getAttribute('data-finder-panel') !== key; });
+      var ph = finder.querySelector('[data-finder-placeholder]'); if (ph) ph.hidden = true;
+      if (focusChip) { chip.focus(); return; }
+      var active = finder.querySelector('[data-finder-panel="' + key + '"]');
+      if (active) { active.setAttribute('tabindex', '-1'); active.focus({ preventScroll: true }); }
+    };
+    chips.forEach(function (chip, i) {
+      chip.addEventListener('click', function () { selectChip(chip, false); });
+      chip.addEventListener('keydown', function (e) {
+        var n = chips.length; var target = null;
+        if (e.key === 'ArrowRight' || e.key === 'ArrowDown') target = chips[(i + 1) % n];
+        else if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') target = chips[(i - 1 + n) % n];
+        else if (e.key === 'Home') target = chips[0];
+        else if (e.key === 'End') target = chips[n - 1];
+        if (target) { e.preventDefault(); selectChip(target, true); }
       });
     });
   }
 
-  // Stellenfilter
+  // Stellenfilter: Karten ausblenden, Anzahl sichtbarer Stellen aus dem DOM schreiben
   var jf = document.querySelector('[data-jobfilter]');
   if (jf) {
     var fchips = jf.querySelectorAll('[data-filter]');
     var cards = jf.querySelectorAll('[data-group]');
+    var counter = jf.querySelector('[data-jobcount]');
+    var animate = document.documentElement.classList.contains('js') && !reduceMotion;
+    var updateCount = function () {
+      if (!counter) return;
+      var n = Array.prototype.filter.call(cards, function (c) { return !c.hidden; }).length;
+      counter.textContent = n === 1 ? '1 Stelle' : n + ' Stellen';
+      counter.hidden = false;
+    };
+    var hideCard = function (c) {
+      if (c.hidden) return;
+      if (animate) { c.classList.add('is-filtered-out'); setTimeout(function () { c.hidden = true; }, 200); }
+      else { c.hidden = true; }
+    };
+    var showCard = function (c) {
+      c.hidden = false;
+      if (animate) { requestAnimationFrame(function () { c.classList.remove('is-filtered-out'); }); }
+      else { c.classList.remove('is-filtered-out'); }
+    };
     fchips.forEach(function (chip) {
       chip.addEventListener('click', function () {
         var key = chip.getAttribute('data-filter');
         fchips.forEach(function (c) { c.setAttribute('aria-pressed', c === chip ? 'true' : 'false'); });
-        cards.forEach(function (c) { c.hidden = key !== 'alle' && c.getAttribute('data-group') !== key; });
+        cards.forEach(function (c) { if (key !== 'alle' && c.getAttribute('data-group') !== key) hideCard(c); else showCard(c); });
+        // Zähler aus dem Zielzustand, nicht aus dem laufenden Übergang
+        var n = Array.prototype.filter.call(cards, function (c) { return key === 'alle' || c.getAttribute('data-group') === key; }).length;
+        if (counter) { counter.textContent = n === 1 ? '1 Stelle' : n + ' Stellen'; counter.hidden = false; }
       });
     });
+    updateCount();
+  }
+
+  // Lesefortschritt auf Ratgeber- und Rechtstexten: Balken skaliert mit der Scrollposition (CSSOM, kein Inline-Stilattribut)
+  var progressBar = document.querySelector('[data-read-progress]');
+  if (progressBar) {
+    progressBar.hidden = false;
+    var ticking = false;
+    var paint = function () {
+      var max = document.documentElement.scrollHeight - window.innerHeight;
+      var ratio = max > 0 ? Math.min(1, Math.max(0, window.scrollY / max)) : 0;
+      progressBar.style.transform = 'scaleX(' + ratio + ')';
+      ticking = false;
+    };
+    window.addEventListener('scroll', function () { if (!ticking) { ticking = true; requestAnimationFrame(paint); } }, { passive: true });
+    paint();
   }
 
   // Thema aus Query (?thema=) in Kontaktformular übernehmen, falls Server es nicht getan hat

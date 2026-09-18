@@ -1,5 +1,5 @@
 <?php use App\Services\View; $icon = fn($n) => View::component('icon', ['name' => $n]); $iconMap = ['/heizung/' => 'heizung', '/sanitaer/' => 'bad', '/wasserschaden/' => 'wasser', '/sanierung/' => 'sanierung', '/fuer-hausverwaltungen-und-vermieter/' => 'verwaltung', '/fuer-gewerbekunden/' => 'gewerbe', '/foerderung/' => 'foerderung']; ?>
-<section class="hero-dark hero-compact on-dark">
+<section class="hero-dark hero-compact">
   <?= View::component('stripes', ['class' => 'stripes']) ?>
   <div class="wrap"><div class="hero-inner">
     <p class="eyebrow"><?= e($page['parent'] ? ($content->page($page['parent'])['title'] ?? 'Leistungen') : 'HSM Tec GmbH') ?></p>
@@ -9,13 +9,13 @@
   </div></div>
 </section>
 <div class="wrap">
-<?php if (!empty($page['emergencyHint'])): ?><p class="notice notice-top"><?= e($page['emergencyHint']) ?></p><?php endif; ?>
+<?php if (!empty($page['emergencyHint'])): ?><p class="notice notice-top island"><?= e($page['emergencyHint']) ?></p><?php endif; ?>
 <?php if (!empty($page['hubChildren'])): ?>
 <section class="section" aria-labelledby="hub-h">
   <div class="section-head" data-reveal><p class="eyebrow">Themen</p><h2 id="hub-h">Unsere Leistungen im Detail</h2></div>
   <ul class="card-grid" data-reveal>
     <?php foreach ($page['hubChildren'] as $i => $cp): $c = $content->page($cp); if (!$c) continue; ?>
-      <li class="card"><a href="<?= e($cp) ?>"><?php if (isset($iconMap[$cp])): ?><span class="card-icon"><?= $icon($iconMap[$cp]) ?></span><?php else: ?><span class="num"><?= sprintf('%02d', $i + 1) ?></span><?php endif; ?><h3><?= e($c['title']) ?></h3><p><?= e(mb_strimwidth($c['metaDescription'] ?? '', 0, 150, '…')) ?></p><span class="card-arrow">Mehr erfahren <?= $icon('arrow') ?></span></a></li>
+      <li class="card"><a href="<?= e($cp) ?>"><?php if (isset($iconMap[$cp])): ?><span class="card-icon"><?= $icon($iconMap[$cp]) ?></span><?php else: ?><span class="num"><?= sprintf('%02d', $i + 1) ?></span><?php endif; ?><h3><?= e($c['title']) ?></h3><p><?= e(excerpt($c['metaDescription'] ?? '', 150)) ?></p><span class="card-arrow">Mehr erfahren <?= $icon('arrow') ?></span></a></li>
     <?php endforeach; ?>
     <?php foreach ($page['extraLinks'] ?? [] as $x): ?>
       <li class="card card-muted"><a href="<?= e($x['path']) ?>"><?php if (isset($iconMap[$x['path']])): ?><span class="card-icon"><?= $icon($iconMap[$x['path']]) ?></span><?php endif; ?><h3><?= e($x['title']) ?></h3><span class="card-arrow">Zur Seite <?= $icon('arrow') ?></span></a></li>
