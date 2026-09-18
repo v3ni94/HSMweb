@@ -488,3 +488,42 @@ body { padding-bottom: 80px; }
   *, *::before, *::after { transition: none !important; animation: none !important; }
   body { padding: 0; font-size: 11pt; }
 }
+
+/* Design v4 „Dunkler Rhythmus“: helle Grundfläche, dunkle Bühnen für Header, Hero, Bänder, Fördercheck-Ergebnis, Faktenkarte und Footer.
+   Die dunklen Werte sind gegenüber v3 angehoben (Anthrazit statt Schwarz), damit die Seite dunkel bleibt, aber nicht schwer wirkt. */
+:root {
+  color-scheme: light;
+  --bg: #F5F7F8; --surface: #FFFFFF; --overlay: #ECF0F2; --overlay-strong: #E0E6EA;
+  --line: #E0E6EA; --line-strong: #6B7A85; --line-hover: #6B7A85; --ring: transparent;
+  --text: #17232D; --text-strong: #0E161D; --text-soft: #3E4C57; --text-muted: #5B6975;
+  --link: #9C1325; --link-hover: #7E0F1E; --link-line: currentColor; --focus: #17232D;
+  --icon-bg: #F6E9EB; --icon-fg: #9C1325; --check-bg: #F6E9EB; --check-fg: #9C1325;
+  --btn2-bg: #17232D; --btn2-fg: #FFFFFF; --btn2-hover: #0E161D;
+  --ghost-fg: #17232D; --ghost-bg: #FFFFFF; --ghost-hover-bg: #F5F7F8;
+  --notice-bg: #FFF6E5; --notice-line: #8A4B00; --notice-ok-bg: #EAF5EE; --notice-ok-line: #1F6B3A;
+  --shadow: 0 2px 6px rgba(23,35,45,.06), 0 12px 32px rgba(23,35,45,.10);
+}
+body { background: #FFFFFF; }
+.island { background-image: none; border-radius: 0; padding: 0; }
+.stage, .site-header, .hero-dark, .band, .calc-result, .site-footer, .facts-card, .card-dark, .mobile-bar {
+  color-scheme: dark;
+  --bg: #1B2733; --bg-deep: #0E161D; --surface: #24323F; --overlay: rgba(255,255,255,.07); --overlay-strong: rgba(255,255,255,.12);
+  --line: rgba(255,255,255,.14); --line-strong: rgba(255,255,255,.5); --line-hover: rgba(255,255,255,.35); --ring: rgba(255,255,255,.45);
+  --text: #E9EEF2; --text-strong: #FFFFFF; --text-soft: #B7C3CC; --text-muted: #B7C3CC;
+  --link: #FFFFFF; --link-hover: #FFFFFF; --link-line: #B7C3CC; --focus: #FFFFFF;
+  --icon-bg: rgba(255,255,255,.12); --icon-fg: #FFFFFF; --check-bg: rgba(255,255,255,.12); --check-fg: #FFFFFF;
+  --btn2-bg: #FFFFFF; --btn2-fg: #0E161D; --btn2-hover: #F5F7F8;
+  --ghost-fg: #FFFFFF; --ghost-bg: transparent; --ghost-hover-bg: rgba(255,255,255,.08);
+  --notice-bg: rgba(255,255,255,.07); --notice-line: #FFFFFF; --notice-ok-bg: rgba(255,255,255,.07); --notice-ok-line: #FFFFFF;
+  --shadow: 0 2px 6px rgba(0,0,0,.35), 0 12px 32px rgba(0,0,0,.4);
+  color: var(--text);
+}
+.band { background: var(--bg); }
+.hero-dark { background: radial-gradient(1200px 600px at 85% -10%, var(--brand-glow), transparent 60%), var(--bg-deep); border-bottom: 0; }
+.calc-result { background: radial-gradient(900px 400px at 100% 0%, var(--brand-glow), transparent 60%), var(--bg-deep); }
+.site-footer { background: var(--bg-deep); }
+.facts-card, .card-dark { background: var(--surface); }
+.card-dark .card-icon { background: var(--icon-bg); color: var(--icon-fg); }
+.finder-result.island { --text: #17232D; --text-strong: #0E161D; --text-soft: #3E4C57; --link: #9C1325; color-scheme: light; background-color: #FFFFFF; }
+.section + .section { border-top-color: #E0E6EA; }
+.breadcrumbs a { color: #5B6975; }
